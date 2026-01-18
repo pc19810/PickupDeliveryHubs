@@ -1,0 +1,1858 @@
+2026-01-18 21:47:46,798 - src.utils - INFO - ======================================================================
+2026-01-18 21:47:46,798 - src.utils - INFO - LOGISTICS HUB ANALYSIS SYSTEM
+2026-01-18 21:47:46,798 - src.utils - INFO - ======================================================================
+2026-01-18 21:47:46,798 - src.utils - INFO - 
+>>> STEP 1: Processing loads report data
+2026-01-18 21:47:46,799 - src.data_processor - INFO - Starting data processing pipeline...
+2026-01-18 21:47:46,799 - src.data_processor - INFO - Found 5 loads report files
+2026-01-18 21:47:46,899 - src.data_processor - INFO - Loaded 13221 records from loads-report_04.01.2025--06.30.2025--(11.07.2025--05-34).csv
+2026-01-18 21:47:46,948 - src.data_processor - INFO - Loaded 9170 records from loads-report_09.01.2025--10.31.2025--(01.16.2026--05-02).csv
+2026-01-18 21:47:46,991 - src.data_processor - INFO - Loaded 8170 records from loads-report_11.01.2025--12.31.2025--(01.16.2026--05-00).csv
+2026-01-18 21:47:47,037 - src.data_processor - INFO - Loaded 8943 records from loads-report_07.01.2025--08.31.2025--(11.07.2025--05-37).csv
+2026-01-18 21:47:47,263 - src.data_processor - INFO - Loaded 46713 records from loads-report-03-31-2025-before.csv
+2026-01-18 21:47:47,296 - src.data_processor - INFO - Combined total: 86217 records
+2026-01-18 21:47:47,304 - src.data_processor - INFO - Extracting cities and states from addresses...
+2026-01-18 21:47:58,416 - src.data_processor - INFO - Successfully extracted 82924/86217 pickup locations
+2026-01-18 21:47:58,416 - src.data_processor - INFO - Successfully extracted 81682/86217 delivery locations
+2026-01-18 21:47:58,416 - src.data_processor - INFO - Aggregating city-level counts...
+2026-01-18 21:47:58,688 - src.data_processor - INFO - Aggregated data for 7068 unique cities
+2026-01-18 21:47:58,688 - src.data_processor - INFO - Adding coordinates to cities using database...
+2026-01-18 21:47:58,782 - src.geocoding_database - INFO - Loaded 31254 cities from database
+2026-01-18 21:48:22,069 - src.data_processor - INFO - Successfully geocoded 5393/7068 cities
+2026-01-18 21:48:22,070 - src.data_processor - WARNING - Could not geocode 1675 cities:
+2026-01-18 21:48:22,070 - src.data_processor - WARNING -   - , IL
+2026-01-18 21:48:22,070 - src.data_processor - WARNING -   - , IN
+2026-01-18 21:48:22,071 - src.data_processor - WARNING -   - , KY
+2026-01-18 21:48:22,071 - src.data_processor - WARNING -   - , MD
+2026-01-18 21:48:22,071 - src.data_processor - WARNING -   - , MI
+2026-01-18 21:48:22,071 - src.data_processor - WARNING -   - , NC
+2026-01-18 21:48:22,071 - src.data_processor - WARNING -   - , NJ
+2026-01-18 21:48:22,072 - src.data_processor - WARNING -   - , NY
+2026-01-18 21:48:22,072 - src.data_processor - WARNING -   - , OH
+2026-01-18 21:48:22,072 - src.data_processor - WARNING -   - , PA
+2026-01-18 21:48:22,072 - src.data_processor - WARNING -   - , SC
+2026-01-18 21:48:22,072 - src.data_processor - WARNING -   - , TN
+2026-01-18 21:48:22,072 - src.data_processor - WARNING -   - , VA
+2026-01-18 21:48:22,072 - src.data_processor - WARNING -   - , VT
+2026-01-18 21:48:22,073 - src.data_processor - WARNING -   - , WV
+2026-01-18 21:48:22,073 - src.data_processor - WARNING -   - -29625, SC
+2026-01-18 21:48:22,073 - src.data_processor - WARNING -   - -32099, FL
+2026-01-18 21:48:22,073 - src.data_processor - WARNING -   - 08691-231, NJ
+2026-01-18 21:48:22,073 - src.data_processor - WARNING -   - 159040001, PA
+2026-01-18 21:48:22,073 - src.data_processor - WARNING -   - 159041988, PA
+2026-01-18 21:48:22,073 - src.data_processor - WARNING -   - 171090001, PA
+2026-01-18 21:48:22,074 - src.data_processor - WARNING -   - 177010001, PA
+2026-01-18 21:48:22,074 - src.data_processor - WARNING -   - 18016220, MA
+2026-01-18 21:48:22,074 - src.data_processor - WARNING -   - 180629802, PA
+2026-01-18 21:48:22,074 - src.data_processor - WARNING -   - 184247802, PA
+2026-01-18 21:48:22,074 - src.data_processor - WARNING -   - 184668982, PA
+2026-01-18 21:48:22,074 - src.data_processor - WARNING -   - 185179601, PA
+2026-01-18 21:48:22,075 - src.data_processor - WARNING -   - 188001880, MA
+2026-01-18 21:48:22,075 - src.data_processor - WARNING -   - 191540001, PA
+2026-01-18 21:48:22,075 - src.data_processor - WARNING -   - 207431219, MD
+2026-01-18 21:48:22,075 - src.data_processor - WARNING -   - 21740-699, MD
+2026-01-18 21:48:22,075 - src.data_processor - WARNING -   - 231856302, VA
+2026-01-18 21:48:22,075 - src.data_processor - WARNING -   - 2322423224, VA
+2026-01-18 21:48:22,075 - src.data_processor - WARNING -   - 232371368, VA
+2026-01-18 21:48:22,077 - src.data_processor - WARNING -   - 233324, VA
+2026-01-18 21:48:22,077 - src.data_processor - WARNING -   - 234342519, VA
+2026-01-18 21:48:22,077 - src.data_processor - WARNING -   - 2350423504, VA
+2026-01-18 21:48:22,077 - src.data_processor - WARNING -   - 236030001, VA
+2026-01-18 21:48:22,077 - src.data_processor - WARNING -   - 240198513, VA
+2026-01-18 21:48:22,078 - src.data_processor - WARNING -   - 245015018, VA
+2026-01-18 21:48:22,078 - src.data_processor - WARNING -   - 272606259, NC
+2026-01-18 21:48:22,078 - src.data_processor - WARNING -   - 275309542, NC
+2026-01-18 21:48:22,078 - src.data_processor - WARNING -   - 280166501, NC
+2026-01-18 21:48:22,078 - src.data_processor - WARNING -   - 28027-973, NC
+2026-01-18 21:48:22,079 - src.data_processor - WARNING -   - 280926129, NC
+2026-01-18 21:48:22,079 - src.data_processor - WARNING -   - 281349201, NC
+2026-01-18 21:48:22,079 - src.data_processor - WARNING -   - 282690362, NC
+2026-01-18 21:48:22,079 - src.data_processor - WARNING -   - 2827328273, NC
+2026-01-18 21:48:22,079 - src.data_processor - WARNING -   - 283586332, NC
+2026-01-18 21:48:22,079 - src.data_processor - WARNING -   - 288625, NC
+2026-01-18 21:48:22,080 - src.data_processor - WARNING -   - 29072 290, SC
+2026-01-18 21:48:22,080 - src.data_processor - WARNING -   - 29200001, RI
+2026-01-18 21:48:22,080 - src.data_processor - WARNING -   - 29501-680, SC
+2026-01-18 21:48:22,080 - src.data_processor - WARNING -   - 296053432, SC
+2026-01-18 21:48:22,080 - src.data_processor - WARNING -   - 296517099, SC
+2026-01-18 21:48:22,080 - src.data_processor - WARNING -   - 297307443, SC
+2026-01-18 21:48:22,081 - src.data_processor - WARNING -   - 300124959, GA
+2026-01-18 21:48:22,081 - src.data_processor - WARNING -   - 300601037, GA
+2026-01-18 21:48:22,081 - src.data_processor - WARNING -   - 30180-109, GA
+2026-01-18 21:48:22,081 - src.data_processor - WARNING -   - 309060000, GA
+2026-01-18 21:48:22,081 - src.data_processor - WARNING -   - 316364005, GA
+2026-01-18 21:48:22,081 - src.data_processor - WARNING -   - 402090001, KY
+2026-01-18 21:48:22,082 - src.data_processor - WARNING -   - 436150001, OH
+2026-01-18 21:48:22,082 - src.data_processor - WARNING -   - 45067*9791, OH
+2026-01-18 21:48:22,082 - src.data_processor - WARNING -   - 471700001, IN
+2026-01-18 21:48:22,082 - src.data_processor - WARNING -   - 482070001, MI
+2026-01-18 21:48:22,082 - src.data_processor - WARNING -   - 500 Gateway Boulevard, OH
+2026-01-18 21:48:22,082 - src.data_processor - WARNING -   - 616 Industrial Road, KY
+2026-01-18 21:48:22,083 - src.data_processor - WARNING -   - 62040-205, IL
+2026-01-18 21:48:22,083 - src.data_processor - WARNING -   - 64773669, CT
+2026-01-18 21:48:22,083 - src.data_processor - WARNING -   - 79810001, NJ
+2026-01-18 21:48:22,083 - src.data_processor - WARNING -   - 83602016, NJ
+2026-01-18 21:48:22,083 - src.data_processor - WARNING -   - 869108691, NJ
+2026-01-18 21:48:22,083 - src.data_processor - WARNING -   - : 47130, IN
+2026-01-18 21:48:22,083 - src.data_processor - WARNING -   - Abington, PA
+2026-01-18 21:48:22,084 - src.data_processor - WARNING -   - Acme, PA
+2026-01-18 21:48:22,084 - src.data_processor - WARNING -   - Acton, MA
+2026-01-18 21:48:22,084 - src.data_processor - WARNING -   - Acushnet, MA
+2026-01-18 21:48:22,084 - src.data_processor - WARNING -   - Ada, MI
+2026-01-18 21:48:22,084 - src.data_processor - WARNING -   - Adams, MA
+2026-01-18 21:48:22,085 - src.data_processor - WARNING -   - Adams, NY
+2026-01-18 21:48:22,085 - src.data_processor - WARNING -   - Addison, NY
+2026-01-18 21:48:22,085 - src.data_processor - WARNING -   - Adger, AL
+2026-01-18 21:48:22,085 - src.data_processor - WARNING -   - Adrian, PA
+2026-01-18 21:48:22,085 - src.data_processor - WARNING -   - Afton, NY
+2026-01-18 21:48:22,085 - src.data_processor - WARNING -   - Afton, TN
+2026-01-18 21:48:22,087 - src.data_processor - WARNING -   - Agawam, MA
+2026-01-18 21:48:22,087 - src.data_processor - WARNING -   - Aladdin, WY
+2026-01-18 21:48:22,087 - src.data_processor - WARNING -   - Alden, NY
+2026-01-18 21:48:22,087 - src.data_processor - WARNING -   - Alexander, NY
+2026-01-18 21:48:22,087 - src.data_processor - WARNING -   - Alfred Station, NY
+2026-01-18 21:48:22,088 - src.data_processor - WARNING -   - Allenstown, NH
+2026-01-18 21:48:22,088 - src.data_processor - WARNING -   - Alloy, WV
+2026-01-18 21:48:22,088 - src.data_processor - WARNING -   - Alton, VA
+2026-01-18 21:48:22,088 - src.data_processor - WARNING -   - Altona, NY
+2026-01-18 21:48:22,088 - src.data_processor - WARNING -   - Amenia, NY
+2026-01-18 21:48:22,088 - src.data_processor - WARNING -   - Amherst, NH
+2026-01-18 21:48:22,089 - src.data_processor - WARNING -   - Amherst, NY
+2026-01-18 21:48:22,089 - src.data_processor - WARNING -   - Ancram, NY
+2026-01-18 21:48:22,089 - src.data_processor - WARNING -   - Andover, MA
+2026-01-18 21:48:22,089 - src.data_processor - WARNING -   - Andover, NJ
+2026-01-18 21:48:22,089 - src.data_processor - WARNING -   - Annapolis Jct, MD
+2026-01-18 21:48:22,089 - src.data_processor - WARNING -   - Annapolis Junction, MD
+2026-01-18 21:48:22,089 - src.data_processor - WARNING -   - Annville, PA
+2026-01-18 21:48:22,090 - src.data_processor - WARNING -   - Antioch, TN
+2026-01-18 21:48:22,090 - src.data_processor - WARNING -   - Appleton, NY
+2026-01-18 21:48:22,090 - src.data_processor - WARNING -   - Ararat, NC
+2026-01-18 21:48:22,090 - src.data_processor - WARNING -   - Arcade, NY
+2026-01-18 21:48:22,090 - src.data_processor - WARNING -   - Arden, NC
+2026-01-18 21:48:22,091 - src.data_processor - WARNING -   - Armuchee, GA
+2026-01-18 21:48:22,091 - src.data_processor - WARNING -   - Arrington, TN
+2026-01-18 21:48:22,091 - src.data_processor - WARNING -   - Artemas, PA
+2026-01-18 21:48:22,091 - src.data_processor - WARNING -   - Arvonia, VA
+2026-01-18 21:48:22,091 - src.data_processor - WARNING -   - Ash, NC
+2026-01-18 21:48:22,091 - src.data_processor - WARNING -   - Ashboro, NC
+2026-01-18 21:48:22,093 - src.data_processor - WARNING -   - Ashcamp, KY
+2026-01-18 21:48:22,093 - src.data_processor - WARNING -   - Ashland, MA
+2026-01-18 21:48:22,093 - src.data_processor - WARNING -   - Ashville, NY
+2026-01-18 21:48:22,093 - src.data_processor - WARNING -   - Assonet, MA
+2026-01-18 21:48:22,093 - src.data_processor - WARNING -   - Aston, PA
+2026-01-18 21:48:22,093 - src.data_processor - WARNING -   - Astoria, NY
+2026-01-18 21:48:22,093 - src.data_processor - WARNING -   - Athens, NY
+2026-01-18 21:48:22,093 - src.data_processor - WARNING -   - Auburn, MA
+2026-01-18 21:48:22,094 - src.data_processor - WARNING -   - Auburn, PA
+2026-01-18 21:48:22,094 - src.data_processor - WARNING -   - Augusta, SC
+2026-01-18 21:48:22,094 - src.data_processor - WARNING -   - Augusta, WV
+2026-01-18 21:48:22,094 - src.data_processor - WARNING -   - Austel, GA
+2026-01-18 21:48:22,094 - src.data_processor - WARNING -   - Avoca, MI
+2026-01-18 21:48:22,094 - src.data_processor - WARNING -   - Avon, CT
+2026-01-18 21:48:22,095 - src.data_processor - WARNING -   - Avon, MA
+2026-01-18 21:48:22,095 - src.data_processor - WARNING -   - Avon, NY
+2026-01-18 21:48:22,095 - src.data_processor - WARNING -   - Axton, VA
+2026-01-18 21:48:22,095 - src.data_processor - WARNING -   - Ayer, MA
+2026-01-18 21:48:22,095 - src.data_processor - WARNING -   - Aylett, VA
+2026-01-18 21:48:22,095 - src.data_processor - WARNING -   - BROOKLYN, CT
+2026-01-18 21:48:22,095 - src.data_processor - WARNING -   - Baileyville, ME
+2026-01-18 21:48:22,096 - src.data_processor - WARNING -   - Bainbridge, NY
+2026-01-18 21:48:22,096 - src.data_processor - WARNING -   - Baker, WV
+2026-01-18 21:48:22,096 - src.data_processor - WARNING -   - Bakewell, TN
+2026-01-18 21:48:22,096 - src.data_processor - WARNING -   - Ballard, WV
+2026-01-18 21:48:22,096 - src.data_processor - WARNING -   - Ballston Lake, NY
+2026-01-18 21:48:22,096 - src.data_processor - WARNING -   - Barker, NY
+2026-01-18 21:48:22,097 - src.data_processor - WARNING -   - Barnesville, PA
+2026-01-18 21:48:22,097 - src.data_processor - WARNING -   - Barnwel, SC
+2026-01-18 21:48:22,097 - src.data_processor - WARNING -   - Barre, MA
+2026-01-18 21:48:22,097 - src.data_processor - WARNING -   - Barre Town, VT
+2026-01-18 21:48:22,097 - src.data_processor - WARNING -   - Basom, NY
+2026-01-18 21:48:22,097 - src.data_processor - WARNING -   - Batesburg, SC
+2026-01-18 21:48:22,097 - src.data_processor - WARNING -   - Batesburg Leesville, SC
+2026-01-18 21:48:22,098 - src.data_processor - WARNING -   - Bath, NY
+2026-01-18 21:48:22,098 - src.data_processor - WARNING -   - Battleboro, NC
+2026-01-18 21:48:22,098 - src.data_processor - WARNING -   - Bay Saint Louis, MS
+2026-01-18 21:48:22,098 - src.data_processor - WARNING -   - Bayville, NJ
+2026-01-18 21:48:22,098 - src.data_processor - WARNING -   - Beacon Falls, CT
+2026-01-18 21:48:22,098 - src.data_processor - WARNING -   - Beaver Falls, NY
+2026-01-18 21:48:22,098 - src.data_processor - WARNING -   - Beccaria, PA
+2026-01-18 21:48:22,100 - src.data_processor - WARNING -   - Bedford, MA
+2026-01-18 21:48:22,100 - src.data_processor - WARNING -   - Bedford, NH
+2026-01-18 21:48:22,100 - src.data_processor - WARNING -   - Bedford, PA
+2026-01-18 21:48:22,100 - src.data_processor - WARNING -   - Beech Creek, PA
+2026-01-18 21:48:22,100 - src.data_processor - WARNING -   - Bel Aire, KS
+2026-01-18 21:48:22,101 - src.data_processor - WARNING -   - Belcamp, MD
+2026-01-18 21:48:22,101 - src.data_processor - WARNING -   - Belchertown, MA
+2026-01-18 21:48:22,101 - src.data_processor - WARNING -   - Belden, MS
+2026-01-18 21:48:22,101 - src.data_processor - WARNING -   - Belleville, NJ
+2026-01-18 21:48:22,101 - src.data_processor - WARNING -   - Bellingham, MA
+2026-01-18 21:48:22,101 - src.data_processor - WARNING -   - Belmont, MI
+2026-01-18 21:48:22,101 - src.data_processor - WARNING -   - Belmont, NH
+2026-01-18 21:48:22,102 - src.data_processor - WARNING -   - Bennington, NH
+2026-01-18 21:48:22,102 - src.data_processor - WARNING -   - Bennington, VT
+2026-01-18 21:48:22,102 - src.data_processor - WARNING -   - Bensalem, PA
+2026-01-18 21:48:22,102 - src.data_processor - WARNING -   - Bergen, NY
+2026-01-18 21:48:22,102 - src.data_processor - WARNING -   - Berkeley Springs, WV
+2026-01-18 21:48:22,102 - src.data_processor - WARNING -   - Berkshire, NY
+2026-01-18 21:48:22,103 - src.data_processor - WARNING -   - Berlin, CT
+2026-01-18 21:48:22,103 - src.data_processor - WARNING -   - Berlin, PA
+2026-01-18 21:48:22,103 - src.data_processor - WARNING -   - Berlin Center, OH
+2026-01-18 21:48:22,103 - src.data_processor - WARNING -   - Berlin Township, NJ
+2026-01-18 21:48:22,103 - src.data_processor - WARNING -   - Bethany, CT
+2026-01-18 21:48:22,104 - src.data_processor - WARNING -   - Bethel, PA
+2026-01-18 21:48:22,104 - src.data_processor - WARNING -   - Bethel Heights, AR
+2026-01-18 21:48:22,104 - src.data_processor - WARNING -   - Bethlehem, NH
+2026-01-18 21:48:22,104 - src.data_processor - WARNING -   - Big Canoe, GA
+2026-01-18 21:48:22,104 - src.data_processor - WARNING -   - Billerica, MA
+2026-01-18 21:48:22,105 - src.data_processor - WARNING -   - Bird in Hand, PA
+2026-01-18 21:48:22,105 - src.data_processor - WARNING -   - Black Creek, GA
+2026-01-18 21:48:22,105 - src.data_processor - WARNING -   - Blacklick, OH
+2026-01-18 21:48:22,105 - src.data_processor - WARNING -   - Blackstone, MA
+2026-01-18 21:48:22,105 - src.data_processor - WARNING -   - Blakeslee, PA
+2026-01-18 21:48:22,106 - src.data_processor - WARNING -   - Bloomfield, CT
+2026-01-18 21:48:22,106 - src.data_processor - WARNING -   - Bloomfield, NJ
+2026-01-18 21:48:22,106 - src.data_processor - WARNING -   - Blue Anchor, NJ
+2026-01-18 21:48:22,106 - src.data_processor - WARNING -   - Boardman, OH
+2026-01-18 21:48:22,106 - src.data_processor - WARNING -   - Boonville, NY
+2026-01-18 21:48:22,106 - src.data_processor - WARNING -   - Bordentown, NJ
+2026-01-18 21:48:22,107 - src.data_processor - WARNING -   - Boss, MO
+2026-01-18 21:48:22,107 - src.data_processor - WARNING -   - Bow, NH
+2026-01-18 21:48:22,107 - src.data_processor - WARNING -   - Boylston, MA
+2026-01-18 21:48:22,107 - src.data_processor - WARNING -   - Bozrah, CT
+2026-01-18 21:48:22,107 - src.data_processor - WARNING -   - Bradford, MA
+2026-01-18 21:48:22,107 - src.data_processor - WARNING -   - Bradford, VT
+2026-01-18 21:48:22,108 - src.data_processor - WARNING -   - Braintree, MA
+2026-01-18 21:48:22,108 - src.data_processor - WARNING -   - Branchburg, NJ
+2026-01-18 21:48:22,108 - src.data_processor - WARNING -   - Brandon, VT
+2026-01-18 21:48:22,108 - src.data_processor - WARNING -   - Branford, CT
+2026-01-18 21:48:22,108 - src.data_processor - WARNING -   - Brant, NY
+2026-01-18 21:48:22,109 - src.data_processor - WARNING -   - Brattleboro, VT
+2026-01-18 21:48:22,109 - src.data_processor - WARNING -   - Breezewood, PA
+2026-01-18 21:48:22,109 - src.data_processor - WARNING -   - Breiningsville, PA
+2026-01-18 21:48:22,109 - src.data_processor - WARNING -   - Brentwood, NH
+2026-01-18 21:48:22,109 - src.data_processor - WARNING -   - Brick, NJ
+2026-01-18 21:48:22,109 - src.data_processor - WARNING -   - Brick Township, NJ
+2026-01-18 21:48:22,110 - src.data_processor - WARNING -   - Bridgeton, NJ
+2026-01-18 21:48:22,110 - src.data_processor - WARNING -   - Bridgewater, MA
+2026-01-18 21:48:22,110 - src.data_processor - WARNING -   - Bridgewater, NJ
+2026-01-18 21:48:22,110 - src.data_processor - WARNING -   - Brighton, PA
+2026-01-18 21:48:22,110 - src.data_processor - WARNING -   - Bristol, PA
+2026-01-18 21:48:22,110 - src.data_processor - WARNING -   - Bristol, RI
+2026-01-18 21:48:22,111 - src.data_processor - WARNING -   - Bristow, IN
+2026-01-18 21:48:22,111 - src.data_processor - WARNING -   - Brockport, PA
+2026-01-18 21:48:22,111 - src.data_processor - WARNING -   - Brook, NJ
+2026-01-18 21:48:22,111 - src.data_processor - WARNING -   - Brookfield, CT
+2026-01-18 21:48:22,111 - src.data_processor - WARNING -   - Brookfield, OH
+2026-01-18 21:48:22,112 - src.data_processor - WARNING -   - Brookpark, OH
+2026-01-18 21:48:22,112 - src.data_processor - WARNING -   - Brown Summit, NC
+2026-01-18 21:48:22,112 - src.data_processor - WARNING -   - Browns Summit, NC
+2026-01-18 21:48:22,112 - src.data_processor - WARNING -   - Brownstown, MI
+2026-01-18 21:48:22,112 - src.data_processor - WARNING -   - Brownstown Charter Township, MI
+2026-01-18 21:48:22,113 - src.data_processor - WARNING -   - Brownstown Township, MI
+2026-01-18 21:48:22,113 - src.data_processor - WARNING -   - Brownstown Twp, MI
+2026-01-18 21:48:22,113 - src.data_processor - WARNING -   - Brunswick, ME
+2026-01-18 21:48:22,113 - src.data_processor - WARNING -   - Burke, NY
+2026-01-18 21:48:22,113 - src.data_processor - WARNING -   - Burkville, AL
+2026-01-18 21:48:22,114 - src.data_processor - WARNING -   - Burlington, MA
+2026-01-18 21:48:22,114 - src.data_processor - WARNING -   - Burlington, NJ
+2026-01-18 21:48:22,114 - src.data_processor - WARNING -   - Burlington Township, NJ
+2026-01-18 21:48:22,114 - src.data_processor - WARNING -   - Bushwood, MD
+2026-01-18 21:48:22,114 - src.data_processor - WARNING -   - Byron, NY
+2026-01-18 21:48:22,114 - src.data_processor - WARNING -   - Cairo, NY
+2026-01-18 21:48:22,115 - src.data_processor - WARNING -   - Caldwell, WV
+2026-01-18 21:48:22,115 - src.data_processor - WARNING -   - Caledonia, NY
+2026-01-18 21:48:22,115 - src.data_processor - WARNING -   - Calendonia, OH
+2026-01-18 21:48:22,115 - src.data_processor - WARNING -   - Cambria Heights, NY
+2026-01-18 21:48:22,115 - src.data_processor - WARNING -   - Cambridge, NY
+2026-01-18 21:48:22,115 - src.data_processor - WARNING -   - Camby, IN
+2026-01-18 21:48:22,115 - src.data_processor - WARNING -   - Camden, NY
+2026-01-18 21:48:22,115 - src.data_processor - WARNING -   - Camden Wyoming, DE
+2026-01-18 21:48:22,117 - src.data_processor - WARNING -   - Camillus, NY
+2026-01-18 21:48:22,117 - src.data_processor - WARNING -   - Camp Creek, WV
+2026-01-18 21:48:22,117 - src.data_processor - WARNING -   - Camp Lejeune, NC
+2026-01-18 21:48:22,117 - src.data_processor - WARNING -   - Campbell, NY
+2026-01-18 21:48:22,117 - src.data_processor - WARNING -   - Campbell Hall, NY
+2026-01-18 21:48:22,117 - src.data_processor - WARNING -   - Canandaigua, NY
+2026-01-18 21:48:22,117 - src.data_processor - WARNING -   - Candler, NC
+2026-01-18 21:48:22,118 - src.data_processor - WARNING -   - Candor, NY
+2026-01-18 21:48:22,118 - src.data_processor - WARNING -   - Canton, MA
+2026-01-18 21:48:22,118 - src.data_processor - WARNING -   - Canton, MI
+2026-01-18 21:48:22,118 - src.data_processor - WARNING -   - Canton, NY
+2026-01-18 21:48:22,118 - src.data_processor - WARNING -   - Cantonment, FL
+2026-01-18 21:48:22,118 - src.data_processor - WARNING -   - Cape May Ch, NJ
+2026-01-18 21:48:22,119 - src.data_processor - WARNING -   - Cape May Ct Hse, NJ
+2026-01-18 21:48:22,119 - src.data_processor - WARNING -   - Carlistle, PA
+2026-01-18 21:48:22,119 - src.data_processor - WARNING -   - Carneys Point, NJ
+2026-01-18 21:48:22,119 - src.data_processor - WARNING -   - Carneys Point Township, NJ
+2026-01-18 21:48:22,119 - src.data_processor - WARNING -   - Carol City, FL
+2026-01-18 21:48:22,120 - src.data_processor - WARNING -   - Carver, MA
+2026-01-18 21:48:22,120 - src.data_processor - WARNING -   - Casco, MI
+2026-01-18 21:48:22,120 - src.data_processor - WARNING -   - Cassatt, SC
+2026-01-18 21:48:22,120 - src.data_processor - WARNING -   - Castleton, VT
+2026-01-18 21:48:22,120 - src.data_processor - WARNING -   - Castleton On Hudson, NY
+2026-01-18 21:48:22,121 - src.data_processor - WARNING -   - Cato, NY
+2026-01-18 21:48:22,121 - src.data_processor - WARNING -   - Catskill, NY
+2026-01-18 21:48:22,121 - src.data_processor - WARNING -   - Cazenovia, NY
+2026-01-18 21:48:22,121 - src.data_processor - WARNING -   - Cedar Grove, NC
+2026-01-18 21:48:22,121 - src.data_processor - WARNING -   - Cedar Grove, NJ
+2026-01-18 21:48:22,121 - src.data_processor - WARNING -   - Center Rutland, VT
+2026-01-18 21:48:22,121 - src.data_processor - WARNING -   - Center Valley, PA
+2026-01-18 21:48:22,121 - src.data_processor - WARNING -   - Champlain, NY
+2026-01-18 21:48:22,122 - src.data_processor - WARNING -   - Champlain, VA
+2026-01-18 21:48:22,122 - src.data_processor - WARNING -   - Chancellor, AL
+2026-01-18 21:48:22,122 - src.data_processor - WARNING -   - Chapman, AL
+2026-01-18 21:48:22,122 - src.data_processor - WARNING -   - Charlestown, MA
+2026-01-18 21:48:22,122 - src.data_processor - WARNING -   - Charlton, MA
+2026-01-18 21:48:22,122 - src.data_processor - WARNING -   - Chatam, VA
+2026-01-18 21:48:22,122 - src.data_processor - WARNING -   - Chateaugay, NY
+2026-01-18 21:48:22,123 - src.data_processor - WARNING -   - Chatham, NY
+2026-01-18 21:48:22,123 - src.data_processor - WARNING -   - Chavies, KY
+2026-01-18 21:48:22,123 - src.data_processor - WARNING -   - Check, VA
+2026-01-18 21:48:22,123 - src.data_processor - WARNING -   - Cheektowaga, NY
+2026-01-18 21:48:22,123 - src.data_processor - WARNING -   - Chelmsford, MA
+2026-01-18 21:48:22,123 - src.data_processor - WARNING -   - Chemung, NY
+2026-01-18 21:48:22,123 - src.data_processor - WARNING -   - Cherry Hill, NJ
+2026-01-18 21:48:22,123 - src.data_processor - WARNING -   - Cherry Hill Township, NJ
+2026-01-18 21:48:22,125 - src.data_processor - WARNING -   - Cherry Point, NC
+2026-01-18 21:48:22,125 - src.data_processor - WARNING -   - Chesapeak, VA
+2026-01-18 21:48:22,125 - src.data_processor - WARNING -   - Chesepeake, VA
+2026-01-18 21:48:22,125 - src.data_processor - WARNING -   - Cheshire, CT
+2026-01-18 21:48:22,125 - src.data_processor - WARNING -   - Chester, NJ
+2026-01-18 21:48:22,125 - src.data_processor - WARNING -   - Chester Springs, PA
+2026-01-18 21:48:22,126 - src.data_processor - WARNING -   - Chesterfield, MI
+2026-01-18 21:48:22,126 - src.data_processor - WARNING -   - Chesterfield, NH
+2026-01-18 21:48:22,126 - src.data_processor - WARNING -   - Chichester, NH
+2026-01-18 21:48:22,126 - src.data_processor - WARNING -   - Chilicothe, OH
+2026-01-18 21:48:22,126 - src.data_processor - WARNING -   - Chuckey, TN
+2026-01-18 21:48:22,127 - src.data_processor - WARNING -   - Cicero, NY
+2026-01-18 21:48:22,127 - src.data_processor - WARNING -   - Cincinnatti, OH
+2026-01-18 21:48:22,127 - src.data_processor - WARNING -   - Cinnaminson, NJ
+2026-01-18 21:48:22,127 - src.data_processor - WARNING -   - Circle Freeway Drive, OH
+2026-01-18 21:48:22,127 - src.data_processor - WARNING -   - City of Orange, NJ
+2026-01-18 21:48:22,127 - src.data_processor - WARNING -   - Clarence, NY
+2026-01-18 21:48:22,127 - src.data_processor - WARNING -   - Clarendon, VT
+2026-01-18 21:48:22,127 - src.data_processor - WARNING -   - Clark, NJ
+2026-01-18 21:48:22,128 - src.data_processor - WARNING -   - Clarklake, MI
+2026-01-18 21:48:22,128 - src.data_processor - WARNING -   - Clay, NY
+2026-01-18 21:48:22,128 - src.data_processor - WARNING -   - Clear Brook, VA
+2026-01-18 21:48:22,128 - src.data_processor - WARNING -   - Clermont, KY
+2026-01-18 21:48:22,128 - src.data_processor - WARNING -   - Clifton, NY
+2026-01-18 21:48:22,128 - src.data_processor - WARNING -   - Clifton Park, NY
+2026-01-18 21:48:22,129 - src.data_processor - WARNING -   - Climax, NC
+2026-01-18 21:48:22,129 - src.data_processor - WARNING -   - Clinton, MA
+2026-01-18 21:48:22,129 - src.data_processor - WARNING -   - Clinton Township, MI
+2026-01-18 21:48:22,129 - src.data_processor - WARNING -   - Coal TWP, PA
+2026-01-18 21:48:22,129 - src.data_processor - WARNING -   - Coal Township, PA
+2026-01-18 21:48:22,129 - src.data_processor - WARNING -   - Cobb, GA
+2026-01-18 21:48:22,130 - src.data_processor - WARNING -   - Cobleskill, NY
+2026-01-18 21:48:22,130 - src.data_processor - WARNING -   - Cocolamus, PA
+2026-01-18 21:48:22,130 - src.data_processor - WARNING -   - Cohocton, NY
+2026-01-18 21:48:22,130 - src.data_processor - WARNING -   - Colchester, CT
+2026-01-18 21:48:22,130 - src.data_processor - WARNING -   - Colchester, VT
+2026-01-18 21:48:22,130 - src.data_processor - WARNING -   - Colfax, NC
+2026-01-18 21:48:22,130 - src.data_processor - WARNING -   - College Grove, TN
+2026-01-18 21:48:22,132 - src.data_processor - WARNING -   - College Point, NY
+2026-01-18 21:48:22,132 - src.data_processor - WARNING -   - Colonie, NY
+2026-01-18 21:48:22,132 - src.data_processor - WARNING -   - Colts Neck, NJ
+2026-01-18 21:48:22,132 - src.data_processor - WARNING -   - Columbia, ME
+2026-01-18 21:48:22,132 - src.data_processor - WARNING -   - Columbia Cross Roads, PA
+2026-01-18 21:48:22,132 - src.data_processor - WARNING -   - Columbia Station, OH
+2026-01-18 21:48:22,132 - src.data_processor - WARNING -   - Columbus, NJ
+2026-01-18 21:48:22,133 - src.data_processor - WARNING -   - Concord Township, OH
+2026-01-18 21:48:22,133 - src.data_processor - WARNING -   - Concord Twp, OH
+2026-01-18 21:48:22,133 - src.data_processor - WARNING -   - Conestoga, PA
+2026-01-18 21:48:22,133 - src.data_processor - WARNING -   - Conklin, MI
+2026-01-18 21:48:22,133 - src.data_processor - WARNING -   - Conklin, NY
+2026-01-18 21:48:22,134 - src.data_processor - WARNING -   - Conway, NH
+2026-01-18 21:48:22,134 - src.data_processor - WARNING -   - Coosa Pines, AL
+2026-01-18 21:48:22,134 - src.data_processor - WARNING -   - Copley, OH
+2026-01-18 21:48:22,134 - src.data_processor - WARNING -   - Copper Hill, VA
+2026-01-18 21:48:22,134 - src.data_processor - WARNING -   - Corapeake, NC
+2026-01-18 21:48:22,135 - src.data_processor - WARNING -   - Cordova, TN
+2026-01-18 21:48:22,135 - src.data_processor - WARNING -   - Corinth, NY
+2026-01-18 21:48:22,135 - src.data_processor - WARNING -   - Cornwall, VT
+2026-01-18 21:48:22,135 - src.data_processor - WARNING -   - Corona, NY
+2026-01-18 21:48:22,135 - src.data_processor - WARNING -   - Cortlandt Manor, NY
+2026-01-18 21:48:22,135 - src.data_processor - WARNING -   - Cottage, NY
+2026-01-18 21:48:22,136 - src.data_processor - WARNING -   - Cottonton, AL
+2026-01-18 21:48:22,136 - src.data_processor - WARNING -   - Coventry, RI
+2026-01-18 21:48:22,136 - src.data_processor - WARNING -   - Covington Township, PA
+2026-01-18 21:48:22,136 - src.data_processor - WARNING -   - Covington Twp, PA
+2026-01-18 21:48:22,136 - src.data_processor - WARNING -   - Coxsackie, NY
+2026-01-18 21:48:22,136 - src.data_processor - WARNING -   - Cr-1281J, KY
+2026-01-18 21:48:22,136 - src.data_processor - WARNING -   - Cranberry Township, PA
+2026-01-18 21:48:22,136 - src.data_processor - WARNING -   - Cranbury, NJ
+2026-01-18 21:48:22,137 - src.data_processor - WARNING -   - Cranbury Station, NJ
+2026-01-18 21:48:22,137 - src.data_processor - WARNING -   - Crandall, GA
+2026-01-18 21:48:22,137 - src.data_processor - WARNING -   - Crawley, WV
+2026-01-18 21:48:22,137 - src.data_processor - WARNING -   - Creighton, PA
+2026-01-18 21:48:22,137 - src.data_processor - WARNING -   - Cromwell, CT
+2026-01-18 21:48:22,137 - src.data_processor - WARNING -   - Cross, SC
+2026-01-18 21:48:22,137 - src.data_processor - WARNING -   - Cross Junction, VA
+2026-01-18 21:48:22,138 - src.data_processor - WARNING -   - Crumpler, NC
+2026-01-18 21:48:22,138 - src.data_processor - WARNING -   - Crystal Hill, VA
+2026-01-18 21:48:22,138 - src.data_processor - WARNING -   - Cuba, NY
+2026-01-18 21:48:22,138 - src.data_processor - WARNING -   - Cullen, VA
+2026-01-18 21:48:22,138 - src.data_processor - WARNING -   - Cumberland, ME
+2026-01-18 21:48:22,138 - src.data_processor - WARNING -   - Cumberland, RI
+2026-01-18 21:48:22,140 - src.data_processor - WARNING -   - Currie, NC
+2026-01-18 21:48:22,140 - src.data_processor - WARNING -   - Curtis Bay, MD
+2026-01-18 21:48:22,140 - src.data_processor - WARNING -   - Curtis Bay Industrial Area, MD
+2026-01-18 21:48:22,140 - src.data_processor - WARNING -   - DENVILLE, NJ
+2026-01-18 21:48:22,140 - src.data_processor - WARNING -   - DFW Airport, TX
+2026-01-18 21:48:22,140 - src.data_processor - WARNING -   - Dallas, PA
+2026-01-18 21:48:22,140 - src.data_processor - WARNING -   - Dalton, MA
+2026-01-18 21:48:22,141 - src.data_processor - WARNING -   - Danvers, MA
+2026-01-18 21:48:22,141 - src.data_processor - WARNING -   - Darien, CT
+2026-01-18 21:48:22,141 - src.data_processor - WARNING -   - Darlington, PA
+2026-01-18 21:48:22,141 - src.data_processor - WARNING -   - Dartmouth, MA
+2026-01-18 21:48:22,141 - src.data_processor - WARNING -   - Davidsonville, MD
+2026-01-18 21:48:22,141 - src.data_processor - WARNING -   - Davisville, WV
+2026-01-18 21:48:22,142 - src.data_processor - WARNING -   - Dedham, MA
+2026-01-18 21:48:22,142 - src.data_processor - WARNING -   - Deep Gap, NC
+2026-01-18 21:48:22,142 - src.data_processor - WARNING -   - Deep River, CT
+2026-01-18 21:48:22,142 - src.data_processor - WARNING -   - Delanco, NJ
+2026-01-18 21:48:22,142 - src.data_processor - WARNING -   - Delano, PA
+2026-01-18 21:48:22,142 - src.data_processor - WARNING -   - Delhi, NY
+2026-01-18 21:48:22,143 - src.data_processor - WARNING -   - Delran, NJ
+2026-01-18 21:48:22,143 - src.data_processor - WARNING -   - Demotte, IN
+2026-01-18 21:48:22,143 - src.data_processor - WARNING -   - Dennis, MA
+2026-01-18 21:48:22,143 - src.data_processor - WARNING -   - Deposit, NY
+2026-01-18 21:48:22,143 - src.data_processor - WARNING -   - Deptford, NJ
+2026-01-18 21:48:22,143 - src.data_processor - WARNING -   - Derry, NH
+2026-01-18 21:48:22,144 - src.data_processor - WARNING -   - Detour, MD
+2026-01-18 21:48:22,144 - src.data_processor - WARNING -   - Dexter, ME
+2026-01-18 21:48:22,144 - src.data_processor - WARNING -   - Dighton, MA
+2026-01-18 21:48:22,144 - src.data_processor - WARNING -   - Dixfield, ME
+2026-01-18 21:48:22,144 - src.data_processor - WARNING -   - Dolomite, AL
+2026-01-18 21:48:22,145 - src.data_processor - WARNING -   - Dolphin, VA
+2026-01-18 21:48:22,145 - src.data_processor - WARNING -   - Dorchester, MA
+2026-01-18 21:48:22,145 - src.data_processor - WARNING -   - Dorchester, SC
+2026-01-18 21:48:22,145 - src.data_processor - WARNING -   - Doswell, VA
+2026-01-18 21:48:22,145 - src.data_processor - WARNING -   - Dover, PA
+2026-01-18 21:48:22,145 - src.data_processor - WARNING -   - Dover Afb, DE
+2026-01-18 21:48:22,146 - src.data_processor - WARNING -   - Downington, PA
+2026-01-18 21:48:22,146 - src.data_processor - WARNING -   - Dracut, MA
+2026-01-18 21:48:22,146 - src.data_processor - WARNING -   - Drums, PA
+2026-01-18 21:48:22,146 - src.data_processor - WARNING -   - Dry Fork, VA
+2026-01-18 21:48:22,146 - src.data_processor - WARNING -   - Dry Run, PA
+2026-01-18 21:48:22,146 - src.data_processor - WARNING -   - Du Bois, PA
+2026-01-18 21:48:22,147 - src.data_processor - WARNING -   - Dudley, MA
+2026-01-18 21:48:22,147 - src.data_processor - WARNING -   - Dues Drive, OH
+2026-01-18 21:48:22,147 - src.data_processor - WARNING -   - Duke, OK
+2026-01-18 21:48:22,147 - src.data_processor - WARNING -   - Dulles, VA
+2026-01-18 21:48:22,147 - src.data_processor - WARNING -   - Dunbridge, OH
+2026-01-18 21:48:22,147 - src.data_processor - WARNING -   - Dunnville, KY
+2026-01-18 21:48:22,147 - src.data_processor - WARNING -   - Durham, NH
+2026-01-18 21:48:22,149 - src.data_processor - WARNING -   - Dyke, VA
+2026-01-18 21:48:22,149 - src.data_processor - WARNING -   - Eagle Bridge, NY
+2026-01-18 21:48:22,149 - src.data_processor - WARNING -   - Eagle Rock, NC
+2026-01-18 21:48:22,149 - src.data_processor - WARNING -   - Early Branch, SC
+2026-01-18 21:48:22,149 - src.data_processor - WARNING -   - Earth City, MO
+2026-01-18 21:48:22,149 - src.data_processor - WARNING -   - East Amherst, NY
+2026-01-18 21:48:22,149 - src.data_processor - WARNING -   - East Berlin, CT
+2026-01-18 21:48:22,150 - src.data_processor - WARNING -   - East Bridgewater, MA
+2026-01-18 21:48:22,150 - src.data_processor - WARNING -   - East Bronx, NY
+2026-01-18 21:48:22,150 - src.data_processor - WARNING -   - East Brunswick, NJ
+2026-01-18 21:48:22,150 - src.data_processor - WARNING -   - East Durham, NY
+2026-01-18 21:48:22,150 - src.data_processor - WARNING -   - East Earl, PA
+2026-01-18 21:48:22,150 - src.data_processor - WARNING -   - East Granby, CT
+2026-01-18 21:48:22,150 - src.data_processor - WARNING -   - East Greenwich, RI
+2026-01-18 21:48:22,150 - src.data_processor - WARNING -   - East Hanover, NJ
+2026-01-18 21:48:22,151 - src.data_processor - WARNING -   - East Hartford, CT
+2026-01-18 21:48:22,151 - src.data_processor - WARNING -   - East Haven, CT
+2026-01-18 21:48:22,151 - src.data_processor - WARNING -   - East Hill Road, VT
+2026-01-18 21:48:22,151 - src.data_processor - WARNING -   - East Longmeadow, MA
+2026-01-18 21:48:22,152 - src.data_processor - WARNING -   - East Montpelier, VT
+2026-01-18 21:48:22,152 - src.data_processor - WARNING -   - East Norriton, PA
+2026-01-18 21:48:22,152 - src.data_processor - WARNING -   - East Saint Louis, IL
+2026-01-18 21:48:22,152 - src.data_processor - WARNING -   - East St Louis, IL
+2026-01-18 21:48:22,152 - src.data_processor - WARNING -   - East Walpole, MA
+2026-01-18 21:48:22,152 - src.data_processor - WARNING -   - East Williamsburg, NY
+2026-01-18 21:48:22,152 - src.data_processor - WARNING -   - East Williamson, NY
+2026-01-18 21:48:22,152 - src.data_processor - WARNING -   - East Windsor, CT
+2026-01-18 21:48:22,152 - src.data_processor - WARNING -   - East Windsor, NJ
+2026-01-18 21:48:22,154 - src.data_processor - WARNING -   - Eastaboga, AL
+2026-01-18 21:48:22,154 - src.data_processor - WARNING -   - Eastampton Township, NJ
+2026-01-18 21:48:22,154 - src.data_processor - WARNING -   - Eastanollee, GA
+2026-01-18 21:48:22,154 - src.data_processor - WARNING -   - Easthampton, MA
+2026-01-18 21:48:22,154 - src.data_processor - WARNING -   - Easton, MA
+2026-01-18 21:48:22,154 - src.data_processor - WARNING -   - Easton, ME
+2026-01-18 21:48:22,155 - src.data_processor - WARNING -   - Eden, NY
+2026-01-18 21:48:22,155 - src.data_processor - WARNING -   - Edgewater Park, NJ
+2026-01-18 21:48:22,155 - src.data_processor - WARNING -   - Edgewood, NY
+2026-01-18 21:48:22,155 - src.data_processor - WARNING -   - Edison, NJ
+2026-01-18 21:48:22,155 - src.data_processor - WARNING -   - Edison Township, NJ
+2026-01-18 21:48:22,156 - src.data_processor - WARNING -   - Edisto Island, SC
+2026-01-18 21:48:22,156 - src.data_processor - WARNING -   - Edmeston, NY
+2026-01-18 21:48:22,156 - src.data_processor - WARNING -   - Effingham, SC
+2026-01-18 21:48:22,156 - src.data_processor - WARNING -   - Egg Harbor City, NJ
+2026-01-18 21:48:22,156 - src.data_processor - WARNING -   - Egg Harbor TWP, NJ
+2026-01-18 21:48:22,156 - src.data_processor - WARNING -   - Egg Harbor Township, NJ
+2026-01-18 21:48:22,157 - src.data_processor - WARNING -   - Egremont, MA
+2026-01-18 21:48:22,157 - src.data_processor - WARNING -   - Elba, NY
+2026-01-18 21:48:22,157 - src.data_processor - WARNING -   - Elbridge, NY
+2026-01-18 21:48:22,157 - src.data_processor - WARNING -   - Elco, IL
+2026-01-18 21:48:22,157 - src.data_processor - WARNING -   - Elithabeth, PA
+2026-01-18 21:48:22,158 - src.data_processor - WARNING -   - Elizabethport, NJ
+2026-01-18 21:48:22,158 - src.data_processor - WARNING -   - Elkton, FL
+2026-01-18 21:48:22,158 - src.data_processor - WARNING -   - Elkwood, VA
+2026-01-18 21:48:22,158 - src.data_processor - WARNING -   - Ellabell, GA
+2026-01-18 21:48:22,158 - src.data_processor - WARNING -   - Ellenwood, GA
+2026-01-18 21:48:22,158 - src.data_processor - WARNING -   - Ellet, OH
+2026-01-18 21:48:22,159 - src.data_processor - WARNING -   - Ellicottville, NY
+2026-01-18 21:48:22,159 - src.data_processor - WARNING -   - Ellington, CT
+2026-01-18 21:48:22,159 - src.data_processor - WARNING -   - Elma, NY
+2026-01-18 21:48:22,159 - src.data_processor - WARNING -   - Elora, TN
+2026-01-18 21:48:22,159 - src.data_processor - WARNING -   - Enfield, CT
+2026-01-18 21:48:22,159 - src.data_processor - WARNING -   - Enfield, ME
+2026-01-18 21:48:22,160 - src.data_processor - WARNING -   - Enka, NC
+2026-01-18 21:48:22,160 - src.data_processor - WARNING -   - Erie, MI
+2026-01-18 21:48:22,160 - src.data_processor - WARNING -   - Erving, MA
+2026-01-18 21:48:22,160 - src.data_processor - WARNING -   - Esperance, NY
+2026-01-18 21:48:22,160 - src.data_processor - WARNING -   - Essex, CT
+2026-01-18 21:48:22,161 - src.data_processor - WARNING -   - Essington, PA
+2026-01-18 21:48:22,161 - src.data_processor - WARNING -   - Etters, PA
+2026-01-18 21:48:22,161 - src.data_processor - WARNING -   - Evington, VA
+2026-01-18 21:48:22,161 - src.data_processor - WARNING -   - Ewing, NJ
+2026-01-18 21:48:22,161 - src.data_processor - WARNING -   - Ewing Township, NJ
+2026-01-18 21:48:22,161 - src.data_processor - WARNING -   - Exeter, NH
+2026-01-18 21:48:22,161 - src.data_processor - WARNING -   - Eynon, PA
+2026-01-18 21:48:22,162 - src.data_processor - WARNING -   - FT PIERCE, FL
+2026-01-18 21:48:22,162 - src.data_processor - WARNING -   - Fairdale, KY
+2026-01-18 21:48:22,162 - src.data_processor - WARNING -   - Fairfax, VT
+2026-01-18 21:48:22,162 - src.data_processor - WARNING -   - Fairfield, ME
+2026-01-18 21:48:22,162 - src.data_processor - WARNING -   - Fairfield, NJ
+2026-01-18 21:48:22,162 - src.data_processor - WARNING -   - Fairfield Township, OH
+2026-01-18 21:48:22,162 - src.data_processor - WARNING -   - Fairfield Twp, OH
+2026-01-18 21:48:22,162 - src.data_processor - WARNING -   - Fallsington, PA
+2026-01-18 21:48:22,164 - src.data_processor - WARNING -   - Falmouth, MA
+2026-01-18 21:48:22,164 - src.data_processor - WARNING -   - Falmouth, ME
+2026-01-18 21:48:22,164 - src.data_processor - WARNING -   - Far Rockaway, NY
+2026-01-18 21:48:22,164 - src.data_processor - WARNING -   - Farmersville Station, NY
+2026-01-18 21:48:22,164 - src.data_processor - WARNING -   - Farmington, CT
+2026-01-18 21:48:22,164 - src.data_processor - WARNING -   - Farmington, ME
+2026-01-18 21:48:22,165 - src.data_processor - WARNING -   - Farmington, NH
+2026-01-18 21:48:22,165 - src.data_processor - WARNING -   - Farmington, NY
+2026-01-18 21:48:22,165 - src.data_processor - WARNING -   - Farnham, VA
+2026-01-18 21:48:22,165 - src.data_processor - WARNING -   - Feasterville Trevose, PA
+2026-01-18 21:48:22,165 - src.data_processor - WARNING -   - Feasterville-Trevose, PA
+2026-01-18 21:48:22,165 - src.data_processor - WARNING -   - Ferndale, NY
+2026-01-18 21:48:22,166 - src.data_processor - WARNING -   - Feura Bush, NY
+2026-01-18 21:48:22,166 - src.data_processor - WARNING -   - Finksburg, MD
+2026-01-18 21:48:22,166 - src.data_processor - WARNING -   - Fishkill, NY
+2026-01-18 21:48:22,166 - src.data_processor - WARNING -   - Fleetwood, NC
+2026-01-18 21:48:22,166 - src.data_processor - WARNING -   - Florence, NJ
+2026-01-18 21:48:22,166 - src.data_processor - WARNING -   - Florence, VT
+2026-01-18 21:48:22,167 - src.data_processor - WARNING -   - Flushing, NY
+2026-01-18 21:48:22,167 - src.data_processor - WARNING -   - Fogelsville, PA
+2026-01-18 21:48:22,167 - src.data_processor - WARNING -   - Fombell, PA
+2026-01-18 21:48:22,167 - src.data_processor - WARNING -   - Forest Hill, MD
+2026-01-18 21:48:22,167 - src.data_processor - WARNING -   - Forest Pk, GA
+2026-01-18 21:48:22,167 - src.data_processor - WARNING -   - Forest Road, PA
+2026-01-18 21:48:22,168 - src.data_processor - WARNING -   - Fork Union, VA
+2026-01-18 21:48:22,168 - src.data_processor - WARNING -   - Fort Ann, NY
+2026-01-18 21:48:22,168 - src.data_processor - WARNING -   - Fort Bragg, NC
+2026-01-18 21:48:22,168 - src.data_processor - WARNING -   - Fort Edward, NY
+2026-01-18 21:48:22,168 - src.data_processor - WARNING -   - Fort Fairfield, ME
+2026-01-18 21:48:22,169 - src.data_processor - WARNING -   - Fort Gillem, GA
+2026-01-18 21:48:22,169 - src.data_processor - WARNING -   - Fort Gratiot, MI
+2026-01-18 21:48:22,169 - src.data_processor - WARNING -   - Fort Jackson, SC
+2026-01-18 21:48:22,169 - src.data_processor - WARNING -   - Fort Johnson, LA
+2026-01-18 21:48:22,169 - src.data_processor - WARNING -   - Fort Johnson South, LA
+2026-01-18 21:48:22,169 - src.data_processor - WARNING -   - Fort Leavenworth, KS
+2026-01-18 21:48:22,170 - src.data_processor - WARNING -   - Fort Liberty, NC
+2026-01-18 21:48:22,170 - src.data_processor - WARNING -   - Fort Mills, SC
+2026-01-18 21:48:22,170 - src.data_processor - WARNING -   - Fort Walker, VA
+2026-01-18 21:48:22,170 - src.data_processor - WARNING -   - Foster, KY
+2026-01-18 21:48:22,170 - src.data_processor - WARNING -   - Fountainn Inn, SC
+2026-01-18 21:48:22,170 - src.data_processor - WARNING -   - Foxborough, MA
+2026-01-18 21:48:22,170 - src.data_processor - WARNING -   - Franfort, NY
+2026-01-18 21:48:22,171 - src.data_processor - WARNING -   - Frankfort, NY
+2026-01-18 21:48:22,171 - src.data_processor - WARNING -   - Franklin, CT
+2026-01-18 21:48:22,171 - src.data_processor - WARNING -   - Franklin, MA
+2026-01-18 21:48:22,171 - src.data_processor - WARNING -   - Franklin Township, NJ
+2026-01-18 21:48:22,171 - src.data_processor - WARNING -   - Franksville, WI
+2026-01-18 21:48:22,171 - src.data_processor - WARNING -   - Frazier Bottom, WV
+2026-01-18 21:48:22,172 - src.data_processor - WARNING -   - Fraziers Bottom, WV
+2026-01-18 21:48:22,172 - src.data_processor - WARNING -   - Frederickburg, VA
+2026-01-18 21:48:22,172 - src.data_processor - WARNING -   - Fredericks, MD
+2026-01-18 21:48:22,172 - src.data_processor - WARNING -   - Freedonia, NY
+2026-01-18 21:48:22,172 - src.data_processor - WARNING -   - Freehold, NJ
+2026-01-18 21:48:22,172 - src.data_processor - WARNING -   - Freetown, MA
+2026-01-18 21:48:22,173 - src.data_processor - WARNING -   - Friendship, NY
+2026-01-18 21:48:22,173 - src.data_processor - WARNING -   - Ft Mill, SC
+2026-01-18 21:48:22,173 - src.data_processor - WARNING -   - Fuquay Varina, NC
+2026-01-18 21:48:22,173 - src.data_processor - WARNING -   - GROTON, CT
+2026-01-18 21:48:22,173 - src.data_processor - WARNING -   - Gable, SC
+2026-01-18 21:48:22,174 - src.data_processor - WARNING -   - Gainestown, AL
+2026-01-18 21:48:22,174 - src.data_processor - WARNING -   - Galivants Ferry, SC
+2026-01-18 21:48:22,174 - src.data_processor - WARNING -   - Gansevoort, NY
+2026-01-18 21:48:22,174 - src.data_processor - WARNING -   - Garden Cty, GA
+2026-01-18 21:48:22,174 - src.data_processor - WARNING -   - Garnerville, NY
+2026-01-18 21:48:22,176 - src.data_processor - WARNING -   - Gates, NC
+2026-01-18 21:48:22,176 - src.data_processor - WARNING -   - Geismaer, LA
+2026-01-18 21:48:22,176 - src.data_processor - WARNING -   - Geismar, LA
+2026-01-18 21:48:22,176 - src.data_processor - WARNING -   - General Way, GA
+2026-01-18 21:48:22,176 - src.data_processor - WARNING -   - Geneseo, NY
+2026-01-18 21:48:22,176 - src.data_processor - WARNING -   - Georgia, VT
+2026-01-18 21:48:22,176 - src.data_processor - WARNING -   - Gladstone, VA
+2026-01-18 21:48:22,177 - src.data_processor - WARNING -   - Gladys, VA
+2026-01-18 21:48:22,177 - src.data_processor - WARNING -   - Glastonbury, CT
+2026-01-18 21:48:22,177 - src.data_processor - WARNING -   - Glen Arm, MD
+2026-01-18 21:48:22,177 - src.data_processor - WARNING -   - Glen Mills, PA
+2026-01-18 21:48:22,177 - src.data_processor - WARNING -   - Glendale, KY
+2026-01-18 21:48:22,177 - src.data_processor - WARNING -   - Glenmont, NY
+2026-01-18 21:48:22,178 - src.data_processor - WARNING -   - Glenn Allen, VA
+2026-01-18 21:48:22,178 - src.data_processor - WARNING -   - Glenville, NY
+2026-01-18 21:48:22,178 - src.data_processor - WARNING -   - Glenwood, MD
+2026-01-18 21:48:22,178 - src.data_processor - WARNING -   - Gln Rock, PA
+2026-01-18 21:48:22,178 - src.data_processor - WARNING -   - Gloucester, VA
+2026-01-18 21:48:22,178 - src.data_processor - WARNING -   - Gloucester Township, NJ
+2026-01-18 21:48:22,179 - src.data_processor - WARNING -   - Goldens Bridge, NY
+2026-01-18 21:48:22,179 - src.data_processor - WARNING -   - Gorham, ME
+2026-01-18 21:48:22,179 - src.data_processor - WARNING -   - Gorham, NH
+2026-01-18 21:48:22,179 - src.data_processor - WARNING -   - Goshen, NY
+2026-01-18 21:48:22,179 - src.data_processor - WARNING -   - Gouverneur, NY
+2026-01-18 21:48:22,179 - src.data_processor - WARNING -   - Grafton, MA
+2026-01-18 21:48:22,179 - src.data_processor - WARNING -   - Grafton, VA
+2026-01-18 21:48:22,179 - src.data_processor - WARNING -   - Granby, MA
+2026-01-18 21:48:22,180 - src.data_processor - WARNING -   - Grand Island, NY
+2026-01-18 21:48:22,180 - src.data_processor - WARNING -   - Grand Junction, MI
+2026-01-18 21:48:22,180 - src.data_processor - WARNING -   - Grandview, TN
+2026-01-18 21:48:22,180 - src.data_processor - WARNING -   - Granville, NY
+2026-01-18 21:48:22,180 - src.data_processor - WARNING -   - Grassy Creek, NC
+2026-01-18 21:48:22,180 - src.data_processor - WARNING -   - Gray''s Creek, NC
+2026-01-18 21:48:22,181 - src.data_processor - WARNING -   - Gray's Creek, NC
+2026-01-18 21:48:22,181 - src.data_processor - WARNING -   - Great Lakes, IL
+2026-01-18 21:48:22,181 - src.data_processor - WARNING -   - Great Valley, NY
+2026-01-18 21:48:22,181 - src.data_processor - WARNING -   - Greater Landover, MD
+2026-01-18 21:48:22,181 - src.data_processor - WARNING -   - Greece, NY
+2026-01-18 21:48:22,181 - src.data_processor - WARNING -   - Green Mountain Road, PA
+2026-01-18 21:48:22,183 - src.data_processor - WARNING -   - Green Township, NJ
+2026-01-18 21:48:22,183 - src.data_processor - WARNING -   - Greene, NY
+2026-01-18 21:48:22,183 - src.data_processor - WARNING -   - Greenfield, MA
+2026-01-18 21:48:22,183 - src.data_processor - WARNING -   - Greenfield, NH
+2026-01-18 21:48:22,183 - src.data_processor - WARNING -   - Greenvile, NC
+2026-01-18 21:48:22,183 - src.data_processor - WARNING -   - Greenville, NH
+2026-01-18 21:48:22,184 - src.data_processor - WARNING -   - Greenwich, CT
+2026-01-18 21:48:22,184 - src.data_processor - WARNING -   - Greenwich, NY
+2026-01-18 21:48:22,184 - src.data_processor - WARNING -   - Greenwich Township, NJ
+2026-01-18 21:48:22,184 - src.data_processor - WARNING -   - Grovepoint, OH
+2026-01-18 21:48:22,184 - src.data_processor - WARNING -   - Guilderland Center, NY
+2026-01-18 21:48:22,184 - src.data_processor - WARNING -   - Guilford, CT
+2026-01-18 21:48:22,184 - src.data_processor - WARNING -   - Guston, KY
+2026-01-18 21:48:22,185 - src.data_processor - WARNING -   - Gwynedd, PA
+2026-01-18 21:48:22,185 - src.data_processor - WARNING -   - Gypsum, OH
+2026-01-18 21:48:22,185 - src.data_processor - WARNING -   - Haddon Twp, NJ
+2026-01-18 21:48:22,185 - src.data_processor - WARNING -   - Hadley, PA
+2026-01-18 21:48:22,185 - src.data_processor - WARNING -   - Hainesport, NJ
+2026-01-18 21:48:22,185 - src.data_processor - WARNING -   - Halethorpe, MD
+2026-01-18 21:48:22,186 - src.data_processor - WARNING -   - Halfmoon, NY
+2026-01-18 21:48:22,186 - src.data_processor - WARNING -   - Halifax, PA
+2026-01-18 21:48:22,186 - src.data_processor - WARNING -   - Hallandale, FL
+2026-01-18 21:48:22,186 - src.data_processor - WARNING -   - Hamburg, NY
+2026-01-18 21:48:22,186 - src.data_processor - WARNING -   - Hamden, CT
+2026-01-18 21:48:22,186 - src.data_processor - WARNING -   - Hamilton, MI
+2026-01-18 21:48:22,186 - src.data_processor - WARNING -   - Hamilton, NJ
+2026-01-18 21:48:22,187 - src.data_processor - WARNING -   - Hamilton Township, NJ
+2026-01-18 21:48:22,187 - src.data_processor - WARNING -   - Hampstead, NH
+2026-01-18 21:48:22,187 - src.data_processor - WARNING -   - Hampton, NH
+2026-01-18 21:48:22,187 - src.data_processor - WARNING -   - Hampton Falls, NH
+2026-01-18 21:48:22,187 - src.data_processor - WARNING -   - Hamptonville, NC
+2026-01-18 21:48:22,188 - src.data_processor - WARNING -   - Hancock, NY
+2026-01-18 21:48:22,188 - src.data_processor - WARNING -   - Hannibal, NY
+2026-01-18 21:48:22,188 - src.data_processor - WARNING -   - Hanover, MD
+2026-01-18 21:48:22,188 - src.data_processor - WARNING -   - Hanover, NJ
+2026-01-18 21:48:22,188 - src.data_processor - WARNING -   - Hanover Towns, PA
+2026-01-18 21:48:22,189 - src.data_processor - WARNING -   - Hanover Township, PA
+2026-01-18 21:48:22,189 - src.data_processor - WARNING -   - Hanover Twp, PA
+2026-01-18 21:48:22,189 - src.data_processor - WARNING -   - Hanson, MA
+2026-01-18 21:48:22,189 - src.data_processor - WARNING -   - Harbeson, DE
+2026-01-18 21:48:22,189 - src.data_processor - WARNING -   - Harborcreek, PA
+2026-01-18 21:48:22,189 - src.data_processor - WARNING -   - Hardwick, VT
+2026-01-18 21:48:22,190 - src.data_processor - WARNING -   - Harmans, MD
+2026-01-18 21:48:22,190 - src.data_processor - WARNING -   - Harper, WV
+2026-01-18 21:48:22,190 - src.data_processor - WARNING -   - Harvard, MA
+2026-01-18 21:48:22,190 - src.data_processor - WARNING -   - Hatfield, MA
+2026-01-18 21:48:22,190 - src.data_processor - WARNING -   - Hatfield, PA
+2026-01-18 21:48:22,190 - src.data_processor - WARNING -   - Haverhill, NH
+2026-01-18 21:48:22,190 - src.data_processor - WARNING -   - Havertown, PA
+2026-01-18 21:48:22,191 - src.data_processor - WARNING -   - Hazelton, PA
+2026-01-18 21:48:22,191 - src.data_processor - WARNING -   - Hazle TWP, PA
+2026-01-18 21:48:22,191 - src.data_processor - WARNING -   - Hazle Township, PA
+2026-01-18 21:48:22,191 - src.data_processor - WARNING -   - Hazle Townshp, PA
+2026-01-18 21:48:22,191 - src.data_processor - WARNING -   - Hazlet, NJ
+2026-01-18 21:48:22,191 - src.data_processor - WARNING -   - Heaters, WV
+2026-01-18 21:48:22,191 - src.data_processor - WARNING -   - Hegins, PA
+2026-01-18 21:48:22,191 - src.data_processor - WARNING -   - Heiskell, TN
+2026-01-18 21:48:22,193 - src.data_processor - WARNING -   - Helena, AR
+2026-01-18 21:48:22,193 - src.data_processor - WARNING -   - Henrico, VA
+2026-01-18 21:48:22,193 - src.data_processor - WARNING -   - Henrietta, NY
+2026-01-18 21:48:22,193 - src.data_processor - WARNING -   - Herkimer, NY
+2026-01-18 21:48:22,193 - src.data_processor - WARNING -   - Hermitage, TN
+2026-01-18 21:48:22,194 - src.data_processor - WARNING -   - Hermon, ME
+2026-01-18 21:48:22,194 - src.data_processor - WARNING -   - Hernshaw, WV
+2026-01-18 21:48:22,194 - src.data_processor - WARNING -   - Highland, MI
+2026-01-18 21:48:22,194 - src.data_processor - WARNING -   - Highland Mills, NY
+2026-01-18 21:48:22,194 - src.data_processor - WARNING -   - Hight Point, NC
+2026-01-18 21:48:22,195 - src.data_processor - WARNING -   - Hildenbran, NC
+2026-01-18 21:48:22,195 - src.data_processor - WARNING -   - Hillsborough Township, NJ
+2026-01-18 21:48:22,195 - src.data_processor - WARNING -   - Hillside, NJ
+2026-01-18 21:48:22,195 - src.data_processor - WARNING -   - Hillside Township, NJ
+2026-01-18 21:48:22,195 - src.data_processor - WARNING -   - Himrod, NY
+2026-01-18 21:48:22,195 - src.data_processor - WARNING -   - Hinckley, OH
+2026-01-18 21:48:22,195 - src.data_processor - WARNING -   - Hingham, MA
+2026-01-18 21:48:22,196 - src.data_processor - WARNING -   - Hinsdale, NH
+2026-01-18 21:48:22,196 - src.data_processor - WARNING -   - Historic New Castle, DE
+2026-01-18 21:48:22,196 - src.data_processor - WARNING -   - Hitchins, KY
+2026-01-18 21:48:22,196 - src.data_processor - WARNING -   - Hixson, TN
+2026-01-18 21:48:22,196 - src.data_processor - WARNING -   - Hobart Township, WI
+2026-01-18 21:48:22,197 - src.data_processor - WARNING -   - Hogansburg, NY
+2026-01-18 21:48:22,197 - src.data_processor - WARNING -   - Holbrook, MA
+2026-01-18 21:48:22,197 - src.data_processor - WARNING -   - Holden, MA
+2026-01-18 21:48:22,197 - src.data_processor - WARNING -   - Holland, NY
+2026-01-18 21:48:22,197 - src.data_processor - WARNING -   - Holland, PA
+2026-01-18 21:48:22,197 - src.data_processor - WARNING -   - Hollins Clg, VA
+2026-01-18 21:48:22,197 - src.data_processor - WARNING -   - Hollis, ME
+2026-01-18 21:48:22,198 - src.data_processor - WARNING -   - Hollis, NY
+2026-01-18 21:48:22,198 - src.data_processor - WARNING -   - Hollis Center, ME
+2026-01-18 21:48:22,198 - src.data_processor - WARNING -   - Holliston, MA
+2026-01-18 21:48:22,198 - src.data_processor - WARNING -   - Hollsopple, PA
+2026-01-18 21:48:22,198 - src.data_processor - WARNING -   - Hollywood, MD
+2026-01-18 21:48:22,199 - src.data_processor - WARNING -   - Holmdel, NJ
+2026-01-18 21:48:22,199 - src.data_processor - WARNING -   - Holmes, NY
+2026-01-18 21:48:22,199 - src.data_processor - WARNING -   - Holtwood, PA
+2026-01-18 21:48:22,199 - src.data_processor - WARNING -   - Homer, NY
+2026-01-18 21:48:22,199 - src.data_processor - WARNING -   - Honey Brook, PA
+2026-01-18 21:48:22,199 - src.data_processor - WARNING -   - Hooksett, NH
+2026-01-18 21:48:22,200 - src.data_processor - WARNING -   - Hope Hull, AL
+2026-01-18 21:48:22,200 - src.data_processor - WARNING -   - Hopkinton, MA
+2026-01-18 21:48:22,200 - src.data_processor - WARNING -   - Hopkinton, RI
+2026-01-18 21:48:22,200 - src.data_processor - WARNING -   - Horner, WV
+2026-01-18 21:48:22,200 - src.data_processor - WARNING -   - Horseheads, NY
+2026-01-18 21:48:22,200 - src.data_processor - WARNING -   - Horsham, PA
+2026-01-18 21:48:22,200 - src.data_processor - WARNING -   - Hot Springs National Park, AR
+2026-01-18 21:48:22,201 - src.data_processor - WARNING -   - Houlka, MS
+2026-01-18 21:48:22,201 - src.data_processor - WARNING -   - Houston, OH
+2026-01-18 21:48:22,201 - src.data_processor - WARNING -   - Howard, PA
+2026-01-18 21:48:22,201 - src.data_processor - WARNING -   - Howell, NJ
+2026-01-18 21:48:22,201 - src.data_processor - WARNING -   - Howell Township, NJ
+2026-01-18 21:48:22,201 - src.data_processor - WARNING -   - Hudson, MA
+2026-01-18 21:48:22,203 - src.data_processor - WARNING -   - Hudson, NH
+2026-01-18 21:48:22,203 - src.data_processor - WARNING -   - Huffman, TX
+2026-01-18 21:48:22,203 - src.data_processor - WARNING -   - Huger, SC
+2026-01-18 21:48:22,203 - src.data_processor - WARNING -   - Huguenot, NY
+2026-01-18 21:48:22,203 - src.data_processor - WARNING -   - Hunt Valley, MD
+2026-01-18 21:48:22,204 - src.data_processor - WARNING -   - Huntingdon Valley, PA
+2026-01-18 21:48:22,204 - src.data_processor - WARNING -   - Huntingdon Vly, PA
+2026-01-18 21:48:22,204 - src.data_processor - WARNING -   - Hunts Point, NY
+2026-01-18 21:48:22,204 - src.data_processor - WARNING -   - Huntsburg, OH
+2026-01-18 21:48:22,204 - src.data_processor - WARNING -   - Hurdle Mills, NC
+2026-01-18 21:48:22,204 - src.data_processor - WARNING -   - Hyannis, MA
+2026-01-18 21:48:22,204 - src.data_processor - WARNING -   - Hyatsville, MD
+2026-01-18 21:48:22,205 - src.data_processor - WARNING -   - Hyde Park, NY
+2026-01-18 21:48:22,205 - src.data_processor - WARNING -   - Ijamsville, MD
+2026-01-18 21:48:22,205 - src.data_processor - WARNING -   - Imler, PA
+2026-01-18 21:48:22,205 - src.data_processor - WARNING -   - Indian Lake, NY
+2026-01-18 21:48:22,205 - src.data_processor - WARNING -   - Indian Land, SC
+2026-01-18 21:48:22,205 - src.data_processor - WARNING -   - Indian Orchard, MA
+2026-01-18 21:48:22,206 - src.data_processor - WARNING -   - Indiana Trail, NC
+2026-01-18 21:48:22,206 - src.data_processor - WARNING -   - Ingleside, IL
+2026-01-18 21:48:22,206 - src.data_processor - WARNING -   - Interchange Way, PA
+2026-01-18 21:48:22,206 - src.data_processor - WARNING -   - Irvine, PA
+2026-01-18 21:48:22,206 - src.data_processor - WARNING -   - Irvington, NJ
+2026-01-18 21:48:22,206 - src.data_processor - WARNING -   - Jackson, NJ
+2026-01-18 21:48:22,206 - src.data_processor - WARNING -   - Jaffrey, NH
+2026-01-18 21:48:22,207 - src.data_processor - WARNING -   - Jamaica, NY
+2026-01-18 21:48:22,207 - src.data_processor - WARNING -   - Jarvisburg, NC
+2026-01-18 21:48:22,207 - src.data_processor - WARNING -   - Java, VA
+2026-01-18 21:48:22,207 - src.data_processor - WARNING -   - Jay, ME
+2026-01-18 21:48:22,207 - src.data_processor - WARNING -   - Jayess, MS
+2026-01-18 21:48:22,207 - src.data_processor - WARNING -   - Jeannete, PA
+2026-01-18 21:48:22,208 - src.data_processor - WARNING -   - Jefferson, ME
+2026-01-18 21:48:22,208 - src.data_processor - WARNING -   - Jefferson, NH
+2026-01-18 21:48:22,208 - src.data_processor - WARNING -   - Jenkins Township, PA
+2026-01-18 21:48:22,208 - src.data_processor - WARNING -   - Jenkins Twp, PA
+2026-01-18 21:48:22,208 - src.data_processor - WARNING -   - Jetersville, VA
+2026-01-18 21:48:22,208 - src.data_processor - WARNING -   - Johns Island, SC
+2026-01-18 21:48:22,209 - src.data_processor - WARNING -   - Johnston, RI
+2026-01-18 21:48:22,209 - src.data_processor - WARNING -   - Joint Base MDL, NJ
+2026-01-18 21:48:22,209 - src.data_processor - WARNING -   - Joppa, MD
+2026-01-18 21:48:22,209 - src.data_processor - WARNING -   - KNG OF PRUSSA, PA
+2026-01-18 21:48:22,209 - src.data_processor - WARNING -   - Kearneysville, WV
+2026-01-18 21:48:22,210 - src.data_processor - WARNING -   - Kendall, NY
+2026-01-18 21:48:22,210 - src.data_processor - WARNING -   - Kenduskeag, ME
+2026-01-18 21:48:22,210 - src.data_processor - WARNING -   - Kent, NY
+2026-01-18 21:48:22,210 - src.data_processor - WARNING -   - Kenyon, RI
+2026-01-18 21:48:22,210 - src.data_processor - WARNING -   - Keymar, MD
+2026-01-18 21:48:22,211 - src.data_processor - WARNING -   - Kill Buck, NY
+2026-01-18 21:48:22,211 - src.data_processor - WARNING -   - Killingly, CT
+2026-01-18 21:48:22,211 - src.data_processor - WARNING -   - Killington, VT
+2026-01-18 21:48:22,211 - src.data_processor - WARNING -   - Kimper, KY
+2026-01-18 21:48:22,211 - src.data_processor - WARNING -   - Kinards, SC
+2026-01-18 21:48:22,211 - src.data_processor - WARNING -   - Kinsale, VA
+2026-01-18 21:48:22,211 - src.data_processor - WARNING -   - Kinzers, PA
+2026-01-18 21:48:22,211 - src.data_processor - WARNING -   - Kirkville, NY
+2026-01-18 21:48:22,212 - src.data_processor - WARNING -   - Kirkwood, NY
+2026-01-18 21:48:22,212 - src.data_processor - WARNING -   - Kittery, ME
+2026-01-18 21:48:22,212 - src.data_processor - WARNING -   - Kodak, TN
+2026-01-18 21:48:22,212 - src.data_processor - WARNING -   - LAND O LAKES, FL
+2026-01-18 21:48:22,212 - src.data_processor - WARNING -   - La Fayette, GA
+2026-01-18 21:48:22,212 - src.data_processor - WARNING -   - La Jose, PA
+2026-01-18 21:48:22,214 - src.data_processor - WARNING -   - LaCygne, KS
+2026-01-18 21:48:22,214 - src.data_processor - WARNING -   - Lacey Township, NJ
+2026-01-18 21:48:22,214 - src.data_processor - WARNING -   - Lafayette, AL
+2026-01-18 21:48:22,214 - src.data_processor - WARNING -   - Lafayette Hill, PA
+2026-01-18 21:48:22,214 - src.data_processor - WARNING -   - Lake Ariel, PA
+2026-01-18 21:48:22,215 - src.data_processor - WARNING -   - Lake Cormorant, MS
+2026-01-18 21:48:22,215 - src.data_processor - WARNING -   - Lakeville, MA
+2026-01-18 21:48:22,215 - src.data_processor - WARNING -   - Lakewood, NJ
+2026-01-18 21:48:22,215 - src.data_processor - WARNING -   - Lambsburg, VA
+2026-01-18 21:48:22,215 - src.data_processor - WARNING -   - Lancaster, MA
+2026-01-18 21:48:22,215 - src.data_processor - WARNING -   - Lancaster, NH
+2026-01-18 21:48:22,216 - src.data_processor - WARNING -   - Lancaster, NY
+2026-01-18 21:48:22,216 - src.data_processor - WARNING -   - Land O'' Lakes, FL
+2026-01-18 21:48:22,216 - src.data_processor - WARNING -   - Landenberg, PA
+2026-01-18 21:48:22,216 - src.data_processor - WARNING -   - Landsdale, PA
+2026-01-18 21:48:22,216 - src.data_processor - WARNING -   - Lanoka Harbor, NJ
+2026-01-18 21:48:22,217 - src.data_processor - WARNING -   - Lansing, NY
+2026-01-18 21:48:22,217 - src.data_processor - WARNING -   - Lauringburg, NC
+2026-01-18 21:48:22,217 - src.data_processor - WARNING -   - Lavale, MD
+2026-01-18 21:48:22,217 - src.data_processor - WARNING -   - Lavergne, TN
+2026-01-18 21:48:22,217 - src.data_processor - WARNING -   - Lawrence Township, NJ
+2026-01-18 21:48:22,218 - src.data_processor - WARNING -   - Le Roy, NY
+2026-01-18 21:48:22,218 - src.data_processor - WARNING -   - Leacock Leola Bareville, PA
+2026-01-18 21:48:22,218 - src.data_processor - WARNING -   - Leacock-Leola-Bareville, PA
+2026-01-18 21:48:22,218 - src.data_processor - WARNING -   - Lebanon, CT
+2026-01-18 21:48:22,218 - src.data_processor - WARNING -   - Lebanon, NJ
+2026-01-18 21:48:22,218 - src.data_processor - WARNING -   - Lee, MA
+2026-01-18 21:48:22,218 - src.data_processor - WARNING -   - Lee, NH
+2026-01-18 21:48:22,219 - src.data_processor - WARNING -   - Lee''s Summit, MO
+2026-01-18 21:48:22,219 - src.data_processor - WARNING -   - Leesville, SC
+2026-01-18 21:48:22,219 - src.data_processor - WARNING -   - Lehigh Valley, PA
+2026-01-18 21:48:22,219 - src.data_processor - WARNING -   - Leicester, NC
+2026-01-18 21:48:22,219 - src.data_processor - WARNING -   - Leroy, NY
+2026-01-18 21:48:22,219 - src.data_processor - WARNING -   - Lewis Center, OH
+2026-01-18 21:48:22,219 - src.data_processor - WARNING -   - Lewiston, NY
+2026-01-18 21:48:22,220 - src.data_processor - WARNING -   - Liberty, NY
+2026-01-18 21:48:22,220 - src.data_processor - WARNING -   - Lima, NY
+2026-01-18 21:48:22,220 - src.data_processor - WARNING -   - Limerick, PA
+2026-01-18 21:48:22,220 - src.data_processor - WARNING -   - Limestone, TN
+2026-01-18 21:48:22,220 - src.data_processor - WARNING -   - Lincoln, RI
+2026-01-18 21:48:22,220 - src.data_processor - WARNING -   - Linfield, PA
+2026-01-18 21:48:22,221 - src.data_processor - WARNING -   - Linganore-Bartonsville, MD
+2026-01-18 21:48:22,221 - src.data_processor - WARNING -   - Linthicum Heights, MD
+2026-01-18 21:48:22,221 - src.data_processor - WARNING -   - Linwood, NC
+2026-01-18 21:48:22,221 - src.data_processor - WARNING -   - Lisbon, NH
+2026-01-18 21:48:22,221 - src.data_processor - WARNING -   - Litchfield, CT
+2026-01-18 21:48:22,221 - src.data_processor - WARNING -   - Little Falls, NJ
+2026-01-18 21:48:22,221 - src.data_processor - WARNING -   - Little Falls Township, NJ
+2026-01-18 21:48:22,221 - src.data_processor - WARNING -   - Little Valley, NY
+2026-01-18 21:48:22,222 - src.data_processor - WARNING -   - Littleton, MA
+2026-01-18 21:48:22,222 - src.data_processor - WARNING -   - Littleton, NH
+2026-01-18 21:48:22,222 - src.data_processor - WARNING -   - Lively, VA
+2026-01-18 21:48:22,222 - src.data_processor - WARNING -   - Livermore, ME
+2026-01-18 21:48:22,222 - src.data_processor - WARNING -   - Liverpool, PA
+2026-01-18 21:48:22,224 - src.data_processor - WARNING -   - Livingston, NJ
+2026-01-18 21:48:22,224 - src.data_processor - WARNING -   - Logan Township, NJ
+2026-01-18 21:48:22,224 - src.data_processor - WARNING -   - Logan Twp, NJ
+2026-01-18 21:48:22,224 - src.data_processor - WARNING -   - Londonderry, NH
+2026-01-18 21:48:22,224 - src.data_processor - WARNING -   - Long Island, VA
+2026-01-18 21:48:22,224 - src.data_processor - WARNING -   - Long Island City, NY
+2026-01-18 21:48:22,225 - src.data_processor - WARNING -   - Long Lake Road, AR
+2026-01-18 21:48:22,225 - src.data_processor - WARNING -   - Longs, SC
+2026-01-18 21:48:22,225 - src.data_processor - WARNING -   - Loretto, VA
+2026-01-18 21:48:22,225 - src.data_processor - WARNING -   - Lothian, MD
+2026-01-18 21:48:22,225 - src.data_processor - WARNING -   - Loudon, NH
+2026-01-18 21:48:22,226 - src.data_processor - WARNING -   - Lower Alloways Creek, NJ
+2026-01-18 21:48:22,226 - src.data_processor - WARNING -   - Lowville, NY
+2026-01-18 21:48:22,226 - src.data_processor - WARNING -   - Loxahatchee, FL
+2026-01-18 21:48:22,226 - src.data_processor - WARNING -   - Ludlow, MA
+2026-01-18 21:48:22,226 - src.data_processor - WARNING -   - Ludlow, VT
+2026-01-18 21:48:22,226 - src.data_processor - WARNING -   - Luke Air Force Base, AZ
+2026-01-18 21:48:22,227 - src.data_processor - WARNING -   - Lumberton, NJ
+2026-01-18 21:48:22,227 - src.data_processor - WARNING -   - Lumberton Township, NJ
+2026-01-18 21:48:22,227 - src.data_processor - WARNING -   - Lunenburg, MA
+2026-01-18 21:48:22,227 - src.data_processor - WARNING -   - Lyndhurst, NJ
+2026-01-18 21:48:22,227 - src.data_processor - WARNING -   - Lyon Station, PA
+2026-01-18 21:48:22,227 - src.data_processor - WARNING -   - Lyons, NY
+2026-01-18 21:48:22,227 - src.data_processor - WARNING -   - MADISON, CT
+2026-01-18 21:48:22,228 - src.data_processor - WARNING -   - Macedon, NY
+2026-01-18 21:48:22,228 - src.data_processor - WARNING -   - Madawaska, ME
+2026-01-18 21:48:22,228 - src.data_processor - WARNING -   - Madison, NY
+2026-01-18 21:48:22,228 - src.data_processor - WARNING -   - Madison, TN
+2026-01-18 21:48:22,228 - src.data_processor - WARNING -   - Madison Height, MI
+2026-01-18 21:48:22,228 - src.data_processor - WARNING -   - Madrid, NY
+2026-01-18 21:48:22,228 - src.data_processor - WARNING -   - Mahwah, NJ
+2026-01-18 21:48:22,228 - src.data_processor - WARNING -   - Malone, NY
+2026-01-18 21:48:22,229 - src.data_processor - WARNING -   - Malta, NY
+2026-01-18 21:48:22,229 - src.data_processor - WARNING -   - Manakin-Sabot, VA
+2026-01-18 21:48:22,229 - src.data_processor - WARNING -   - Manalapan Township, NJ
+2026-01-18 21:48:22,229 - src.data_processor - WARNING -   - Manchester, CT
+2026-01-18 21:48:22,229 - src.data_processor - WARNING -   - Manchester, NJ
+2026-01-18 21:48:22,229 - src.data_processor - WARNING -   - Manchester, NY
+2026-01-18 21:48:22,230 - src.data_processor - WARNING -   - Manlius, NY
+2026-01-18 21:48:22,230 - src.data_processor - WARNING -   - Mannington Township, NJ
+2026-01-18 21:48:22,230 - src.data_processor - WARNING -   - Manquin, VA
+2026-01-18 21:48:22,230 - src.data_processor - WARNING -   - Mansfield, MA
+2026-01-18 21:48:22,230 - src.data_processor - WARNING -   - Mansfield Township, NJ
+2026-01-18 21:48:22,231 - src.data_processor - WARNING -   - Manson, NC
+2026-01-18 21:48:22,231 - src.data_processor - WARNING -   - Maple Shade, NJ
+2026-01-18 21:48:22,231 - src.data_processor - WARNING -   - Maplewood, NJ
+2026-01-18 21:48:22,231 - src.data_processor - WARNING -   - Marble Hill, GA
+2026-01-18 21:48:22,231 - src.data_processor - WARNING -   - Margarettsville, NC
+2026-01-18 21:48:22,231 - src.data_processor - WARNING -   - Marietta, SC
+2026-01-18 21:48:22,231 - src.data_processor - WARNING -   - Marine Corps Air Station Cherry Point, NC
+2026-01-18 21:48:22,232 - src.data_processor - WARNING -   - Marne, MI
+2026-01-18 21:48:22,232 - src.data_processor - WARNING -   - Marstons Mills, MA
+2026-01-18 21:48:22,232 - src.data_processor - WARNING -   - Martin, SC
+2026-01-18 21:48:22,232 - src.data_processor - WARNING -   - Marydel, DE
+2026-01-18 21:48:22,232 - src.data_processor - WARNING -   - Marydell, KY
+2026-01-18 21:48:22,233 - src.data_processor - WARNING -   - Maspeth, NY
+2026-01-18 21:48:22,233 - src.data_processor - WARNING -   - Massena, NY
+2026-01-18 21:48:22,233 - src.data_processor - WARNING -   - Mathews, NC
+2026-01-18 21:48:22,233 - src.data_processor - WARNING -   - Mattapan, MA
+2026-01-18 21:48:22,233 - src.data_processor - WARNING -   - Mattaponi, VA
+2026-01-18 21:48:22,233 - src.data_processor - WARNING -   - Mauk, GA
+2026-01-18 21:48:22,234 - src.data_processor - WARNING -   - Maxwelton, WV
+2026-01-18 21:48:22,234 - src.data_processor - WARNING -   - Mayfield Vlg, OH
+2026-01-18 21:48:22,234 - src.data_processor - WARNING -   - Mayport, PA
+2026-01-18 21:48:22,234 - src.data_processor - WARNING -   - Mc Arthur, OH
+2026-01-18 21:48:22,234 - src.data_processor - WARNING -   - Mc Bee, SC
+2026-01-18 21:48:22,234 - src.data_processor - WARNING -   - Mc Connellsburg, PA
+2026-01-18 21:48:22,234 - src.data_processor - WARNING -   - Mc Donough, GA
+2026-01-18 21:48:22,234 - src.data_processor - WARNING -   - Mc Gaheysville, VA
+2026-01-18 21:48:22,236 - src.data_processor - WARNING -   - Mc Intyre, GA
+2026-01-18 21:48:22,236 - src.data_processor - WARNING -   - Mc Kees Rocks, PA
+2026-01-18 21:48:22,236 - src.data_processor - WARNING -   - Mc Kenzie, TN
+2026-01-18 21:48:22,236 - src.data_processor - WARNING -   - Mc Lean, VA
+2026-01-18 21:48:22,236 - src.data_processor - WARNING -   - Mc Leansville, NC
+2026-01-18 21:48:22,236 - src.data_processor - WARNING -   - Mcalistervle, PA
+2026-01-18 21:48:22,237 - src.data_processor - WARNING -   - Meadowview, VA
+2026-01-18 21:48:22,237 - src.data_processor - WARNING -   - Mechanic Falls, ME
+2026-01-18 21:48:22,237 - src.data_processor - WARNING -   - Mechanicsbur, PA
+2026-01-18 21:48:22,237 - src.data_processor - WARNING -   - Mechanicsburgh, PA
+2026-01-18 21:48:22,237 - src.data_processor - WARNING -   - Medford, NJ
+2026-01-18 21:48:22,238 - src.data_processor - WARNING -   - Meredith, NH
+2026-01-18 21:48:22,238 - src.data_processor - WARNING -   - Meridian Way, OH
+2026-01-18 21:48:22,238 - src.data_processor - WARNING -   - Merrimack, NH
+2026-01-18 21:48:22,238 - src.data_processor - WARNING -   - Merry Hill, NC
+2026-01-18 21:48:22,238 - src.data_processor - WARNING -   - Mertztowm, PA
+2026-01-18 21:48:22,239 - src.data_processor - WARNING -   - Meshoppen, PA
+2026-01-18 21:48:22,239 - src.data_processor - WARNING -   - Methuen, MA
+2026-01-18 21:48:22,239 - src.data_processor - WARNING -   - Middle Grove, NY
+2026-01-18 21:48:22,239 - src.data_processor - WARNING -   - Middleboro, MA
+2026-01-18 21:48:22,239 - src.data_processor - WARNING -   - Middleborough, MA
+2026-01-18 21:48:22,239 - src.data_processor - WARNING -   - Middleburg Height, OH
+2026-01-18 21:48:22,240 - src.data_processor - WARNING -   - Middlebury, VT
+2026-01-18 21:48:22,240 - src.data_processor - WARNING -   - Middlebury Center, PA
+2026-01-18 21:48:22,240 - src.data_processor - WARNING -   - Middlesboro, KY
+2026-01-18 21:48:22,240 - src.data_processor - WARNING -   - Middleton, MA
+2026-01-18 21:48:22,240 - src.data_processor - WARNING -   - Middletown, RI
+2026-01-18 21:48:22,240 - src.data_processor - WARNING -   - Middletown Township, NJ
+2026-01-18 21:48:22,241 - src.data_processor - WARNING -   - Midway, TN
+2026-01-18 21:48:22,241 - src.data_processor - WARNING -   - Midway Park, NC
+2026-01-18 21:48:22,241 - src.data_processor - WARNING -   - Milan, NH
+2026-01-18 21:48:22,241 - src.data_processor - WARNING -   - Milford, CT
+2026-01-18 21:48:22,241 - src.data_processor - WARNING -   - Milford, MA
+2026-01-18 21:48:22,241 - src.data_processor - WARNING -   - Milford, NH
+2026-01-18 21:48:22,241 - src.data_processor - WARNING -   - Milford, VA
+2026-01-18 21:48:22,242 - src.data_processor - WARNING -   - Millburn, NJ
+2026-01-18 21:48:22,242 - src.data_processor - WARNING -   - Millbury, MA
+2026-01-18 21:48:22,242 - src.data_processor - WARNING -   - Millersville, MD
+2026-01-18 21:48:22,242 - src.data_processor - WARNING -   - Millersville, OH
+2026-01-18 21:48:22,242 - src.data_processor - WARNING -   - Millis, MA
+2026-01-18 21:48:22,242 - src.data_processor - WARNING -   - Millstone, NJ
+2026-01-18 21:48:22,242 - src.data_processor - WARNING -   - Millstone TWP, NJ
+2026-01-18 21:48:22,243 - src.data_processor - WARNING -   - Millstone Township, NJ
+2026-01-18 21:48:22,243 - src.data_processor - WARNING -   - Millwood, WV
+2026-01-18 21:48:22,243 - src.data_processor - WARNING -   - Milton, VT
+2026-01-18 21:48:22,244 - src.data_processor - WARNING -   - Milwood, WV
+2026-01-18 21:48:22,244 - src.data_processor - WARNING -   - Mine Hill, NJ
+2026-01-18 21:48:22,244 - src.data_processor - WARNING -   - Mine Hill Township, NJ
+2026-01-18 21:48:22,244 - src.data_processor - WARNING -   - Mineral Wells, WV
+2026-01-18 21:48:22,244 - src.data_processor - WARNING -   - Mnt Lake Park, MD
+2026-01-18 21:48:22,244 - src.data_processor - WARNING -   - Mnt Pleasant, PA
+2026-01-18 21:48:22,245 - src.data_processor - WARNING -   - Mohawk, NY
+2026-01-18 21:48:22,245 - src.data_processor - WARNING -   - Mohawk, TN
+2026-01-18 21:48:22,245 - src.data_processor - WARNING -   - Monclova, OH
+2026-01-18 21:48:22,245 - src.data_processor - WARNING -   - Monmouth, ME
+2026-01-18 21:48:22,245 - src.data_processor - WARNING -   - Monmouth, NJ
+2026-01-18 21:48:22,245 - src.data_processor - WARNING -   - Monmouth Jct, NJ
+2026-01-18 21:48:22,246 - src.data_processor - WARNING -   - Monroe, CT
+2026-01-18 21:48:22,246 - src.data_processor - WARNING -   - Monroe, NJ
+2026-01-18 21:48:22,246 - src.data_processor - WARNING -   - Monroe, NY
+2026-01-18 21:48:22,246 - src.data_processor - WARNING -   - Monroe, VA
+2026-01-18 21:48:22,246 - src.data_processor - WARNING -   - Monroe Township, NJ
+2026-01-18 21:48:22,246 - src.data_processor - WARNING -   - Monroe Twp, NJ
+2026-01-18 21:48:22,246 - src.data_processor - WARNING -   - Monson, MA
+2026-01-18 21:48:22,247 - src.data_processor - WARNING -   - Montague, MA
+2026-01-18 21:48:22,247 - src.data_processor - WARNING -   - Montgomery, NY
+2026-01-18 21:48:22,247 - src.data_processor - WARNING -   - Montpelier, VA
+2026-01-18 21:48:22,247 - src.data_processor - WARNING -   - Montville, CT
+2026-01-18 21:48:22,247 - src.data_processor - WARNING -   - Montville, NJ
+2026-01-18 21:48:22,247 - src.data_processor - WARNING -   - Mooers, NY
+2026-01-18 21:48:22,247 - src.data_processor - WARNING -   - Moon TWP, PA
+2026-01-18 21:48:22,249 - src.data_processor - WARNING -   - Moon Township, PA
+2026-01-18 21:48:22,249 - src.data_processor - WARNING -   - Moore, SC
+2026-01-18 21:48:22,249 - src.data_processor - WARNING -   - Moorestown, NJ
+2026-01-18 21:48:22,249 - src.data_processor - WARNING -   - Morristown, NY
+2026-01-18 21:48:22,249 - src.data_processor - WARNING -   - Morristown, VT
+2026-01-18 21:48:22,249 - src.data_processor - WARNING -   - Moseley, VA
+2026-01-18 21:48:22,249 - src.data_processor - WARNING -   - Moss, TN
+2026-01-18 21:48:22,249 - src.data_processor - WARNING -   - Moultonborough, NH
+2026-01-18 21:48:22,250 - src.data_processor - WARNING -   - Mount Braddock, PA
+2026-01-18 21:48:22,250 - src.data_processor - WARNING -   - Mount Clare, WV
+2026-01-18 21:48:22,250 - src.data_processor - WARNING -   - Mount Holly, NJ
+2026-01-18 21:48:22,250 - src.data_processor - WARNING -   - Mount Holly, SC
+2026-01-18 21:48:22,250 - src.data_processor - WARNING -   - Mount Laurel, NJ
+2026-01-18 21:48:22,251 - src.data_processor - WARNING -   - Mount Laurel Township, NJ
+2026-01-18 21:48:22,251 - src.data_processor - WARNING -   - Mount Morris, NY
+2026-01-18 21:48:22,251 - src.data_processor - WARNING -   - Mount Nebo, WV
+2026-01-18 21:48:22,251 - src.data_processor - WARNING -   - Mount Olive, NJ
+2026-01-18 21:48:22,251 - src.data_processor - WARNING -   - Mount Storm, WV
+2026-01-18 21:48:22,252 - src.data_processor - WARNING -   - Moutian Top, PA
+2026-01-18 21:48:22,252 - src.data_processor - WARNING -   - Mt Airy, NC
+2026-01-18 21:48:22,252 - src.data_processor - WARNING -   - Mt Holly, NC
+2026-01-18 21:48:22,252 - src.data_processor - WARNING -   - Mt Holly, SC
+2026-01-18 21:48:22,252 - src.data_processor - WARNING -   - Mt Laurel, NJ
+2026-01-18 21:48:22,252 - src.data_processor - WARNING -   - Mt Morris, PA
+2026-01-18 21:48:22,253 - src.data_processor - WARNING -   - Mt Olive, NC
+2026-01-18 21:48:22,253 - src.data_processor - WARNING -   - Mt Pleasant, NC
+2026-01-18 21:48:22,253 - src.data_processor - WARNING -   - Mt Pleasant, PA
+2026-01-18 21:48:22,253 - src.data_processor - WARNING -   - Mt Vernon, IL
+2026-01-18 21:48:22,253 - src.data_processor - WARNING -   - Mt Vernon, IN
+2026-01-18 21:48:22,253 - src.data_processor - WARNING -   - Mt Vernon, OH
+2026-01-18 21:48:22,253 - src.data_processor - WARNING -   - Mt. Juliet, TN
+2026-01-18 21:48:22,254 - src.data_processor - WARNING -   - Muhlhauser Road, OH
+2026-01-18 21:48:22,254 - src.data_processor - WARNING -   - Myrtle Beach, FL
+2026-01-18 21:48:22,254 - src.data_processor - WARNING -   - N Charleston, SC
+2026-01-18 21:48:22,254 - src.data_processor - WARNING -   - N Chesterfield, VA
+2026-01-18 21:48:22,254 - src.data_processor - WARNING -   - N Chesterfld, VA
+2026-01-18 21:48:22,254 - src.data_processor - WARNING -   - N Martinsville, WV
+2026-01-18 21:48:22,254 - src.data_processor - WARNING -   - N Norwich, NY
+2026-01-18 21:48:22,255 - src.data_processor - WARNING -   - N. Charleston, SC
+2026-01-18 21:48:22,255 - src.data_processor - WARNING -   - NC 27560, NC
+2026-01-18 21:48:22,255 - src.data_processor - WARNING -   - Nabb, IN
+2026-01-18 21:48:22,255 - src.data_processor - WARNING -   - Naples, NY
+2026-01-18 21:48:22,255 - src.data_processor - WARNING -   - Narragansett, RI
+2026-01-18 21:48:22,255 - src.data_processor - WARNING -   - Narvon, PA
+2026-01-18 21:48:22,256 - src.data_processor - WARNING -   - Nassau, NY
+2026-01-18 21:48:22,256 - src.data_processor - WARNING -   - Natural Bridge Station, VA
+2026-01-18 21:48:22,256 - src.data_processor - WARNING -   - Needham, MA
+2026-01-18 21:48:22,256 - src.data_processor - WARNING -   - Needham Heights, MA
+2026-01-18 21:48:22,256 - src.data_processor - WARNING -   - Neptune, NJ
+2026-01-18 21:48:22,256 - src.data_processor - WARNING -   - New Boston, MI
+2026-01-18 21:48:22,256 - src.data_processor - WARNING -   - New Britain, PA
+2026-01-18 21:48:22,256 - src.data_processor - WARNING -   - New Caney, TX
+2026-01-18 21:48:22,256 - src.data_processor - WARNING -   - New Century, KS
+2026-01-18 21:48:22,258 - src.data_processor - WARNING -   - New Concord, KY
+2026-01-18 21:48:22,258 - src.data_processor - WARNING -   - New Hampton, NY
+2026-01-18 21:48:22,258 - src.data_processor - WARNING -   - New Hanover, NJ
+2026-01-18 21:48:22,258 - src.data_processor - WARNING -   - New Hartford, NY
+2026-01-18 21:48:22,258 - src.data_processor - WARNING -   - New Hudson, MI
+2026-01-18 21:48:22,258 - src.data_processor - WARNING -   - New Limerick, ME
+2026-01-18 21:48:22,259 - src.data_processor - WARNING -   - New London, NH
+2026-01-18 21:48:22,259 - src.data_processor - WARNING -   - New Milford, CT
+2026-01-18 21:48:22,259 - src.data_processor - WARNING -   - New Milford, PA
+2026-01-18 21:48:22,259 - src.data_processor - WARNING -   - New Paltz, NY
+2026-01-18 21:48:22,259 - src.data_processor - WARNING -   - New Park, PA
+2026-01-18 21:48:22,259 - src.data_processor - WARNING -   - New Windsor, NY
+2026-01-18 21:48:22,259 - src.data_processor - WARNING -   - Newburgh, NY
+2026-01-18 21:48:22,261 - src.data_processor - WARNING -   - Newbury, MA
+2026-01-18 21:48:22,261 - src.data_processor - WARNING -   - Newbury, OH
+2026-01-18 21:48:22,261 - src.data_processor - WARNING -   - Newholland, PA
+2026-01-18 21:48:22,261 - src.data_processor - WARNING -   - Newington, CT
+2026-01-18 21:48:22,261 - src.data_processor - WARNING -   - Newington, NH
+2026-01-18 21:48:22,261 - src.data_processor - WARNING -   - Newport, NH
+2026-01-18 21:48:22,262 - src.data_processor - WARNING -   - Newport, PA
+2026-01-18 21:48:22,262 - src.data_processor - WARNING -   - Newportville, PA
+2026-01-18 21:48:22,262 - src.data_processor - WARNING -   - Newton, NH
+2026-01-18 21:48:22,262 - src.data_processor - WARNING -   - Nichols, NY
+2026-01-18 21:48:22,262 - src.data_processor - WARNING -   - Norccross, GA
+2026-01-18 21:48:22,262 - src.data_processor - WARNING -   - Norfolk, CT
+2026-01-18 21:48:22,262 - src.data_processor - WARNING -   - Norfolk, MA
+2026-01-18 21:48:22,263 - src.data_processor - WARNING -   - Norfolk, NY
+2026-01-18 21:48:22,263 - src.data_processor - WARNING -   - Nortfolk, VA
+2026-01-18 21:48:22,263 - src.data_processor - WARNING -   - North Andover, MA
+2026-01-18 21:48:22,263 - src.data_processor - WARNING -   - North Attleborough, MA
+2026-01-18 21:48:22,263 - src.data_processor - WARNING -   - North Bergen, NJ
+2026-01-18 21:48:22,263 - src.data_processor - WARNING -   - North Billerica, MA
+2026-01-18 21:48:22,263 - src.data_processor - WARNING -   - North Branch, NJ
+2026-01-18 21:48:22,264 - src.data_processor - WARNING -   - North Branford, CT
+2026-01-18 21:48:22,264 - src.data_processor - WARNING -   - North Brunswick, NJ
+2026-01-18 21:48:22,264 - src.data_processor - WARNING -   - North Brunswick Township, NJ
+2026-01-18 21:48:22,264 - src.data_processor - WARNING -   - North Canaan, CT
+2026-01-18 21:48:22,264 - src.data_processor - WARNING -   - North Chesterfield, VA
+2026-01-18 21:48:22,265 - src.data_processor - WARNING -   - North Chili, NY
+2026-01-18 21:48:22,265 - src.data_processor - WARNING -   - North Collins, NY
+2026-01-18 21:48:22,265 - src.data_processor - WARNING -   - North East, PA
+2026-01-18 21:48:22,265 - src.data_processor - WARNING -   - North Grafton, MA
+2026-01-18 21:48:22,265 - src.data_processor - WARNING -   - North Haven, CT
+2026-01-18 21:48:22,266 - src.data_processor - WARNING -   - North Jackson, OH
+2026-01-18 21:48:22,266 - src.data_processor - WARNING -   - North Java, NY
+2026-01-18 21:48:22,266 - src.data_processor - WARNING -   - North Kingstown, RI
+2026-01-18 21:48:22,266 - src.data_processor - WARNING -   - North Park Drive, PA
+2026-01-18 21:48:22,266 - src.data_processor - WARNING -   - North Prince George, VA
+2026-01-18 21:48:22,266 - src.data_processor - WARNING -   - North Reading, MA
+2026-01-18 21:48:22,267 - src.data_processor - WARNING -   - North Smithfield, RI
+2026-01-18 21:48:22,267 - src.data_processor - WARNING -   - North Stonington, CT
+2026-01-18 21:48:22,267 - src.data_processor - WARNING -   - North Versailles, PA
+2026-01-18 21:48:22,267 - src.data_processor - WARNING -   - North Windham, CT
+2026-01-18 21:48:22,267 - src.data_processor - WARNING -   - Northborough, MA
+2026-01-18 21:48:22,267 - src.data_processor - WARNING -   - Northbridge, MA
+2026-01-18 21:48:22,267 - src.data_processor - WARNING -   - Norton, MA
+2026-01-18 21:48:22,267 - src.data_processor - WARNING -   - Norwood, MA
+2026-01-18 21:48:22,267 - src.data_processor - WARNING -   - Nottingham, MD
+2026-01-18 21:48:22,269 - src.data_processor - WARNING -   - Novelty, OH
+2026-01-18 21:48:22,269 - src.data_processor - WARNING -   - Nunda, NY
+2026-01-18 21:48:22,269 - src.data_processor - WARNING -   - Nutley, NJ
+2026-01-18 21:48:22,269 - src.data_processor - WARNING -   - O Fallon, MO
+2026-01-18 21:48:22,269 - src.data_processor - WARNING -   - O''fallon, MO
+2026-01-18 21:48:22,269 - src.data_processor - WARNING -   - Oak Ridge Road, PA
+2026-01-18 21:48:22,270 - src.data_processor - WARNING -   - Oakfield, NY
+2026-01-18 21:48:22,270 - src.data_processor - WARNING -   - Oakland, ME
+2026-01-18 21:48:22,270 - src.data_processor - WARNING -   - Oaks Corners, NY
+2026-01-18 21:48:22,270 - src.data_processor - WARNING -   - Oakwood Village, OH
+2026-01-18 21:48:22,270 - src.data_processor - WARNING -   - Ocean Township, NJ
+2026-01-18 21:48:22,270 - src.data_processor - WARNING -   - Oilville, VA
+2026-01-18 21:48:22,271 - src.data_processor - WARNING -   - Okatie, SC
+2026-01-18 21:48:22,271 - src.data_processor - WARNING -   - Old Bridge, NJ
+2026-01-18 21:48:22,271 - src.data_processor - WARNING -   - Old Hickory, TN
+2026-01-18 21:48:22,271 - src.data_processor - WARNING -   - Old Lyme, CT
+2026-01-18 21:48:22,271 - src.data_processor - WARNING -   - Old Saybrook, CT
+2026-01-18 21:48:22,272 - src.data_processor - WARNING -   - Old Town, FL
+2026-01-18 21:48:22,272 - src.data_processor - WARNING -   - Old US Highway 84E, GA
+2026-01-18 21:48:22,272 - src.data_processor - WARNING -   - Oldmans Township, NJ
+2026-01-18 21:48:22,272 - src.data_processor - WARNING -   - Oley, PA
+2026-01-18 21:48:22,272 - src.data_processor - WARNING -   - Olin, NC
+2026-01-18 21:48:22,273 - src.data_processor - WARNING -   - Ona, WV
+2026-01-18 21:48:22,273 - src.data_processor - WARNING -   - Ontario, NY
+2026-01-18 21:48:22,273 - src.data_processor - WARNING -   - Opa Locka, FL
+2026-01-18 21:48:22,273 - src.data_processor - WARNING -   - Orange, CT
+2026-01-18 21:48:22,273 - src.data_processor - WARNING -   - Orange, MA
+2026-01-18 21:48:22,273 - src.data_processor - WARNING -   - Orange, NJ
+2026-01-18 21:48:22,274 - src.data_processor - WARNING -   - Orchard Pard, NY
+2026-01-18 21:48:22,274 - src.data_processor - WARNING -   - Orchard Park, NY
+2026-01-18 21:48:22,274 - src.data_processor - WARNING -   - Orefield, PA
+2026-01-18 21:48:22,274 - src.data_processor - WARNING -   - Orla, TX
+2026-01-18 21:48:22,274 - src.data_processor - WARNING -   - Ossining, NY
+2026-01-18 21:48:22,274 - src.data_processor - WARNING -   - Ossipee, NH
+2026-01-18 21:48:22,275 - src.data_processor - WARNING -   - Ottawa Lake, MI
+2026-01-18 21:48:22,275 - src.data_processor - WARNING -   - Ottsville, PA
+2026-01-18 21:48:22,275 - src.data_processor - WARNING -   - Ovid, NY
+2026-01-18 21:48:22,275 - src.data_processor - WARNING -   - Owego, NY
+2026-01-18 21:48:22,275 - src.data_processor - WARNING -   - Oxford, CT
+2026-01-18 21:48:22,275 - src.data_processor - WARNING -   - Oxford, MA
+2026-01-18 21:48:22,277 - src.data_processor - WARNING -   - Oxford, NJ
+2026-01-18 21:48:22,277 - src.data_processor - WARNING -   - Ozone, TN
+2026-01-18 21:48:22,277 - src.data_processor - WARNING -   - Ozone Park, NY
+2026-01-18 21:48:22,277 - src.data_processor - WARNING -   - P Forest City, NC
+2026-01-18 21:48:22,277 - src.data_processor - WARNING -   - Painesville Township, OH
+2026-01-18 21:48:22,278 - src.data_processor - WARNING -   - Palmer, MA
+2026-01-18 21:48:22,278 - src.data_processor - WARNING -   - Palmyra, MI
+2026-01-18 21:48:22,278 - src.data_processor - WARNING -   - Pamplin, VA
+2026-01-18 21:48:22,278 - src.data_processor - WARNING -   - Panama City Bch, FL
+2026-01-18 21:48:22,278 - src.data_processor - WARNING -   - Paradise, PA
+2026-01-18 21:48:22,278 - src.data_processor - WARNING -   - Parlin, NJ
+2026-01-18 21:48:22,278 - src.data_processor - WARNING -   - Parris Island, SC
+2026-01-18 21:48:22,279 - src.data_processor - WARNING -   - Parsippany-Troy Hills, NJ
+2026-01-18 21:48:22,279 - src.data_processor - WARNING -   - Patterson, NY
+2026-01-18 21:48:22,279 - src.data_processor - WARNING -   - Pattersonville, NY
+2026-01-18 21:48:22,279 - src.data_processor - WARNING -   - Pavilion, NY
+2026-01-18 21:48:22,280 - src.data_processor - WARNING -   - Pawling, NY
+2026-01-18 21:48:22,280 - src.data_processor - WARNING -   - Paxinos, PA
+2026-01-18 21:48:22,280 - src.data_processor - WARNING -   - Peach Bottom, PA
+2026-01-18 21:48:22,280 - src.data_processor - WARNING -   - Peach Glen, PA
+2026-01-18 21:48:22,280 - src.data_processor - WARNING -   - Peachtree Cor, GA
+2026-01-18 21:48:22,281 - src.data_processor - WARNING -   - Pecos, TX
+2026-01-18 21:48:22,281 - src.data_processor - WARNING -   - Pelham, NC
+2026-01-18 21:48:22,281 - src.data_processor - WARNING -   - Pelham, NH
+2026-01-18 21:48:22,281 - src.data_processor - WARNING -   - Pelham, NY
+2026-01-18 21:48:22,281 - src.data_processor - WARNING -   - Pemberton, NJ
+2026-01-18 21:48:22,281 - src.data_processor - WARNING -   - Pembroke, MA
+2026-01-18 21:48:22,283 - src.data_processor - WARNING -   - Pembroke, NH
+2026-01-18 21:48:22,283 - src.data_processor - WARNING -   - Penacook, NH
+2026-01-18 21:48:22,283 - src.data_processor - WARNING -   - Pendelton, SC
+2026-01-18 21:48:22,283 - src.data_processor - WARNING -   - Pendleton, NC
+2026-01-18 21:48:22,283 - src.data_processor - WARNING -   - Pennsauken, NJ
+2026-01-18 21:48:22,284 - src.data_processor - WARNING -   - Pennsauken Township, NJ
+2026-01-18 21:48:22,284 - src.data_processor - WARNING -   - Pennsdale, PA
+2026-01-18 21:48:22,284 - src.data_processor - WARNING -   - Pennsville, NJ
+2026-01-18 21:48:22,284 - src.data_processor - WARNING -   - Pennsville Township, NJ
+2026-01-18 21:48:22,284 - src.data_processor - WARNING -   - Pepperell, MA
+2026-01-18 21:48:22,285 - src.data_processor - WARNING -   - Pequannock Township, NJ
+2026-01-18 21:48:22,285 - src.data_processor - WARNING -   - Perry, NY
+2026-01-18 21:48:22,285 - src.data_processor - WARNING -   - Peru, NY
+2026-01-18 21:48:22,285 - src.data_processor - WARNING -   - Peterborough, NH
+2026-01-18 21:48:22,285 - src.data_processor - WARNING -   - Petersburgh, NY
+2026-01-18 21:48:22,285 - src.data_processor - WARNING -   - Pewaukee, WI
+2026-01-18 21:48:22,286 - src.data_processor - WARNING -   - Pfafftown, NC
+2026-01-18 21:48:22,286 - src.data_processor - WARNING -   - Phila, PA
+2026-01-18 21:48:22,286 - src.data_processor - WARNING -   - Phildelphia, PA
+2026-01-18 21:48:22,286 - src.data_processor - WARNING -   - Philsdelphia, PA
+2026-01-18 21:48:22,286 - src.data_processor - WARNING -   - Piineville, NC
+2026-01-18 21:48:22,287 - src.data_processor - WARNING -   - Pilesgrove, NJ
+2026-01-18 21:48:22,287 - src.data_processor - WARNING -   - Pine Hall, NC
+2026-01-18 21:48:22,287 - src.data_processor - WARNING -   - Piney Flats, TN
+2026-01-18 21:48:22,287 - src.data_processor - WARNING -   - Piney River, VA
+2026-01-18 21:48:22,288 - src.data_processor - WARNING -   - Pioneer, TN
+2026-01-18 21:48:22,288 - src.data_processor - WARNING -   - Pipersville, PA
+2026-01-18 21:48:22,288 - src.data_processor - WARNING -   - Piscataway, NJ
+2026-01-18 21:48:22,288 - src.data_processor - WARNING -   - Pittsfield, ME
+2026-01-18 21:48:22,288 - src.data_processor - WARNING -   - Pittsford, VT
+2026-01-18 21:48:22,288 - src.data_processor - WARNING -   - Pittston Township, PA
+2026-01-18 21:48:22,289 - src.data_processor - WARNING -   - Pittston Twp, PA
+2026-01-18 21:48:22,289 - src.data_processor - WARNING -   - Pittsview, AL
+2026-01-18 21:48:22,289 - src.data_processor - WARNING -   - Plainfield, CT
+2026-01-18 21:48:22,289 - src.data_processor - WARNING -   - Plains, PA
+2026-01-18 21:48:22,289 - src.data_processor - WARNING -   - Plainville, CT
+2026-01-18 21:48:22,289 - src.data_processor - WARNING -   - Plainville, MA
+2026-01-18 21:48:22,290 - src.data_processor - WARNING -   - Plaistow, NH
+2026-01-18 21:48:22,290 - src.data_processor - WARNING -   - Plymouth, MA
+2026-01-18 21:48:22,290 - src.data_processor - WARNING -   - Plympton, MA
+2026-01-18 21:48:22,290 - src.data_processor - WARNING -   - Pocomoke, MD
+2026-01-18 21:48:22,290 - src.data_processor - WARNING -   - Pocono Summit, PA
+2026-01-18 21:48:22,291 - src.data_processor - WARNING -   - Point Harbor, NC
+2026-01-18 21:48:22,291 - src.data_processor - WARNING -   - Points, WV
+2026-01-18 21:48:22,291 - src.data_processor - WARNING -   - Poland, ME
+2026-01-18 21:48:22,291 - src.data_processor - WARNING -   - Poland Spring, ME
+2026-01-18 21:48:22,292 - src.data_processor - WARNING -   - Pomona, IL
+2026-01-18 21:48:22,292 - src.data_processor - WARNING -   - Pontiac, SC
+2026-01-18 21:48:22,292 - src.data_processor - WARNING -   - Port Canaveral, FL
+2026-01-18 21:48:22,292 - src.data_processor - WARNING -   - Port Saint Lucie, FL
+2026-01-18 21:48:22,292 - src.data_processor - WARNING -   - Port Union Rialto Road, OH
+2026-01-18 21:48:22,293 - src.data_processor - WARNING -   - Port Wentwor, GA
+2026-01-18 21:48:22,293 - src.data_processor - WARNING -   - Porter, ME
+2026-01-18 21:48:22,293 - src.data_processor - WARNING -   - Portsmouth, RI
+2026-01-18 21:48:22,293 - src.data_processor - WARNING -   - Potsdam, NY
+2026-01-18 21:48:22,293 - src.data_processor - WARNING -   - Prattsburgh, NY
+2026-01-18 21:48:22,293 - src.data_processor - WARNING -   - Preston, CT
+2026-01-18 21:48:22,295 - src.data_processor - WARNING -   - Preston, GA
+2026-01-18 21:48:22,295 - src.data_processor - WARNING -   - Proctor, WV
+2026-01-18 21:48:22,295 - src.data_processor - WARNING -   - Prospect, CT
+2026-01-18 21:48:22,295 - src.data_processor - WARNING -   - Providence Forge, VA
+2026-01-18 21:48:22,295 - src.data_processor - WARNING -   - Prussia, PA
+2026-01-18 21:48:22,295 - src.data_processor - WARNING -   - Pryor, OK
+2026-01-18 21:48:22,295 - src.data_processor - WARNING -   - Putnam, CT
+2026-01-18 21:48:22,296 - src.data_processor - WARNING -   - Queensburry, NY
+2026-01-18 21:48:22,296 - src.data_processor - WARNING -   - Queensbury, NY
+2026-01-18 21:48:22,296 - src.data_processor - WARNING -   - ROCKTON, PA
+2026-01-18 21:48:22,296 - src.data_processor - WARNING -   - Rabun Gap, GA
+2026-01-18 21:48:22,296 - src.data_processor - WARNING -   - Randlerman, NC
+2026-01-18 21:48:22,296 - src.data_processor - WARNING -   - Randolph, MA
+2026-01-18 21:48:22,296 - src.data_processor - WARNING -   - Randolph, NJ
+2026-01-18 21:48:22,296 - src.data_processor - WARNING -   - Randolph, VA
+2026-01-18 21:48:22,297 - src.data_processor - WARNING -   - Randolph, VT
+2026-01-18 21:48:22,297 - src.data_processor - WARNING -   - Raphine, VA
+2026-01-18 21:48:22,297 - src.data_processor - WARNING -   - Rapidan, VA
+2026-01-18 21:48:22,297 - src.data_processor - WARNING -   - Raymond, NH
+2026-01-18 21:48:22,297 - src.data_processor - WARNING -   - Raynham, MA
+2026-01-18 21:48:22,297 - src.data_processor - WARNING -   - Readville, MA
+2026-01-18 21:48:22,297 - src.data_processor - WARNING -   - Red Oak, VA
+2026-01-18 21:48:22,299 - src.data_processor - WARNING -   - Redford, MI
+2026-01-18 21:48:22,299 - src.data_processor - WARNING -   - Reedville, VA
+2026-01-18 21:48:22,299 - src.data_processor - WARNING -   - Relief, NC
+2026-01-18 21:48:22,299 - src.data_processor - WARNING -   - Reno, PA
+2026-01-18 21:48:22,299 - src.data_processor - WARNING -   - Research Trian, NC
+2026-01-18 21:48:22,299 - src.data_processor - WARNING -   - Research Triangle Park, NC
+2026-01-18 21:48:22,300 - src.data_processor - WARNING -   - Rexford, NY
+2026-01-18 21:48:22,300 - src.data_processor - WARNING -   - Richland Center, WI
+2026-01-18 21:48:22,300 - src.data_processor - WARNING -   - Richmond, RI
+2026-01-18 21:48:22,300 - src.data_processor - WARNING -   - Richwood, KY
+2026-01-18 21:48:22,301 - src.data_processor - WARNING -   - Ridge, VA
+2026-01-18 21:48:22,301 - src.data_processor - WARNING -   - Ridgefield, CT
+2026-01-18 21:48:22,301 - src.data_processor - WARNING -   - Ridgewood, NY
+2026-01-18 21:48:22,301 - src.data_processor - WARNING -   - Ringgold, PA
+2026-01-18 21:48:22,301 - src.data_processor - WARNING -   - Ringgold, VA
+2026-01-18 21:48:22,301 - src.data_processor - WARNING -   - Riverhead, NY
+2026-01-18 21:48:22,302 - src.data_processor - WARNING -   - Riverside, NJ
+2026-01-18 21:48:22,302 - src.data_processor - WARNING -   - Riverton, WV
+2026-01-18 21:48:22,302 - src.data_processor - WARNING -   - Riverville, VA
+2026-01-18 21:48:22,302 - src.data_processor - WARNING -   - Rives Junction, MI
+2026-01-18 21:48:22,302 - src.data_processor - WARNING -   - Roaring Branch, PA
+2026-01-18 21:48:22,302 - src.data_processor - WARNING -   - Roaring River, NC
+2026-01-18 21:48:22,302 - src.data_processor - WARNING -   - Robbinsville, NJ
+2026-01-18 21:48:22,302 - src.data_processor - WARNING -   - Robbinsville Township, NJ
+2026-01-18 21:48:22,303 - src.data_processor - WARNING -   - Robert, LA
+2026-01-18 21:48:22,303 - src.data_processor - WARNING -   - Rochdale Village, NY
+2026-01-18 21:48:22,303 - src.data_processor - WARNING -   - Rochester, MA
+2026-01-18 21:48:22,303 - src.data_processor - WARNING -   - Rock, GA
+2026-01-18 21:48:22,303 - src.data_processor - WARNING -   - Rock Island, TN
+2026-01-18 21:48:22,303 - src.data_processor - WARNING -   - Rock Tavern, NY
+2026-01-18 21:48:22,304 - src.data_processor - WARNING -   - Rockaway, NJ
+2026-01-18 21:48:22,304 - src.data_processor - WARNING -   - Rockfall, CT
+2026-01-18 21:48:22,304 - src.data_processor - WARNING -   - Rockingham, VA
+2026-01-18 21:48:22,304 - src.data_processor - WARNING -   - Rockland, MA
+2026-01-18 21:48:22,304 - src.data_processor - WARNING -   - Rockville, VA
+2026-01-18 21:48:22,304 - src.data_processor - WARNING -   - Rocky Hill, CT
+2026-01-18 21:48:22,304 - src.data_processor - WARNING -   - Rogers, CT
+2026-01-18 21:48:22,304 - src.data_processor - WARNING -   - Rogers, KY
+2026-01-18 21:48:22,306 - src.data_processor - WARNING -   - Romulus, NY
+2026-01-18 21:48:22,306 - src.data_processor - WARNING -   - Rootstown, OH
+2026-01-18 21:48:22,306 - src.data_processor - WARNING -   - Roslindale, MA
+2026-01-18 21:48:22,306 - src.data_processor - WARNING -   - Rotterdam, NY
+2026-01-18 21:48:22,306 - src.data_processor - WARNING -   - Rotterdam Junction, NY
+2026-01-18 21:48:22,307 - src.data_processor - WARNING -   - Roulette, PA
+2026-01-18 21:48:22,307 - src.data_processor - WARNING -   - Round O, SC
+2026-01-18 21:48:22,307 - src.data_processor - WARNING -   - Roxbury, MA
+2026-01-18 21:48:22,307 - src.data_processor - WARNING -   - Roxbury, ME
+2026-01-18 21:48:22,308 - src.data_processor - WARNING -   - Roxbury Township, NJ
+2026-01-18 21:48:22,308 - src.data_processor - WARNING -   - Ruff Dale, PA
+2026-01-18 21:48:22,308 - src.data_processor - WARNING -   - Ruffs Dale, PA
+2026-01-18 21:48:22,308 - src.data_processor - WARNING -   - Rumford, ME
+2026-01-18 21:48:22,308 - src.data_processor - WARNING -   - Rumford, RI
+2026-01-18 21:48:22,308 - src.data_processor - WARNING -   - Ruther Glen, VA
+2026-01-18 21:48:22,309 - src.data_processor - WARNING -   - S Abington TWP, PA
+2026-01-18 21:48:22,309 - src.data_processor - WARNING -   - S Charleston, WV
+2026-01-18 21:48:22,309 - src.data_processor - WARNING -   - S Chesterfld, VA
+2026-01-18 21:48:22,309 - src.data_processor - WARNING -   - SHEPHERDSVLLE, KY
+2026-01-18 21:48:22,309 - src.data_processor - WARNING -   - SHOEMAKERSVLE, PA
+2026-01-18 21:48:22,310 - src.data_processor - WARNING -   - SOUTH ATTLEBORO, MA
+2026-01-18 21:48:22,310 - src.data_processor - WARNING -   - ST JOHNSBURY, VT
+2026-01-18 21:48:22,310 - src.data_processor - WARNING -   - Sacramento, PA
+2026-01-18 21:48:22,310 - src.data_processor - WARNING -   - Saddle Brook, NJ
+2026-01-18 21:48:22,310 - src.data_processor - WARNING -   - Saginaw, AL
+2026-01-18 21:48:22,311 - src.data_processor - WARNING -   - Saginaw, MN
+2026-01-18 21:48:22,311 - src.data_processor - WARNING -   - Saint Albans, VT
+2026-01-18 21:48:22,311 - src.data_processor - WARNING -   - Saint Albans, WV
+2026-01-18 21:48:22,311 - src.data_processor - WARNING -   - Saint Albans City, VT
+2026-01-18 21:48:22,311 - src.data_processor - WARNING -   - Saint Augusta, MN
+2026-01-18 21:48:22,312 - src.data_processor - WARNING -   - Saint Charles, IL
+2026-01-18 21:48:22,312 - src.data_processor - WARNING -   - Saint Charles, MO
+2026-01-18 21:48:22,312 - src.data_processor - WARNING -   - Saint Clair, MI
+2026-01-18 21:48:22,312 - src.data_processor - WARNING -   - Saint Clair, MO
+2026-01-18 21:48:22,312 - src.data_processor - WARNING -   - Saint Clair, PA
+2026-01-18 21:48:22,312 - src.data_processor - WARNING -   - Saint Clairsville, OH
+2026-01-18 21:48:22,313 - src.data_processor - WARNING -   - Saint Croix Falls, WI
+2026-01-18 21:48:22,313 - src.data_processor - WARNING -   - Saint Elmo, IL
+2026-01-18 21:48:22,313 - src.data_processor - WARNING -   - Saint Francisville, IL
+2026-01-18 21:48:22,313 - src.data_processor - WARNING -   - Saint Francisville, LA
+2026-01-18 21:48:22,313 - src.data_processor - WARNING -   - Saint George, SC
+2026-01-18 21:48:22,314 - src.data_processor - WARNING -   - Saint Helena Island, SC
+2026-01-18 21:48:22,314 - src.data_processor - WARNING -   - Saint Henry, OH
+2026-01-18 21:48:22,314 - src.data_processor - WARNING -   - Saint Joe, IN
+2026-01-18 21:48:22,314 - src.data_processor - WARNING -   - Saint John, IN
+2026-01-18 21:48:22,314 - src.data_processor - WARNING -   - Saint Johns, MI
+2026-01-18 21:48:22,316 - src.data_processor - WARNING -   - Saint Johnsbury, VT
+2026-01-18 21:48:22,316 - src.data_processor - WARNING -   - Saint Johnsville, NY
+2026-01-18 21:48:22,316 - src.data_processor - WARNING -   - Saint Joseph, IL
+2026-01-18 21:48:22,316 - src.data_processor - WARNING -   - Saint Joseph, MO
+2026-01-18 21:48:22,316 - src.data_processor - WARNING -   - Saint Louis, MI
+2026-01-18 21:48:22,316 - src.data_processor - WARNING -   - Saint Louis, MO
+2026-01-18 21:48:22,316 - src.data_processor - WARNING -   - Saint Marys, GA
+2026-01-18 21:48:22,316 - src.data_processor - WARNING -   - Saint Marys, OH
+2026-01-18 21:48:22,317 - src.data_processor - WARNING -   - Saint Marys, PA
+2026-01-18 21:48:22,317 - src.data_processor - WARNING -   - Saint Marys, WV
+2026-01-18 21:48:22,317 - src.data_processor - WARNING -   - Saint Matthews, SC
+2026-01-18 21:48:22,317 - src.data_processor - WARNING -   - Saint Paris, OH
+2026-01-18 21:48:22,318 - src.data_processor - WARNING -   - Saint Paul, MN
+2026-01-18 21:48:22,318 - src.data_processor - WARNING -   - Saint Paul, VA
+2026-01-18 21:48:22,318 - src.data_processor - WARNING -   - Saint Pauls, NC
+2026-01-18 21:48:22,318 - src.data_processor - WARNING -   - Saint Stephen, SC
+2026-01-18 21:48:22,318 - src.data_processor - WARNING -   - Saint Stephens Church, VA
+2026-01-18 21:48:22,318 - src.data_processor - WARNING -   - Saint Thomas, PA
+2026-01-18 21:48:22,318 - src.data_processor - WARNING -   - Sainte Genevieve, MO
+2026-01-18 21:48:22,318 - src.data_processor - WARNING -   - Salem, NH
+2026-01-18 21:48:22,319 - src.data_processor - WARNING -   - Salina, NY
+2026-01-18 21:48:22,319 - src.data_processor - WARNING -   - Salisburg, NC
+2026-01-18 21:48:22,319 - src.data_processor - WARNING -   - Salters, SC
+2026-01-18 21:48:22,319 - src.data_processor - WARNING -   - Sanderson, FL
+2026-01-18 21:48:22,319 - src.data_processor - WARNING -   - Sandwich, MA
+2026-01-18 21:48:22,320 - src.data_processor - WARNING -   - Sandy Lake, PA
+2026-01-18 21:48:22,320 - src.data_processor - WARNING -   - Saratoga Sprs, NY
+2026-01-18 21:48:22,320 - src.data_processor - WARNING -   - Sarver, PA
+2026-01-18 21:48:22,320 - src.data_processor - WARNING -   - Saugerties, NY
+2026-01-18 21:48:22,320 - src.data_processor - WARNING -   - Saugus, MA
+2026-01-18 21:48:22,321 - src.data_processor - WARNING -   - Sault Sainte Marie, MI
+2026-01-18 21:48:22,321 - src.data_processor - WARNING -   - Savannah, NY
+2026-01-18 21:48:22,321 - src.data_processor - WARNING -   - Sawyer, MI
+2026-01-18 21:48:22,321 - src.data_processor - WARNING -   - Scarborough, ME
+2026-01-18 21:48:22,321 - src.data_processor - WARNING -   - Scenery Hill, PA
+2026-01-18 21:48:22,322 - src.data_processor - WARNING -   - Schaghticoke, NY
+2026-01-18 21:48:22,322 - src.data_processor - WARNING -   - Schodack Landing, NY
+2026-01-18 21:48:22,322 - src.data_processor - WARNING -   - Schuyler, NY
+2026-01-18 21:48:22,322 - src.data_processor - WARNING -   - Sciotoville, OH
+2026-01-18 21:48:22,322 - src.data_processor - WARNING -   - Scituate, MA
+2026-01-18 21:48:22,322 - src.data_processor - WARNING -   - Scotch Pine Drive, PA
+2026-01-18 21:48:22,323 - src.data_processor - WARNING -   - Scotrun, PA
+2026-01-18 21:48:22,323 - src.data_processor - WARNING -   - Scott Depot, WV
+2026-01-18 21:48:22,323 - src.data_processor - WARNING -   - Seabrook, NH
+2026-01-18 21:48:22,324 - src.data_processor - WARNING -   - Sedalia, OH
+2026-01-18 21:48:22,324 - src.data_processor - WARNING -   - Seekonk, MA
+2026-01-18 21:48:22,324 - src.data_processor - WARNING -   - Selkirk, NY
+2026-01-18 21:48:22,324 - src.data_processor - WARNING -   - Selma Mill, AL
+2026-01-18 21:48:22,324 - src.data_processor - WARNING -   - Semora, NC
+2026-01-18 21:48:22,324 - src.data_processor - WARNING -   - Seneca Falls, NY
+2026-01-18 21:48:22,325 - src.data_processor - WARNING -   - Sewickley, PA
+2026-01-18 21:48:22,325 - src.data_processor - WARNING -   - Seymour, CT
+2026-01-18 21:48:22,325 - src.data_processor - WARNING -   - Shady Grove, PA
+2026-01-18 21:48:22,325 - src.data_processor - WARNING -   - Shaftsbury, VT
+2026-01-18 21:48:22,325 - src.data_processor - WARNING -   - Sharon, MA
+2026-01-18 21:48:22,326 - src.data_processor - WARNING -   - Shaw AFB, SC
+2026-01-18 21:48:22,326 - src.data_processor - WARNING -   - Shaw Air Force Base, SC
+2026-01-18 21:48:22,326 - src.data_processor - WARNING -   - Shawboro, NC
+2026-01-18 21:48:22,326 - src.data_processor - WARNING -   - Sheffield Village, OH
+2026-01-18 21:48:22,326 - src.data_processor - WARNING -   - Shelby Township, MI
+2026-01-18 21:48:22,326 - src.data_processor - WARNING -   - Sheldon, VT
+2026-01-18 21:48:22,328 - src.data_processor - WARNING -   - Sherburne, NY
+2026-01-18 21:48:22,328 - src.data_processor - WARNING -   - Sherrills Ford, NC
+2026-01-18 21:48:22,328 - src.data_processor - WARNING -   - Shippensbur, PA
+2026-01-18 21:48:22,328 - src.data_processor - WARNING -   - Shrewsbury, MA
+2026-01-18 21:48:22,328 - src.data_processor - WARNING -   - Sickerville, NJ
+2026-01-18 21:48:22,328 - src.data_processor - WARNING -   - Sidney, NY
+2026-01-18 21:48:22,328 - src.data_processor - WARNING -   - Skaneateles, NY
+2026-01-18 21:48:22,328 - src.data_processor - WARNING -   - Skippack, PA
+2026-01-18 21:48:22,328 - src.data_processor - WARNING -   - Skippers, VA
+2026-01-18 21:48:22,329 - src.data_processor - WARNING -   - Skowhegan, ME
+2026-01-18 21:48:22,329 - src.data_processor - WARNING -   - Slate Hill, NY
+2026-01-18 21:48:22,329 - src.data_processor - WARNING -   - Slingerlands, NY
+2026-01-18 21:48:22,329 - src.data_processor - WARNING -   - Smithfield, RI
+2026-01-18 21:48:22,329 - src.data_processor - WARNING -   - Smoot, WV
+2026-01-18 21:48:22,329 - src.data_processor - WARNING -   - Smyrna, NY
+2026-01-18 21:48:22,329 - src.data_processor - WARNING -   - Snow Shoe, PA
+2026-01-18 21:48:22,331 - src.data_processor - WARNING -   - Sodus, NY
+2026-01-18 21:48:22,331 - src.data_processor - WARNING -   - Somers, CT
+2026-01-18 21:48:22,331 - src.data_processor - WARNING -   - Somers, NY
+2026-01-18 21:48:22,331 - src.data_processor - WARNING -   - Sophia, NC
+2026-01-18 21:48:22,331 - src.data_processor - WARNING -   - South Barre, MA
+2026-01-18 21:48:22,332 - src.data_processor - WARNING -   - South Brunswick Township, NJ
+2026-01-18 21:48:22,332 - src.data_processor - WARNING -   - South Cheektowaga, NY
+2026-01-18 21:48:22,332 - src.data_processor - WARNING -   - South Chesterfield, VA
+2026-01-18 21:48:22,332 - src.data_processor - WARNING -   - South Easton, MA
+2026-01-18 21:48:22,332 - src.data_processor - WARNING -   - South Hackensack, NJ
+2026-01-18 21:48:22,333 - src.data_processor - WARNING -   - South Hadley, MA
+2026-01-18 21:48:22,333 - src.data_processor - WARNING -   - South Kingstown, RI
+2026-01-18 21:48:22,333 - src.data_processor - WARNING -   - South Otselic, NY
+2026-01-18 21:48:22,333 - src.data_processor - WARNING -   - South Salem, NY
+2026-01-18 21:48:22,333 - src.data_processor - WARNING -   - South Windsor, CT
+2026-01-18 21:48:22,334 - src.data_processor - WARNING -   - Southampton, PA
+2026-01-18 21:48:22,334 - src.data_processor - WARNING -   - Southard, OK
+2026-01-18 21:48:22,334 - src.data_processor - WARNING -   - Southborough, MA
+2026-01-18 21:48:22,334 - src.data_processor - WARNING -   - Southington, CT
+2026-01-18 21:48:22,334 - src.data_processor - WARNING -   - Southside, WV
+2026-01-18 21:48:22,335 - src.data_processor - WARNING -   - Sparows Point, MD
+2026-01-18 21:48:22,335 - src.data_processor - WARNING -   - Sparrows Poin, MD
+2026-01-18 21:48:22,335 - src.data_processor - WARNING -   - Sparrows Point, MD
+2026-01-18 21:48:22,335 - src.data_processor - WARNING -   - Sparta, NJ
+2026-01-18 21:48:22,335 - src.data_processor - WARNING -   - Spartenburg, SC
+2026-01-18 21:48:22,336 - src.data_processor - WARNING -   - Spencer, MA
+2026-01-18 21:48:22,336 - src.data_processor - WARNING -   - Spring Glen, PA
+2026-01-18 21:48:22,336 - src.data_processor - WARNING -   - Spring Run, PA
+2026-01-18 21:48:22,336 - src.data_processor - WARNING -   - Springfield Gardens, NY
+2026-01-18 21:48:22,336 - src.data_processor - WARNING -   - Spruce Creek, PA
+2026-01-18 21:48:22,337 - src.data_processor - WARNING -   - Spurger, TX
+2026-01-18 21:48:22,337 - src.data_processor - WARNING -   - Ssttuarts Draft, VA
+2026-01-18 21:48:22,337 - src.data_processor - WARNING -   - St Albans, VT
+2026-01-18 21:48:22,337 - src.data_processor - WARNING -   - St Albans, WV
+2026-01-18 21:48:22,337 - src.data_processor - WARNING -   - St Johns, MI
+2026-01-18 21:48:22,337 - src.data_processor - WARNING -   - St Joseph, MO
+2026-01-18 21:48:22,337 - src.data_processor - WARNING -   - St Louis, MO
+2026-01-18 21:48:22,337 - src.data_processor - WARNING -   - St Marys, PA
+2026-01-18 21:48:22,338 - src.data_processor - WARNING -   - St Matthews, KY
+2026-01-18 21:48:22,338 - src.data_processor - WARNING -   - St Matthews, SC
+2026-01-18 21:48:22,338 - src.data_processor - WARNING -   - St Paul, MN
+2026-01-18 21:48:22,338 - src.data_processor - WARNING -   - Stafford, NY
+2026-01-18 21:48:22,338 - src.data_processor - WARNING -   - Stafford, VA
+2026-01-18 21:48:22,339 - src.data_processor - WARNING -   - Stamford, NY
+2026-01-18 21:48:22,339 - src.data_processor - WARNING -   - Stanley, NY
+2026-01-18 21:48:22,339 - src.data_processor - WARNING -   - Stanton, DE
+2026-01-18 21:48:22,339 - src.data_processor - WARNING -   - Stanville, KY
+2026-01-18 21:48:22,339 - src.data_processor - WARNING -   - State Farm, VA
+2026-01-18 21:48:22,339 - src.data_processor - WARNING -   - State Highway 1406, KY
+2026-01-18 21:48:22,340 - src.data_processor - WARNING -   - Stephenson, VA
+2026-01-18 21:48:22,340 - src.data_processor - WARNING -   - Stephensport, KY
+2026-01-18 21:48:22,340 - src.data_processor - WARNING -   - Sterling, CT
+2026-01-18 21:48:22,340 - src.data_processor - WARNING -   - Sterling, MA
+2026-01-18 21:48:22,340 - src.data_processor - WARNING -   - Stevensburg, VA
+2026-01-18 21:48:22,341 - src.data_processor - WARNING -   - Stockertown Township, PA
+2026-01-18 21:48:22,341 - src.data_processor - WARNING -   - Stony Creek Road, PA
+2026-01-18 21:48:22,341 - src.data_processor - WARNING -   - Stony Point, NY
+2026-01-18 21:48:22,341 - src.data_processor - WARNING -   - Stormville, NY
+2026-01-18 21:48:22,341 - src.data_processor - WARNING -   - Stoughton, MA
+2026-01-18 21:48:22,341 - src.data_processor - WARNING -   - Strasburg, PA
+2026-01-18 21:48:22,341 - src.data_processor - WARNING -   - Stratford, CT
+2026-01-18 21:48:22,343 - src.data_processor - WARNING -   - Stratham, NH
+2026-01-18 21:48:22,343 - src.data_processor - WARNING -   - Street, MD
+2026-01-18 21:48:22,343 - src.data_processor - WARNING -   - Sudbury, MA
+2026-01-18 21:48:22,343 - src.data_processor - WARNING -   - Suffield, CT
+2026-01-18 21:48:22,343 - src.data_processor - WARNING -   - Sulphur, KY
+2026-01-18 21:48:22,344 - src.data_processor - WARNING -   - Summerville, WV
+2026-01-18 21:48:22,344 - src.data_processor - WARNING -   - Summit Point, WV
+2026-01-18 21:48:22,344 - src.data_processor - WARNING -   - Sumterville, FL
+2026-01-18 21:48:22,344 - src.data_processor - WARNING -   - Supply, NC
+2026-01-18 21:48:22,344 - src.data_processor - WARNING -   - Surgoinville, TN
+2026-01-18 21:48:22,344 - src.data_processor - WARNING -   - Susquehanna, PA
+2026-01-18 21:48:22,344 - src.data_processor - WARNING -   - Sutherland, VA
+2026-01-18 21:48:22,345 - src.data_processor - WARNING -   - Sutton, MA
+2026-01-18 21:48:22,345 - src.data_processor - WARNING -   - Swanquarter, NC
+2026-01-18 21:48:22,345 - src.data_processor - WARNING -   - Swansea, MA
+2026-01-18 21:48:22,345 - src.data_processor - WARNING -   - Swanton, VT
+2026-01-18 21:48:22,345 - src.data_processor - WARNING -   - Swanzey, NH
+2026-01-18 21:48:22,345 - src.data_processor - WARNING -   - Swiftwater, PA
+2026-01-18 21:48:22,346 - src.data_processor - WARNING -   - Tabernacle, NJ
+2026-01-18 21:48:22,346 - src.data_processor - WARNING -   - Tafton, PA
+2026-01-18 21:48:22,346 - src.data_processor - WARNING -   - Tanner, AL
+2026-01-18 21:48:22,346 - src.data_processor - WARNING -   - Tannersville, PA
+2026-01-18 21:48:22,347 - src.data_processor - WARNING -   - Tarrs, PA
+2026-01-18 21:48:22,347 - src.data_processor - WARNING -   - Teaneck, NJ
+2026-01-18 21:48:22,347 - src.data_processor - WARNING -   - Teterboror, NJ
+2026-01-18 21:48:22,347 - src.data_processor - WARNING -   - Tewksbury, MA
+2026-01-18 21:48:22,347 - src.data_processor - WARNING -   - The Bronx, NY
+2026-01-18 21:48:22,347 - src.data_processor - WARNING -   - Thomaston, CT
+2026-01-18 21:48:22,347 - src.data_processor - WARNING -   - Thomasville, PA
+2026-01-18 21:48:22,348 - src.data_processor - WARNING -   - Thornburg, VA
+2026-01-18 21:48:22,348 - src.data_processor - WARNING -   - Ticonderoga, NY
+2026-01-18 21:48:22,348 - src.data_processor - WARNING -   - Tilton, NH
+2026-01-18 21:48:22,348 - src.data_processor - WARNING -   - Timberlake, NC
+2026-01-18 21:48:22,348 - src.data_processor - WARNING -   - Timberline Drive, PA
+2026-01-18 21:48:22,348 - src.data_processor - WARNING -   - Tioga, PA
+2026-01-18 21:48:22,349 - src.data_processor - WARNING -   - Toano, VA
+2026-01-18 21:48:22,349 - src.data_processor - WARNING -   - Tobyhanna, PA
+2026-01-18 21:48:22,349 - src.data_processor - WARNING -   - Toms River, NJ
+2026-01-18 21:48:22,349 - src.data_processor - WARNING -   - Town of Schuyler, NY
+2026-01-18 21:48:22,349 - src.data_processor - WARNING -   - Townsend, MA
+2026-01-18 21:48:22,349 - src.data_processor - WARNING -   - Township Highway 198, OH
+2026-01-18 21:48:22,350 - src.data_processor - WARNING -   - Township of Taylorsville, NC
+2026-01-18 21:48:22,350 - src.data_processor - WARNING -   - Transfer, PA
+2026-01-18 21:48:22,350 - src.data_processor - WARNING -   - Trenton, ME
+2026-01-18 21:48:22,350 - src.data_processor - WARNING -   - Trevor, WI
+2026-01-18 21:48:22,350 - src.data_processor - WARNING -   - Troy, VA
+2026-01-18 21:48:22,350 - src.data_processor - WARNING -   - Trumbull, CT
+2026-01-18 21:48:22,350 - src.data_processor - WARNING -   - Tully, NY
+2026-01-18 21:48:22,350 - src.data_processor - WARNING -   - Tyner, NC
+2026-01-18 21:48:22,352 - src.data_processor - WARNING -   - US-28216, NC
+2026-01-18 21:48:22,352 - src.data_processor - WARNING -   - Ulysses, PA
+2026-01-18 21:48:22,352 - src.data_processor - WARNING -   - Uncasville, CT
+2026-01-18 21:48:22,352 - src.data_processor - WARNING -   - Union Grove, NC
+2026-01-18 21:48:22,352 - src.data_processor - WARNING -   - University Park, PA
+2026-01-18 21:48:22,353 - src.data_processor - WARNING -   - Upper Darby, PA
+2026-01-18 21:48:22,353 - src.data_processor - WARNING -   - Upper Township, NJ
+2026-01-18 21:48:22,353 - src.data_processor - WARNING -   - Uxbridge, MA
+2026-01-18 21:48:22,353 - src.data_processor - WARNING -   - Vale, NC
+2026-01-18 21:48:22,353 - src.data_processor - WARNING -   - Van Buren, ME
+2026-01-18 21:48:22,353 - src.data_processor - WARNING -   - Van Buren Township, MI
+2026-01-18 21:48:22,353 - src.data_processor - WARNING -   - Van Buren Twp, MI
+2026-01-18 21:48:22,353 - src.data_processor - WARNING -   - Van Dyke, MI
+2026-01-18 21:48:22,354 - src.data_processor - WARNING -   - Van Patten Drive, NY
+2026-01-18 21:48:22,354 - src.data_processor - WARNING -   - Vassalboro, ME
+2026-01-18 21:48:22,354 - src.data_processor - WARNING -   - Venus, FL
+2026-01-18 21:48:22,354 - src.data_processor - WARNING -   - Vernon, CT
+2026-01-18 21:48:22,354 - src.data_processor - WARNING -   - Vernon Hill, VA
+2026-01-18 21:48:22,354 - src.data_processor - WARNING -   - Verona, NY
+2026-01-18 21:48:22,355 - src.data_processor - WARNING -   - Vestal, NY
+2026-01-18 21:48:22,355 - src.data_processor - WARNING -   - Victor, NY
+2026-01-18 21:48:22,355 - src.data_processor - WARNING -   - Vienna, OH
+2026-01-18 21:48:22,355 - src.data_processor - WARNING -   - Voorhees, NJ
+2026-01-18 21:48:22,355 - src.data_processor - WARNING -   - Voorhees Township, NJ
+2026-01-18 21:48:22,355 - src.data_processor - WARNING -   - W Aliquippa, PA
+2026-01-18 21:48:22,355 - src.data_processor - WARNING -   - W Hazleton, PA
+2026-01-18 21:48:22,356 - src.data_processor - WARNING -   - W Middlesex, PA
+2026-01-18 21:48:22,356 - src.data_processor - WARNING -   - W Seneca, NY
+2026-01-18 21:48:22,356 - src.data_processor - WARNING -   - WLKS BARR Township, PA
+2026-01-18 21:48:22,356 - src.data_processor - WARNING -   - Wakefield, MA
+2026-01-18 21:48:22,356 - src.data_processor - WARNING -   - Waldoboro, ME
+2026-01-18 21:48:22,356 - src.data_processor - WARNING -   - Wales, ME
+2026-01-18 21:48:22,356 - src.data_processor - WARNING -   - Walhonding, OH
+2026-01-18 21:48:22,358 - src.data_processor - WARNING -   - Wall Township, NJ
+2026-01-18 21:48:22,358 - src.data_processor - WARNING -   - Wallingford, CT
+2026-01-18 21:48:22,358 - src.data_processor - WARNING -   - Wallkill, NY
+2026-01-18 21:48:22,358 - src.data_processor - WARNING -   - Walpole, MA
+2026-01-18 21:48:22,358 - src.data_processor - WARNING -   - Walpole, NH
+2026-01-18 21:48:22,358 - src.data_processor - WARNING -   - Walton, NY
+2026-01-18 21:48:22,359 - src.data_processor - WARNING -   - Ware, MA
+2026-01-18 21:48:22,359 - src.data_processor - WARNING -   - Wareham, MA
+2026-01-18 21:48:22,359 - src.data_processor - WARNING -   - Warminster, PA
+2026-01-18 21:48:22,359 - src.data_processor - WARNING -   - Warner, NH
+2026-01-18 21:48:22,360 - src.data_processor - WARNING -   - Warners, NY
+2026-01-18 21:48:22,360 - src.data_processor - WARNING -   - Warren, RI
+2026-01-18 21:48:22,360 - src.data_processor - WARNING -   - Warrendale, PA
+2026-01-18 21:48:22,360 - src.data_processor - WARNING -   - Warrington, PA
+2026-01-18 21:48:22,360 - src.data_processor - WARNING -   - Warsaw, NY
+2026-01-18 21:48:22,360 - src.data_processor - WARNING -   - Warwick, MD
+2026-01-18 21:48:22,361 - src.data_processor - WARNING -   - Warwick, NY
+2026-01-18 21:48:22,361 - src.data_processor - WARNING -   - Washington, ME
+2026-01-18 21:48:22,361 - src.data_processor - WARNING -   - Washington Court, OH
+2026-01-18 21:48:22,361 - src.data_processor - WARNING -   - Waterford, CT
+2026-01-18 21:48:22,361 - src.data_processor - WARNING -   - Waterford, MI
+2026-01-18 21:48:22,362 - src.data_processor - WARNING -   - Waterford, NY
+2026-01-18 21:48:22,362 - src.data_processor - WARNING -   - Waterford Township, MI
+2026-01-18 21:48:22,362 - src.data_processor - WARNING -   - Waterloo, NY
+2026-01-18 21:48:22,362 - src.data_processor - WARNING -   - Watertown, CT
+2026-01-18 21:48:22,362 - src.data_processor - WARNING -   - Watertown, MA
+2026-01-18 21:48:22,362 - src.data_processor - WARNING -   - Wayland, NY
+2026-01-18 21:48:22,362 - src.data_processor - WARNING -   - Wayne, IN
+2026-01-18 21:48:22,363 - src.data_processor - WARNING -   - Wayne, NJ
+2026-01-18 21:48:22,363 - src.data_processor - WARNING -   - Weaverly, OH
+2026-01-18 21:48:22,363 - src.data_processor - WARNING -   - Webster, MA
+2026-01-18 21:48:22,363 - src.data_processor - WARNING -   - Webster, NY
+2026-01-18 21:48:22,363 - src.data_processor - WARNING -   - Welch, MN
+2026-01-18 21:48:22,363 - src.data_processor - WARNING -   - Wellesley, MA
+2026-01-18 21:48:22,364 - src.data_processor - WARNING -   - Wells, ME
+2026-01-18 21:48:22,364 - src.data_processor - WARNING -   - Wellsville, NY
+2026-01-18 21:48:22,364 - src.data_processor - WARNING -   - West Boylston, MA
+2026-01-18 21:48:22,364 - src.data_processor - WARNING -   - West Bridgewater, MA
+2026-01-18 21:48:22,364 - src.data_processor - WARNING -   - West Caldwell, NJ
+2026-01-18 21:48:22,365 - src.data_processor - WARNING -   - West Carrolton, OH
+2026-01-18 21:48:22,365 - src.data_processor - WARNING -   - West Cheste, PA
+2026-01-18 21:48:22,365 - src.data_processor - WARNING -   - West Chester, OH
+2026-01-18 21:48:22,365 - src.data_processor - WARNING -   - West Chester Township, OH
+2026-01-18 21:48:22,365 - src.data_processor - WARNING -   - West Coxsackie, NY
+2026-01-18 21:48:22,365 - src.data_processor - WARNING -   - West Creek, NJ
+2026-01-18 21:48:22,366 - src.data_processor - WARNING -   - West Deptford, NJ
+2026-01-18 21:48:22,366 - src.data_processor - WARNING -   - West End, NC
+2026-01-18 21:48:22,366 - src.data_processor - WARNING -   - West Enfield, ME
+2026-01-18 21:48:22,366 - src.data_processor - WARNING -   - West Greenwich, RI
+2026-01-18 21:48:22,366 - src.data_processor - WARNING -   - West Hartford, CT
+2026-01-18 21:48:22,366 - src.data_processor - WARNING -   - West Hazelton, PA
+2026-01-18 21:48:22,367 - src.data_processor - WARNING -   - West Henrietta, NY
+2026-01-18 21:48:22,367 - src.data_processor - WARNING -   - West Lebanon, NH
+2026-01-18 21:48:22,367 - src.data_processor - WARNING -   - West Orange, NJ
+2026-01-18 21:48:22,367 - src.data_processor - WARNING -   - West Point, PA
+2026-01-18 21:48:22,367 - src.data_processor - WARNING -   - West Rutland, VT
+2026-01-18 21:48:22,367 - src.data_processor - WARNING -   - West Seneca, NY
+2026-01-18 21:48:22,368 - src.data_processor - WARNING -   - West Springfield, MA
+2026-01-18 21:48:22,368 - src.data_processor - WARNING -   - West Warwick, RI
+2026-01-18 21:48:22,368 - src.data_processor - WARNING -   - Westampton, NJ
+2026-01-18 21:48:22,368 - src.data_processor - WARNING -   - Westampton Township, NJ
+2026-01-18 21:48:22,368 - src.data_processor - WARNING -   - Westborough, MA
+2026-01-18 21:48:22,368 - src.data_processor - WARNING -   - Westbrook, CT
+2026-01-18 21:48:22,369 - src.data_processor - WARNING -   - Westerly, RI
+2026-01-18 21:48:22,369 - src.data_processor - WARNING -   - Westfield, NC
+2026-01-18 21:48:22,369 - src.data_processor - WARNING -   - Westfield, NY
+2026-01-18 21:48:22,369 - src.data_processor - WARNING -   - Westford, MA
+2026-01-18 21:48:22,369 - src.data_processor - WARNING -   - Westminster, MA
+2026-01-18 21:48:22,369 - src.data_processor - WARNING -   - Westmoreland, NH
+2026-01-18 21:48:22,369 - src.data_processor - WARNING -   - Westmoreland, NY
+2026-01-18 21:48:22,371 - src.data_processor - WARNING -   - Westover, MD
+2026-01-18 21:48:22,371 - src.data_processor - WARNING -   - Wethersfield, CT
+2026-01-18 21:48:22,371 - src.data_processor - WARNING -   - Weymouth, MA
+2026-01-18 21:48:22,371 - src.data_processor - WARNING -   - Whetsell, SC
+2026-01-18 21:48:22,371 - src.data_processor - WARNING -   - Whipple, OH
+2026-01-18 21:48:22,371 - src.data_processor - WARNING -   - White Hall, MD
+2026-01-18 21:48:22,371 - src.data_processor - WARNING -   - White Lake, MI
+2026-01-18 21:48:22,371 - src.data_processor - WARNING -   - White Plains, MD
+2026-01-18 21:48:22,372 - src.data_processor - WARNING -   - White River Jct, VT
+2026-01-18 21:48:22,372 - src.data_processor - WARNING -   - White Stone, SC
+2026-01-18 21:48:22,372 - src.data_processor - WARNING -   - Whitehall, PA
+2026-01-18 21:48:22,372 - src.data_processor - WARNING -   - Whitesburg, TN
+2026-01-18 21:48:22,373 - src.data_processor - WARNING -   - Whitman, MA
+2026-01-18 21:48:22,373 - src.data_processor - WARNING -   - Whitman, WV
+2026-01-18 21:48:22,373 - src.data_processor - WARNING -   - Wiconisco, PA
+2026-01-18 21:48:22,373 - src.data_processor - WARNING -   - Wilbraham, MA
+2026-01-18 21:48:22,373 - src.data_processor - WARNING -   - Wildwood, PA
+2026-01-18 21:48:22,374 - src.data_processor - WARNING -   - Wilkes Barre, PA
+2026-01-18 21:48:22,374 - src.data_processor - WARNING -   - Wilkes-Barre Township, PA
+2026-01-18 21:48:22,374 - src.data_processor - WARNING -   - Willard, NC
+2026-01-18 21:48:22,374 - src.data_processor - WARNING -   - Williamsburg, MI
+2026-01-18 21:48:22,374 - src.data_processor - WARNING -   - Williamson, NY
+2026-01-18 21:48:22,374 - src.data_processor - WARNING -   - Williamstown, NY
+2026-01-18 21:48:22,375 - src.data_processor - WARNING -   - Willington, CT
+2026-01-18 21:48:22,375 - src.data_processor - WARNING -   - Williston, VT
+2026-01-18 21:48:22,375 - src.data_processor - WARNING -   - Willsboro, NY
+2026-01-18 21:48:22,375 - src.data_processor - WARNING -   - Wilmington, MA
+2026-01-18 21:48:22,375 - src.data_processor - WARNING -   - Wilton, CT
+2026-01-18 21:48:22,375 - src.data_processor - WARNING -   - Wilton, ME
+2026-01-18 21:48:22,375 - src.data_processor - WARNING -   - Wilton, NY
+2026-01-18 21:48:22,375 - src.data_processor - WARNING -   - Winchester, CT
+2026-01-18 21:48:22,376 - src.data_processor - WARNING -   - Winchester, MA
+2026-01-18 21:48:22,376 - src.data_processor - WARNING -   - Winchester, NH
+2026-01-18 21:48:22,376 - src.data_processor - WARNING -   - Windfall, IN
+2026-01-18 21:48:22,376 - src.data_processor - WARNING -   - Windham, CT
+2026-01-18 21:48:22,376 - src.data_processor - WARNING -   - Windham, NH
+2026-01-18 21:48:22,376 - src.data_processor - WARNING -   - Windsor, CT
+2026-01-18 21:48:22,376 - src.data_processor - WARNING -   - Windsor, OH
+2026-01-18 21:48:22,378 - src.data_processor - WARNING -   - Windsor, WI
+2026-01-18 21:48:22,378 - src.data_processor - WARNING -   - Windsor Locks, CT
+2026-01-18 21:48:22,378 - src.data_processor - WARNING -   - Windsor Mill, MD
+2026-01-18 21:48:22,378 - src.data_processor - WARNING -   - Winslow, ME
+2026-01-18 21:48:22,378 - src.data_processor - WARNING -   - Winslow Township, NJ
+2026-01-18 21:48:22,378 - src.data_processor - WARNING -   - Winston Salem, NC
+2026-01-18 21:48:22,378 - src.data_processor - WARNING -   - Winthrop, ME
+2026-01-18 21:48:22,378 - src.data_processor - WARNING -   - Wirtz, VA
+2026-01-18 21:48:22,378 - src.data_processor - WARNING -   - Wolcott, CT
+2026-01-18 21:48:22,379 - src.data_processor - WARNING -   - Wolcott, NY
+2026-01-18 21:48:22,379 - src.data_processor - WARNING -   - Wolfeboro, NH
+2026-01-18 21:48:22,379 - src.data_processor - WARNING -   - Wood Ridge, NJ
+2026-01-18 21:48:22,379 - src.data_processor - WARNING -   - Woodbine, KY
+2026-01-18 21:48:22,379 - src.data_processor - WARNING -   - Woodbridge, NJ
+2026-01-18 21:48:22,380 - src.data_processor - WARNING -   - Woodbridge Township, NJ
+2026-01-18 21:48:22,380 - src.data_processor - WARNING -   - Woodford, VA
+2026-01-18 21:48:22,380 - src.data_processor - WARNING -   - Woodland Park, NJ
+2026-01-18 21:48:22,380 - src.data_processor - WARNING -   - Woodleaf, NC
+2026-01-18 21:48:22,380 - src.data_processor - WARNING -   - Woodside, NY
+2026-01-18 21:48:22,381 - src.data_processor - WARNING -   - Woodstock, CT
+2026-01-18 21:48:22,381 - src.data_processor - WARNING -   - Woolwich Township, NJ
+2026-01-18 21:48:22,381 - src.data_processor - WARNING -   - Wray, GA
+2026-01-18 21:48:22,381 - src.data_processor - WARNING -   - Wrentham, MA
+2026-01-18 21:48:22,381 - src.data_processor - WARNING -   - Wyandanch, NY
+2026-01-18 21:48:22,381 - src.data_processor - WARNING -   - Wye Mills, MD
+2026-01-18 21:48:22,382 - src.data_processor - WARNING -   - Wysox, PA
+2026-01-18 21:48:22,382 - src.data_processor - WARNING -   - Yalesville, CT
+2026-01-18 21:48:22,382 - src.data_processor - WARNING -   - Yarmouth, MA
+2026-01-18 21:48:22,382 - src.data_processor - WARNING -   - Yougnstown, OH
+2026-01-18 21:48:22,382 - src.data_processor - WARNING -   - Ypsilanti Charter Township, MI
+2026-01-18 21:48:22,382 - src.data_processor - WARNING -   - Zion Crossroads, VA
+2026-01-18 21:48:22,382 - src.data_processor - WARNING -   - Zirconia, NC
+2026-01-18 21:48:22,402 - src.data_processor - INFO - Saved city counts to D:\puneet_workspace\PickupDeliveryHubs\data\processed\city_pickup_delivery_counts.csv
+2026-01-18 21:48:22,402 - src.data_processor - INFO - Data processing pipeline completed successfully
+2026-01-18 21:48:22,441 - src.utils - INFO - 
+>>> STEP 2: Creating logistics hubs
+2026-01-18 21:48:22,441 - src.hub_creator - INFO - Starting hub creation pipeline...
+2026-01-18 21:48:22,466 - src.hub_creator - INFO - Loaded 5393 cities with valid coordinates
+2026-01-18 21:48:22,468 - src.hub_creator - INFO - State AL: Pickup Hub = Decatur, Delivery Hub = Gadsden
+2026-01-18 21:48:22,469 - src.hub_creator - INFO - State AR: Pickup Hub = West Memphis, Delivery Hub = Little Rock
+2026-01-18 21:48:22,469 - src.hub_creator - INFO - State AZ: Pickup Hub = Phoenix, Delivery Hub = Peoria
+2026-01-18 21:48:22,469 - src.hub_creator - INFO - State CA: Pickup Hub = Perris, Delivery Hub = Long Beach
+2026-01-18 21:48:22,470 - src.hub_creator - INFO - State CO: Pickup Hub = Aurora, Delivery Hub = Denver
+2026-01-18 21:48:22,470 - src.hub_creator - INFO - State CT: Pickup Hub = Middletown, Delivery Hub = Waterbury
+2026-01-18 21:48:22,471 - src.hub_creator - INFO - State DC: Pickup Hub = Washington, Delivery Hub = Washington
+2026-01-18 21:48:22,471 - src.hub_creator - INFO - State DE: Pickup Hub = Wilmington, Delivery Hub = Newark
+2026-01-18 21:48:22,471 - src.hub_creator - INFO - State FL: Pickup Hub = Jacksonville, Delivery Hub = Jacksonville
+2026-01-18 21:48:22,472 - src.hub_creator - INFO - State GA: Pickup Hub = Atlanta, Delivery Hub = Pendergrass
+2026-01-18 21:48:22,472 - src.hub_creator - INFO - State IA: Pickup Hub = Des Moines, Delivery Hub = West Des Moines
+2026-01-18 21:48:22,472 - src.hub_creator - INFO - State ID: Pickup Hub = Weiser, Delivery Hub = Boise
+2026-01-18 21:48:22,472 - src.hub_creator - INFO - State IL: Pickup Hub = Decatur, Delivery Hub = Edwardsville
+2026-01-18 21:48:22,473 - src.hub_creator - INFO - State IN: Pickup Hub = Indianapolis, Delivery Hub = Whitestown
+2026-01-18 21:48:22,473 - src.hub_creator - INFO - State KS: Pickup Hub = Kansas City, Delivery Hub = Kansas City
+2026-01-18 21:48:22,473 - src.hub_creator - INFO - State KY: Pickup Hub = Louisville, Delivery Hub = Louisville
+2026-01-18 21:48:22,474 - src.hub_creator - INFO - State LA: Pickup Hub = New Orleans, Delivery Hub = Baton Rouge
+2026-01-18 21:48:22,474 - src.hub_creator - INFO - State MA: Pickup Hub = Leominster, Delivery Hub = New Bedford
+2026-01-18 21:48:22,475 - src.hub_creator - INFO - State MD: Pickup Hub = Baltimore, Delivery Hub = Baltimore
+2026-01-18 21:48:22,475 - src.hub_creator - INFO - State ME: Pickup Hub = Kingfield, Delivery Hub = Bangor
+2026-01-18 21:48:22,476 - src.hub_creator - INFO - State MI: Pickup Hub = Grand Rapids, Delivery Hub = Petoskey
+2026-01-18 21:48:22,476 - src.hub_creator - INFO - State MN: Pickup Hub = Minneapolis, Delivery Hub = Eden Prairie
+2026-01-18 21:48:22,477 - src.hub_creator - INFO - State MO: Pickup Hub = St. Louis, Delivery Hub = Sikeston
+2026-01-18 21:48:22,477 - src.hub_creator - INFO - State MS: Pickup Hub = Olive Branch, Delivery Hub = Hattiesburg
+2026-01-18 21:48:22,477 - src.hub_creator - INFO - State MT: Pickup Hub = Billings, Delivery Hub = Billings
+2026-01-18 21:48:22,477 - src.hub_creator - INFO - State NC: Pickup Hub = Charlotte, Delivery Hub = Charlotte
+2026-01-18 21:48:22,479 - src.hub_creator - INFO - State ND: Pickup Hub = Carrington, Delivery Hub = Carrington
+2026-01-18 21:48:22,479 - src.hub_creator - INFO - State NE: Pickup Hub = Omaha, Delivery Hub = Omaha
+2026-01-18 21:48:22,479 - src.hub_creator - INFO - State NH: Pickup Hub = Concord, Delivery Hub = Nashua
+2026-01-18 21:48:22,480 - src.hub_creator - INFO - State NJ: Pickup Hub = Newark, Delivery Hub = Newark
+2026-01-18 21:48:22,480 - src.hub_creator - INFO - State NM: Pickup Hub = Las Cruces, Delivery Hub = Hobbs
+2026-01-18 21:48:22,481 - src.hub_creator - INFO - State NV: Pickup Hub = Las Vegas, Delivery Hub = Las Vegas
+2026-01-18 21:48:22,481 - src.hub_creator - INFO - State NY: Pickup Hub = Baldwinsville, Delivery Hub = Rochester
+2026-01-18 21:48:22,482 - src.hub_creator - INFO - State OH: Pickup Hub = Norwalk, Delivery Hub = Columbus
+2026-01-18 21:48:22,482 - src.hub_creator - INFO - State OK: Pickup Hub = Tulsa, Delivery Hub = Tulsa
+2026-01-18 21:48:22,482 - src.hub_creator - INFO - State OR: Pickup Hub = Echo, Delivery Hub = Halsey
+2026-01-18 21:48:22,482 - src.hub_creator - INFO - State PA: Pickup Hub = Leesport, Delivery Hub = Carlisle
+2026-01-18 21:48:22,483 - src.hub_creator - INFO - State RI: Pickup Hub = Cranston, Delivery Hub = Woonsocket
+2026-01-18 21:48:22,483 - src.hub_creator - INFO - State SC: Pickup Hub = Rock Hill, Delivery Hub = Newberry
+2026-01-18 21:48:22,484 - src.hub_creator - INFO - State SD: Pickup Hub = Sioux Falls, Delivery Hub = Sioux Falls
+2026-01-18 21:48:22,484 - src.hub_creator - INFO - State TN: Pickup Hub = Knoxville, Delivery Hub = Knoxville
+2026-01-18 21:48:22,485 - src.hub_creator - INFO - State TX: Pickup Hub = Houston, Delivery Hub = Fort Worth
+2026-01-18 21:48:22,485 - src.hub_creator - INFO - State UT: Pickup Hub = Roosevelt, Delivery Hub = Magna
+2026-01-18 21:48:22,485 - src.hub_creator - INFO - State VA: Pickup Hub = Ridgeway, Delivery Hub = Richmond
+2026-01-18 21:48:22,486 - src.hub_creator - INFO - State VT: Pickup Hub = Rutland, Delivery Hub = Rutland
+2026-01-18 21:48:22,486 - src.hub_creator - INFO - State WA: Pickup Hub = Vancouver, Delivery Hub = Vancouver
+2026-01-18 21:48:22,486 - src.hub_creator - INFO - State WI: Pickup Hub = Appleton, Delivery Hub = Oshkosh
+2026-01-18 21:48:22,486 - src.hub_creator - INFO - State WV: Pickup Hub = Martinsburg, Delivery Hub = Culloden
+2026-01-18 21:48:22,488 - src.hub_creator - INFO - State WY: Pickup Hub = Cheyenne, Delivery Hub = Cheyenne
+2026-01-18 21:48:22,494 - src.hub_creator - INFO - Pickup Hub for AL (Decatur): 26 cities within 50 miles
+2026-01-18 21:48:22,498 - src.hub_creator - INFO - Pickup Hub for AR (West Memphis): 11 cities within 50 miles
+2026-01-18 21:48:22,499 - src.hub_creator - INFO - Pickup Hub for AZ (Phoenix): 6 cities within 50 miles
+2026-01-18 21:48:22,501 - src.hub_creator - INFO - Pickup Hub for CA (Perris): 1 cities within 50 miles
+2026-01-18 21:48:22,502 - src.hub_creator - INFO - Pickup Hub for CO (Aurora): 6 cities within 50 miles
+2026-01-18 21:48:22,504 - src.hub_creator - INFO - Pickup Hub for CT (Middletown): 27 cities within 50 miles
+2026-01-18 21:48:22,505 - src.hub_creator - INFO - Pickup Hub for DC (Washington): 1 cities within 50 miles
+2026-01-18 21:48:22,508 - src.hub_creator - INFO - Pickup Hub for DE (Wilmington): 17 cities within 50 miles
+2026-01-18 21:48:22,515 - src.hub_creator - INFO - Pickup Hub for FL (Jacksonville): 13 cities within 50 miles
+2026-01-18 21:48:22,527 - src.hub_creator - INFO - Pickup Hub for GA (Atlanta): 86 cities within 50 miles
+2026-01-18 21:48:22,531 - src.hub_creator - INFO - Pickup Hub for IA (Des Moines): 17 cities within 50 miles
+2026-01-18 21:48:22,532 - src.hub_creator - INFO - Pickup Hub for ID (Weiser): 1 cities within 50 miles
+2026-01-18 21:48:22,542 - src.hub_creator - INFO - Pickup Hub for IL (Decatur): 20 cities within 50 miles
+2026-01-18 21:48:22,553 - src.hub_creator - INFO - Pickup Hub for IN (Indianapolis): 55 cities within 50 miles
+2026-01-18 21:48:22,556 - src.hub_creator - INFO - Pickup Hub for KS (Kansas City): 16 cities within 50 miles
+2026-01-18 21:48:22,563 - src.hub_creator - INFO - Pickup Hub for KY (Louisville): 30 cities within 50 miles
+2026-01-18 21:48:22,567 - src.hub_creator - INFO - Pickup Hub for LA (New Orleans): 17 cities within 50 miles
+2026-01-18 21:48:22,570 - src.hub_creator - INFO - Pickup Hub for MA (Leominster): 31 cities within 50 miles
+2026-01-18 21:48:22,579 - src.hub_creator - INFO - Pickup Hub for MD (Baltimore): 116 cities within 50 miles
+2026-01-18 21:48:22,581 - src.hub_creator - INFO - Pickup Hub for ME (Kingfield): 5 cities within 50 miles
+2026-01-18 21:48:22,593 - src.hub_creator - INFO - Pickup Hub for MI (Grand Rapids): 49 cities within 50 miles
+2026-01-18 21:48:22,599 - src.hub_creator - INFO - Pickup Hub for MN (Minneapolis): 52 cities within 50 miles
+2026-01-18 21:48:22,606 - src.hub_creator - INFO - Pickup Hub for MO (St. Louis): 27 cities within 50 miles
+2026-01-18 21:48:22,611 - src.hub_creator - INFO - Pickup Hub for MS (Olive Branch): 12 cities within 50 miles
+2026-01-18 21:48:22,612 - src.hub_creator - INFO - Pickup Hub for MT (Billings): 1 cities within 50 miles
+2026-01-18 21:48:22,628 - src.hub_creator - INFO - Pickup Hub for NC (Charlotte): 72 cities within 50 miles
+2026-01-18 21:48:22,629 - src.hub_creator - INFO - Pickup Hub for ND (Carrington): 1 cities within 50 miles
+2026-01-18 21:48:22,630 - src.hub_creator - INFO - Pickup Hub for NE (Omaha): 6 cities within 50 miles
+2026-01-18 21:48:22,632 - src.hub_creator - INFO - Pickup Hub for NH (Concord): 13 cities within 50 miles
+2026-01-18 21:48:22,641 - src.hub_creator - INFO - Pickup Hub for NJ (Newark): 148 cities within 50 miles
+2026-01-18 21:48:22,644 - src.hub_creator - INFO - Pickup Hub for NM (Las Cruces): 3 cities within 50 miles
+2026-01-18 21:48:22,645 - src.hub_creator - INFO - Pickup Hub for NV (Las Vegas): 1 cities within 50 miles
+2026-01-18 21:48:22,659 - src.hub_creator - INFO - Pickup Hub for NY (Baldwinsville): 30 cities within 50 miles
+2026-01-18 21:48:22,677 - src.hub_creator - INFO - Pickup Hub for OH (Norwalk): 75 cities within 50 miles
+2026-01-18 21:48:22,680 - src.hub_creator - INFO - Pickup Hub for OK (Tulsa): 8 cities within 50 miles
+2026-01-18 21:48:22,681 - src.hub_creator - INFO - Pickup Hub for OR (Echo): 1 cities within 50 miles
+2026-01-18 21:48:22,704 - src.hub_creator - INFO - Pickup Hub for PA (Leesport): 179 cities within 50 miles
+2026-01-18 21:48:22,706 - src.hub_creator - INFO - Pickup Hub for RI (Cranston): 10 cities within 50 miles
+2026-01-18 21:48:22,714 - src.hub_creator - INFO - Pickup Hub for SC (Rock Hill): 27 cities within 50 miles
+2026-01-18 21:48:22,715 - src.hub_creator - INFO - Pickup Hub for SD (Sioux Falls): 5 cities within 50 miles
+2026-01-18 21:48:22,725 - src.hub_creator - INFO - Pickup Hub for TN (Knoxville): 44 cities within 50 miles
+2026-01-18 21:48:22,732 - src.hub_creator - INFO - Pickup Hub for TX (Houston): 20 cities within 50 miles
+2026-01-18 21:48:22,733 - src.hub_creator - INFO - Pickup Hub for UT (Roosevelt): 1 cities within 50 miles
+2026-01-18 21:48:22,742 - src.hub_creator - INFO - Pickup Hub for VA (Ridgeway): 24 cities within 50 miles
+2026-01-18 21:48:22,744 - src.hub_creator - INFO - Pickup Hub for VT (Rutland): 9 cities within 50 miles
+2026-01-18 21:48:22,745 - src.hub_creator - INFO - Pickup Hub for WA (Vancouver): 1 cities within 50 miles
+2026-01-18 21:48:22,750 - src.hub_creator - INFO - Pickup Hub for WI (Appleton): 40 cities within 50 miles
+2026-01-18 21:48:22,755 - src.hub_creator - INFO - Pickup Hub for WV (Martinsburg): 6 cities within 50 miles
+2026-01-18 21:48:22,755 - src.hub_creator - INFO - Pickup Hub for WY (Cheyenne): 1 cities within 50 miles
+2026-01-18 21:48:22,764 - src.hub_creator - INFO - Saved hub coverage to D:\puneet_workspace\PickupDeliveryHubs\data\processed\pickup_hub_coverage.csv
+2026-01-18 21:48:22,770 - src.hub_creator - INFO - Delivery Hub for AL (Gadsden): 35 cities within 50 miles
+2026-01-18 21:48:22,774 - src.hub_creator - INFO - Delivery Hub for AR (Little Rock): 17 cities within 50 miles
+2026-01-18 21:48:22,775 - src.hub_creator - INFO - Delivery Hub for AZ (Peoria): 6 cities within 50 miles
+2026-01-18 21:48:22,776 - src.hub_creator - INFO - Delivery Hub for CA (Long Beach): 1 cities within 50 miles
+2026-01-18 21:48:22,777 - src.hub_creator - INFO - Delivery Hub for CO (Denver): 6 cities within 50 miles
+2026-01-18 21:48:22,779 - src.hub_creator - INFO - Delivery Hub for CT (Waterbury): 24 cities within 50 miles
+2026-01-18 21:48:22,780 - src.hub_creator - INFO - Delivery Hub for DC (Washington): 1 cities within 50 miles
+2026-01-18 21:48:22,781 - src.hub_creator - INFO - Delivery Hub for DE (Newark): 18 cities within 50 miles
+2026-01-18 21:48:22,788 - src.hub_creator - INFO - Delivery Hub for FL (Jacksonville): 13 cities within 50 miles
+2026-01-18 21:48:22,798 - src.hub_creator - INFO - Delivery Hub for GA (Pendergrass): 67 cities within 50 miles
+2026-01-18 21:48:22,802 - src.hub_creator - INFO - Delivery Hub for IA (West Des Moines): 17 cities within 50 miles
+2026-01-18 21:48:22,803 - src.hub_creator - INFO - Delivery Hub for ID (Boise): 1 cities within 50 miles
+2026-01-18 21:48:22,817 - src.hub_creator - INFO - Delivery Hub for IL (Edwardsville): 33 cities within 50 miles
+2026-01-18 21:48:22,827 - src.hub_creator - INFO - Delivery Hub for IN (Whitestown): 50 cities within 50 miles
+2026-01-18 21:48:22,830 - src.hub_creator - INFO - Delivery Hub for KS (Kansas City): 16 cities within 50 miles
+2026-01-18 21:48:22,836 - src.hub_creator - INFO - Delivery Hub for KY (Louisville): 30 cities within 50 miles
+2026-01-18 21:48:22,840 - src.hub_creator - INFO - Delivery Hub for LA (Baton Rouge): 18 cities within 50 miles
+2026-01-18 21:48:22,842 - src.hub_creator - INFO - Delivery Hub for MA (New Bedford): 10 cities within 50 miles
+2026-01-18 21:48:22,849 - src.hub_creator - INFO - Delivery Hub for MD (Baltimore): 116 cities within 50 miles
+2026-01-18 21:48:22,851 - src.hub_creator - INFO - Delivery Hub for ME (Bangor): 6 cities within 50 miles
+2026-01-18 21:48:22,861 - src.hub_creator - INFO - Delivery Hub for MI (Petoskey): 10 cities within 50 miles
+2026-01-18 21:48:22,865 - src.hub_creator - INFO - Delivery Hub for MN (Eden Prairie): 53 cities within 50 miles
+2026-01-18 21:48:22,872 - src.hub_creator - INFO - Delivery Hub for MO (Sikeston): 15 cities within 50 miles
+2026-01-18 21:48:22,876 - src.hub_creator - INFO - Delivery Hub for MS (Hattiesburg): 15 cities within 50 miles
+2026-01-18 21:48:22,877 - src.hub_creator - INFO - Delivery Hub for MT (Billings): 1 cities within 50 miles
+2026-01-18 21:48:22,891 - src.hub_creator - INFO - Delivery Hub for NC (Charlotte): 72 cities within 50 miles
+2026-01-18 21:48:22,892 - src.hub_creator - INFO - Delivery Hub for ND (Carrington): 1 cities within 50 miles
+2026-01-18 21:48:22,894 - src.hub_creator - INFO - Delivery Hub for NE (Omaha): 6 cities within 50 miles
+2026-01-18 21:48:22,896 - src.hub_creator - INFO - Delivery Hub for NH (Nashua): 9 cities within 50 miles
+2026-01-18 21:48:22,909 - src.hub_creator - INFO - Delivery Hub for NJ (Newark): 148 cities within 50 miles
+2026-01-18 21:48:22,911 - src.hub_creator - INFO - Delivery Hub for NM (Hobbs): 1 cities within 50 miles
+2026-01-18 21:48:22,911 - src.hub_creator - INFO - Delivery Hub for NV (Las Vegas): 1 cities within 50 miles
+2026-01-18 21:48:22,921 - src.hub_creator - INFO - Delivery Hub for NY (Rochester): 31 cities within 50 miles
+2026-01-18 21:48:22,937 - src.hub_creator - INFO - Delivery Hub for OH (Columbus): 59 cities within 50 miles
+2026-01-18 21:48:22,939 - src.hub_creator - INFO - Delivery Hub for OK (Tulsa): 8 cities within 50 miles
+2026-01-18 21:48:22,940 - src.hub_creator - INFO - Delivery Hub for OR (Halsey): 1 cities within 50 miles
+2026-01-18 21:48:22,959 - src.hub_creator - INFO - Delivery Hub for PA (Carlisle): 100 cities within 50 miles
+2026-01-18 21:48:22,961 - src.hub_creator - INFO - Delivery Hub for RI (Woonsocket): 10 cities within 50 miles
+2026-01-18 21:48:22,968 - src.hub_creator - INFO - Delivery Hub for SC (Newberry): 53 cities within 50 miles
+2026-01-18 21:48:22,970 - src.hub_creator - INFO - Delivery Hub for SD (Sioux Falls): 5 cities within 50 miles
+2026-01-18 21:48:22,978 - src.hub_creator - INFO - Delivery Hub for TN (Knoxville): 44 cities within 50 miles
+2026-01-18 21:48:22,984 - src.hub_creator - INFO - Delivery Hub for TX (Fort Worth): 38 cities within 50 miles
+2026-01-18 21:48:22,985 - src.hub_creator - INFO - Delivery Hub for UT (Magna): 2 cities within 50 miles
+2026-01-18 21:48:22,993 - src.hub_creator - INFO - Delivery Hub for VA (Richmond): 31 cities within 50 miles
+2026-01-18 21:48:22,995 - src.hub_creator - INFO - Delivery Hub for VT (Rutland): 9 cities within 50 miles
+2026-01-18 21:48:22,996 - src.hub_creator - INFO - Delivery Hub for WA (Vancouver): 1 cities within 50 miles
+2026-01-18 21:48:23,002 - src.hub_creator - INFO - Delivery Hub for WI (Oshkosh): 47 cities within 50 miles
+2026-01-18 21:48:23,007 - src.hub_creator - INFO - Delivery Hub for WV (Culloden): 30 cities within 50 miles
+2026-01-18 21:48:23,007 - src.hub_creator - INFO - Delivery Hub for WY (Cheyenne): 1 cities within 50 miles
+2026-01-18 21:48:23,016 - src.hub_creator - INFO - Saved hub coverage to D:\puneet_workspace\PickupDeliveryHubs\data\processed\delivery_hub_coverage.csv
+2026-01-18 21:48:23,016 - src.hub_creator - INFO - Hub creation pipeline completed successfully
+2026-01-18 21:48:23,016 - src.utils - INFO - 
+>>> STEP 3: Launching visualization
+2026-01-18 21:48:23,016 - src.visualization - INFO - Loading visualization data...
+2026-01-18 21:48:23,046 - src.visualization - INFO - Data loaded successfully
+2026-01-18 21:48:23,081 - src.visualization - INFO - Starting visualization server at http://0.0.0.0:8050

@@ -1,0 +1,1288 @@
+hub_state,hub_city,city,state,latitude,longitude,distance_miles,delivery_count
+AL,Gadsden,Albertville,AL,34.2633,-86.2108,20.84,6
+AL,Gadsden,Anniston,AL,33.6712,-85.8135,26.04,5
+AL,Gadsden,Arab,AL,34.3309,-86.4991,35.49,2
+AL,Gadsden,Attalla,AL,34.005,-86.1039,5.06,1
+AL,Gadsden,Boaz,AL,34.1985,-86.1529,15.29,1
+AL,Gadsden,Centre,AL,34.1537,-85.6689,22.23,0
+AL,Gadsden,Crossville,AL,34.2852,-85.9996,19.13,0
+AL,Gadsden,Cullman,AL,34.1775,-86.8407,48.63,17
+AL,Gadsden,Fort Payne,AL,34.4559,-85.6965,35.88,6
+AL,Gadsden,Fyffe,AL,34.449,-85.9052,31.08,0
+AL,Gadsden,Gadsden,AL,34.0086,-86.0157,0.0,214
+AL,Gadsden,Guntersville,AL,34.3671,-86.2637,28.54,2
+AL,Gadsden,Hanceville,AL,34.0632,-86.7645,43.04,0
+AL,Gadsden,Heflin,AL,33.647,-85.5698,35.77,0
+AL,Gadsden,Henagar,AL,34.6306,-85.7413,45.74,0
+AL,Gadsden,Holly Pond,AL,34.1696,-86.6125,35.92,0
+AL,Gadsden,Hollywood,AL,34.7195,-85.9641,49.21,2
+AL,Gadsden,Leeds,AL,33.5436,-86.5639,44.98,2
+AL,Gadsden,Leesburg,AL,34.1839,-85.775,18.34,1
+AL,Gadsden,Moody,AL,33.5986,-86.4963,39.55,2
+AL,Gadsden,Odenville,AL,33.6978,-86.4228,31.73,0
+AL,Gadsden,Oneonta,AL,33.9394,-86.4932,27.77,1
+AL,Gadsden,Oxford,AL,33.5967,-85.8687,29.68,5
+AL,Gadsden,Pell City,AL,33.561,-86.2669,34.13,2
+AL,Gadsden,Piedmont,AL,33.9269,-85.6149,23.65,1
+AL,Gadsden,Pinson,AL,33.7055,-86.6678,42.88,1
+AL,Gadsden,Rainbow City,AL,33.9336,-86.0922,6.79,1
+AL,Gadsden,Rainsville,AL,34.4938,-85.8436,34.94,1
+AL,Gadsden,Scottsboro,AL,34.6438,-86.0491,43.93,7
+AL,Gadsden,Steele,AL,33.937,-86.2004,11.68,1
+AL,Gadsden,Sterrett,AL,33.449,-86.4645,46.48,2
+AL,Gadsden,Talladega,AL,33.4333,-86.0986,40.03,2
+AL,Gadsden,Trussville,AL,33.6405,-86.5815,41.25,2
+AL,Gadsden,Union Grove,AL,34.4025,-86.4483,36.77,1
+AL,Gadsden,Warrior,AL,33.8149,-86.8157,47.78,1
+AR,Little Rock,Alexander,AR,34.6185,-92.4512,9.11,1
+AR,Little Rock,Benton,AR,34.5776,-92.5713,15.87,0
+AR,Little Rock,Bryant,AR,34.6152,-92.4914,10.77,2
+AR,Little Rock,Carlisle,AR,34.7947,-91.7361,35.61,0
+AR,Little Rock,Conway,AR,35.0753,-92.4692,24.97,3
+AR,Little Rock,Hot Springs,AR,34.4892,-93.0501,42.63,1
+AR,Little Rock,Hot Springs Village,AR,34.6566,-92.9643,34.79,1
+AR,Little Rock,Jacksonville,AR,34.8807,-92.1304,16.77,1
+AR,Little Rock,Leola,AR,34.17,-92.5914,40.63,0
+AR,Little Rock,Little Rock,AR,34.7256,-92.3577,0.0,17
+AR,Little Rock,Maumelle,AR,34.8522,-92.4,9.07,1
+AR,Little Rock,Morrilton,AR,35.1558,-92.7387,36.73,1
+AR,Little Rock,North Little Rock,AR,34.7807,-92.2371,7.83,6
+AR,Little Rock,Pine Bluff,AR,34.2116,-92.0173,40.46,2
+AR,Little Rock,Plumerville,AR,35.16,-92.643,34.09,0
+AR,Little Rock,Stuttgart,AR,34.4952,-91.5487,48.68,2
+AR,Little Rock,White Hall,AR,34.2741,-92.1006,34.46,0
+AZ,Peoria,Avondale,AZ,33.3873,-112.3235,27.47,0
+AZ,Peoria,El Mirage,AZ,33.5905,-112.3271,13.49,1
+AZ,Peoria,Mesa,AZ,33.4015,-111.7178,42.64,1
+AZ,Peoria,Peoria,AZ,33.7843,-112.2989,0.0,2
+AZ,Peoria,Phoenix,AZ,33.5722,-112.0892,18.98,1
+AZ,Peoria,Tolleson,AZ,33.4484,-112.256,23.34,0
+CA,Long Beach,Long Beach,CA,33.7977,-118.167,0.0,1
+CO,Denver,Aurora,CO,39.7083,-104.7237,8.89,2
+CO,Denver,Brighton,CO,39.9716,-104.7963,15.08,0
+CO,Denver,Commerce City,CO,39.8641,-104.843,7.27,1
+CO,Denver,Denver,CO,39.762,-104.8758,0.0,4
+CO,Denver,Fort Lupton,CO,40.0827,-104.8068,22.46,1
+CO,Denver,Frederick,CO,40.1088,-104.9701,24.48,1
+CT,Waterbury,Ansonia,CT,41.3443,-73.0689,14.88,6
+CT,Waterbury,Bridgeport,CT,41.1918,-73.1954,26.63,12
+CT,Waterbury,Bristol,CT,41.6812,-72.9407,9.82,10
+CT,Waterbury,Canaan,CT,42.0347,-73.3322,36.28,2
+CT,Waterbury,Danbury,CT,41.4015,-73.4709,24.98,13
+CT,Waterbury,Derby,CT,41.3265,-73.0833,16.19,5
+CT,Waterbury,Hartford,CT,41.7661,-72.6834,23.19,13
+CT,Waterbury,Meriden,CT,41.5369,-72.7946,12.57,5
+CT,Waterbury,Middletown,CT,41.5476,-72.6549,19.72,10
+CT,Waterbury,Naugatuck,CT,41.489,-73.0518,4.85,9
+CT,Waterbury,New Britain,CT,41.6759,-72.7862,15.26,0
+CT,Waterbury,New Haven,CT,41.3113,-72.9246,18.01,3
+CT,Waterbury,Norwalk,CT,41.1144,-73.4215,36.61,6
+CT,Waterbury,Norwich,CT,41.5495,-72.0882,49.01,6
+CT,Waterbury,SOUTH WINDHAM,CT,41.685,-72.1845,44.85,1
+CT,Waterbury,Sandy Hook,CT,41.4128,-73.244,14.72,1
+CT,Waterbury,Shelton,CT,41.306,-73.1383,18.21,3
+CT,Waterbury,Stafford Springs,CT,41.9595,-72.3105,46.55,1
+CT,Waterbury,Stamford,CT,41.1039,-73.5585,41.47,3
+CT,Waterbury,Torrington,CT,41.8349,-73.1282,19.7,10
+CT,Waterbury,Waterbury,CT,41.5582,-73.0361,0.0,27
+CT,Waterbury,West Haven,CT,41.2739,-72.9672,19.97,20
+CT,Waterbury,Willimantic,CT,41.7171,-72.2114,43.98,1
+CT,Waterbury,Winsted,CT,41.9262,-73.0675,25.48,0
+DC,Washington,Washington,DC,38.9047,-77.0163,0.0,26
+DE,Newark,Bear,DE,39.6189,-75.6808,5.76,20
+DE,Newark,Camden,DE,39.099,-75.5571,41.39,1
+DE,Newark,Claymont,DE,39.8032,-75.4607,18.0,10
+DE,Newark,Clayton,DE,39.2849,-75.6366,27.89,0
+DE,Newark,Delaware City,DE,39.574,-75.5938,11.28,1
+DE,Newark,Dover,DE,39.161,-75.5202,37.88,150
+DE,Newark,Edgemoor,DE,39.7547,-75.5069,14.35,0
+DE,Newark,Felton,DE,39.0127,-75.5765,46.95,3
+DE,Newark,Hartly,DE,39.1683,-75.7124,35.27,4
+DE,Newark,Hockessin,DE,39.7837,-75.6815,8.37,2
+DE,Newark,Middletown,DE,39.445,-75.7183,16.21,25
+DE,Newark,New Castle,DE,39.6681,-75.5697,10.01,108
+DE,Newark,Newark,DE,39.6776,-75.7576,0.0,187
+DE,Newark,Newport,DE,39.7135,-75.6046,8.5,2
+DE,Newark,Smyrna,DE,39.2935,-75.6083,27.71,130
+DE,Newark,Townsend,DE,39.3968,-75.6943,19.69,1
+DE,Newark,Viola,DE,39.0429,-75.5715,44.97,24
+DE,Newark,Wilmington,DE,39.7415,-75.5416,12.3,56
+FL,Jacksonville,East Palatka,FL,29.6502,-81.5997,47.34,1
+FL,Jacksonville,Fernandina Beach,FL,30.6571,-81.4511,26.1,1
+FL,Jacksonville,Fleming Island,FL,30.0988,-81.7124,16.28,1
+FL,Jacksonville,Green Cove Springs,FL,29.9904,-81.6807,23.62,2
+FL,Jacksonville,Jacksonville,FL,30.3322,-81.6749,0.0,156
+FL,Jacksonville,Jacksonville Beach,FL,30.2782,-81.4045,16.56,2
+FL,Jacksonville,Macclenny,FL,30.2809,-82.1253,27.1,5
+FL,Jacksonville,Middleburg,FL,30.0502,-81.9011,23.71,0
+FL,Jacksonville,Orange Park,FL,30.1706,-81.7041,11.3,2
+FL,Jacksonville,Palatka,FL,29.6493,-81.6705,47.18,0
+FL,Jacksonville,St. Augustine,FL,29.8976,-81.31,37.11,3
+FL,Jacksonville,Starke,FL,29.9474,-82.1129,37.31,1
+FL,Jacksonville,Yulee,FL,30.635,-81.5678,21.87,1
+GA,Pendergrass,Alpharetta,GA,34.0704,-84.2738,34.43,15
+GA,Pendergrass,Alto,GA,34.4649,-83.5727,21.68,0
+GA,Pendergrass,Athens,GA,33.9508,-83.3689,23.26,11
+GA,Pendergrass,Auburn,GA,34.0156,-83.8319,13.37,0
+GA,Pendergrass,Ball Ground,GA,34.3426,-84.3637,40.79,8
+GA,Pendergrass,Bethlehem,GA,33.9368,-83.7102,15.82,0
+GA,Pendergrass,Bogart,GA,33.9479,-83.5341,17.22,1
+GA,Pendergrass,Bowersville,GA,34.373,-83.0838,37.1,1
+GA,Pendergrass,Braselton,GA,34.1087,-83.8127,8.38,8
+GA,Pendergrass,Buford,GA,34.1192,-83.9903,17.87,72
+GA,Pendergrass,Canon,GA,34.3455,-83.1107,34.98,0
+GA,Pendergrass,Canton,GA,34.2467,-84.4897,46.46,1
+GA,Pendergrass,Carnesville,GA,34.3729,-83.2328,29.45,1
+GA,Pendergrass,Chamblee,GA,33.8842,-84.3007,40.35,2
+GA,Pendergrass,Clarkesville,GA,34.6103,-83.5284,32.03,1
+GA,Pendergrass,Clarkston,GA,33.8117,-84.2403,40.19,0
+GA,Pendergrass,Cleveland,GA,34.597,-83.7622,30.22,5
+GA,Pendergrass,Commerce,GA,34.2134,-83.4733,12.43,24
+GA,Pendergrass,Conyers,GA,33.6646,-83.9966,38.95,29
+GA,Pendergrass,Cornelia,GA,34.517,-83.5311,25.84,1
+GA,Pendergrass,Covington,GA,33.6049,-83.8463,39.79,32
+GA,Pendergrass,Crawford,GA,33.8831,-83.1551,35.93,1
+GA,Pendergrass,Cumming,GA,34.2063,-84.1339,25.95,9
+GA,Pendergrass,Dacula,GA,33.9815,-83.8952,17.55,19
+GA,Pendergrass,Dahlonega,GA,34.5311,-83.9804,30.49,0
+GA,Pendergrass,Dawsonville,GA,34.4362,-84.125,31.46,0
+GA,Pendergrass,Decatur,GA,33.7711,-84.2963,44.45,3
+GA,Pendergrass,Doraville,GA,33.9073,-84.2711,38.09,11
+GA,Pendergrass,Duluth,GA,34.0053,-84.1492,28.87,15
+GA,Pendergrass,Dunwoody,GA,33.9418,-84.3122,39.19,2
+GA,Pendergrass,Elberton,GA,34.1063,-82.8705,46.62,2
+GA,Pendergrass,Flowery Branch,GA,34.1712,-83.9142,13.24,4
+GA,Pendergrass,Gainesville,GA,34.2902,-83.8294,12.06,29
+GA,Pendergrass,Gillsville,GA,34.3085,-83.6352,10.31,0
+GA,Pendergrass,Hartwell,GA,34.3496,-82.9289,44.9,4
+GA,Pendergrass,Helen,GA,34.7046,-83.7214,37.38,1
+GA,Pendergrass,Hoschton,GA,34.0853,-83.7594,7.02,1
+GA,Pendergrass,Jasper,GA,34.471,-84.4497,48.62,0
+GA,Pendergrass,Jefferson,GA,34.1373,-83.6021,4.98,13
+GA,Pendergrass,Lavonia,GA,34.4341,-83.1079,37.72,19
+GA,Pendergrass,Lawrenceville,GA,33.9523,-83.9932,23.04,23
+GA,Pendergrass,Lilburn,GA,33.8897,-84.1364,32.18,4
+GA,Pendergrass,Lithonia,GA,33.7129,-84.106,39.53,23
+GA,Pendergrass,Lula,GA,34.3955,-83.6659,15.98,6
+GA,Pendergrass,Madison,GA,33.5793,-83.4758,42.15,2
+GA,Pendergrass,Martin,GA,34.4856,-83.1985,35.43,0
+GA,Pendergrass,Maysville,GA,34.2555,-83.5521,9.75,2
+GA,Pendergrass,Monroe,GA,33.799,-83.7161,25.33,19
+GA,Pendergrass,Mount Airy,GA,34.5221,-83.4976,26.86,0
+GA,Pendergrass,Norcross,GA,33.9379,-84.2065,33.83,54
+GA,Pendergrass,Oakwood,GA,34.2236,-83.8851,12.26,9
+GA,Pendergrass,Peachtree Corners,GA,33.967,-84.232,34.28,1
+GA,Pendergrass,Pendergrass,GA,34.1646,-83.6827,0.0,278
+GA,Pendergrass,Royston,GA,34.2861,-83.1106,33.74,3
+GA,Pendergrass,Social Circle,GA,33.6505,-83.7116,35.56,19
+GA,Pendergrass,Stone Mountain,GA,33.8035,-84.1723,37.54,11
+GA,Pendergrass,Stonecrest,GA,33.6842,-84.1372,42.2,3
+GA,Pendergrass,Sugar Hill,GA,34.108,-84.0558,21.69,0
+GA,Pendergrass,Suwanee,GA,34.0508,-84.0686,23.44,20
+GA,Pendergrass,Talmo,GA,34.1831,-83.721,2.54,0
+GA,Pendergrass,Tiger,GA,34.8458,-83.433,49.17,0
+GA,Pendergrass,Toccoa,GA,34.581,-83.3263,35.23,4
+GA,Pendergrass,Tucker,GA,33.8436,-84.2024,37.12,11
+GA,Pendergrass,Watkinsville,GA,33.861,-83.4072,26.25,0
+GA,Pendergrass,Winder,GA,33.9917,-83.7218,12.15,9
+GA,Pendergrass,Winterville,GA,33.9666,-83.2815,26.73,0
+GA,Pendergrass,Woodstock,GA,34.1026,-84.5091,47.46,1
+IA,West Des Moines,Adel,IA,41.6101,-94.0124,12.63,1
+IA,West Des Moines,Altoona,IA,41.6483,-93.4783,16.97,1
+IA,West Des Moines,Ames,IA,42.0256,-93.6217,33.72,0
+IA,West Des Moines,Ankeny,IA,41.7288,-93.6031,15.27,3
+IA,West Des Moines,Boone,IA,42.0531,-93.877,34.97,0
+IA,West Des Moines,Carlisle,IA,41.5118,-93.495,15.03,0
+IA,West Des Moines,Chariton,IA,41.0175,-93.3097,44.3,2
+IA,West Des Moines,Clive,IA,41.6147,-93.798,4.42,0
+IA,West Des Moines,Creston,IA,41.0598,-94.365,45.57,0
+IA,West Des Moines,Des Moines,IA,41.5725,-93.6105,8.91,5
+IA,West Des Moines,Grimes,IA,41.6779,-93.7947,8.72,2
+IA,West Des Moines,Jefferson,IA,42.0173,-94.3799,44.57,1
+IA,West Des Moines,Nevada,IA,42.0184,-93.4633,36.13,1
+IA,West Des Moines,Ogden,IA,42.0395,-94.0282,36.01,0
+IA,West Des Moines,Pleasant Hill,IA,41.5867,-93.4953,14.94,2
+IA,West Des Moines,Urbandale,IA,41.639,-93.7812,6.0,8
+IA,West Des Moines,West Des Moines,IA,41.5521,-93.7806,0.0,19
+ID,Boise,Boise,ID,43.6005,-116.2308,0.0,1
+IL,Edwardsville,Alton,IL,38.9037,-90.152,11.74,1
+IL,Edwardsville,Baldwin,IL,38.1838,-89.8451,42.74,4
+IL,Edwardsville,Belleville,IL,38.5164,-89.99,19.06,2
+IL,Edwardsville,Breese,IL,38.6138,-89.523,27.91,1
+IL,Edwardsville,Collinsville,IL,38.677,-90.0063,8.02,3
+IL,Edwardsville,Dupo,IL,38.5146,-90.2168,22.83,2
+IL,Edwardsville,East Alton,IL,38.884,-90.1074,9.05,3
+IL,Edwardsville,East St. Louis,IL,38.6155,-90.1304,14.44,1
+IL,Edwardsville,Edwardsville,IL,38.7922,-89.9874,0.0,126
+IL,Edwardsville,Fairmont City,IL,38.6504,-90.1024,11.59,0
+IL,Edwardsville,Fairview Heights,IL,38.5974,-90.0053,13.49,1
+IL,Edwardsville,Godfrey,IL,38.9577,-90.2156,16.78,0
+IL,Edwardsville,Granite City,IL,38.7296,-90.1268,8.67,7
+IL,Edwardsville,Greenville,IL,38.8867,-89.3894,32.84,1
+IL,Edwardsville,Highland,IL,38.7602,-89.6812,16.64,3
+IL,Edwardsville,Hillsboro,IL,39.1752,-89.4723,38.28,1
+IL,Edwardsville,Lebanon,IL,38.6005,-89.8114,16.29,1
+IL,Edwardsville,Litchfield,IL,39.1954,-89.63,33.83,0
+IL,Edwardsville,Madison,IL,38.7024,-90.1501,10.74,1
+IL,Edwardsville,Mascoutah,IL,38.5192,-89.8045,21.29,1
+IL,Edwardsville,Mount Olive,IL,39.0726,-89.7277,23.88,4
+IL,Edwardsville,Nashville,IL,38.3541,-89.377,44.76,0
+IL,Edwardsville,Pontoon Beach,IL,38.7208,-90.0609,6.33,1
+IL,Edwardsville,Red Bud,IL,38.2096,-89.9989,40.26,1
+IL,Edwardsville,Sauget,IL,38.5842,-90.1608,17.15,1
+IL,Edwardsville,Sparta,IL,38.1513,-89.7185,46.61,1
+IL,Edwardsville,Trenton,IL,38.6083,-89.6852,20.66,0
+IL,Edwardsville,Valmeyer,IL,38.3064,-90.2979,37.53,1
+IL,Edwardsville,Vandalia,IL,38.9754,-89.1117,48.77,0
+IL,Edwardsville,Vernon,IL,38.8014,-89.0875,48.46,5
+IL,Edwardsville,Washington Park,IL,38.6285,-90.0928,12.66,0
+IL,Edwardsville,Waterloo,IL,38.3403,-90.1538,32.49,1
+IL,Edwardsville,Wood River,IL,38.8631,-90.0774,6.89,1
+IN,Whitestown,Alexandria,IN,40.263,-85.6737,41.57,1
+IN,Whitestown,Anderson,IN,40.0891,-85.6892,36.48,16
+IN,Whitestown,Arlington,IN,39.6458,-85.5797,47.16,1
+IN,Whitestown,Avon,IN,39.7601,-86.3916,14.63,18
+IN,Whitestown,Bloomingdale,IN,39.8306,-87.2502,48.1,0
+IN,Whitestown,Bringhurst,IN,40.5269,-86.5251,39.4,0
+IN,Whitestown,Brownsburg,IN,39.8337,-86.383,9.53,37
+IN,Whitestown,Carmel,IN,39.965,-86.146,11.4,4
+IN,Whitestown,Clayton,IN,39.6892,-86.5234,21.26,10
+IN,Whitestown,Crawfordsville,IN,40.0428,-86.8976,28.82,17
+IN,Whitestown,Delphi,IN,40.5834,-86.6668,45.3,1
+IN,Whitestown,Edinburgh,IN,39.3509,-85.9625,47.78,2
+IN,Whitestown,Elwood,IN,40.2738,-85.8374,34.71,4
+IN,Whitestown,Fairland,IN,39.5849,-85.8627,37.56,0
+IN,Whitestown,Fishers,IN,39.9588,-85.9659,20.95,23
+IN,Whitestown,Frankfort,IN,40.281,-86.5212,23.05,10
+IN,Whitestown,Franklin,IN,39.4948,-86.0544,36.69,102
+IN,Whitestown,Greencastle,IN,39.6432,-86.8418,34.09,2
+IN,Whitestown,Greenfield,IN,39.7937,-85.7738,33.46,46
+IN,Whitestown,Greenwood,IN,39.6019,-86.1073,28.82,34
+IN,Whitestown,Hillsboro,IN,40.1089,-87.1577,43.2,1
+IN,Whitestown,Indianapolis,IN,39.7771,-86.1458,17.58,370
+IN,Whitestown,Knightstown,IN,39.7959,-85.5312,45.63,0
+IN,Whitestown,Kokomo,IN,40.464,-86.1277,36.25,49
+IN,Whitestown,Lafayette,IN,40.3991,-86.8593,39.6,21
+IN,Whitestown,Lapel,IN,40.0334,-85.8406,27.89,2
+IN,Whitestown,Lebanon,IN,40.0324,-86.4551,6.55,42
+IN,Whitestown,Martinsville,IN,39.4149,-86.4316,38.58,1
+IN,Whitestown,Mccordsville,IN,39.8966,-85.9208,23.89,8
+IN,Whitestown,Middletown,IN,40.0595,-85.5423,43.77,0
+IN,Whitestown,Mooresville,IN,39.6022,-86.3681,25.46,9
+IN,Whitestown,Morristown,IN,39.6738,-85.7052,40.4,1
+IN,Whitestown,New Ross,IN,39.9646,-86.7142,18.7,0
+IN,Whitestown,Noblesville,IN,40.0355,-86.0042,19.42,4
+IN,Whitestown,Orestes,IN,40.271,-85.7247,39.52,2
+IN,Whitestown,Pendleton,IN,40.0066,-85.7711,31.34,4
+IN,Whitestown,Pittsboro,IN,39.8705,-86.4654,8.85,2
+IN,Whitestown,Plainfield,IN,39.6954,-86.3716,19.02,68
+IN,Whitestown,Rockville,IN,39.7666,-87.2295,48.15,1
+IN,Whitestown,Shelbyville,IN,39.5352,-85.7793,43.13,22
+IN,Whitestown,Swayzee,IN,40.5066,-85.8244,46.62,0
+IN,Whitestown,Tipton,IN,40.282,-86.0423,27.33,2
+IN,Whitestown,Trafalgar,IN,39.4124,-86.1499,40.17,0
+IN,Whitestown,Veedersburg,IN,40.1137,-87.2566,48.38,1
+IN,Whitestown,West Lafayette,IN,40.4432,-86.9238,44.13,1
+IN,Whitestown,Westfield,IN,40.0341,-86.1529,11.87,4
+IN,Whitestown,Whiteland,IN,39.5505,-86.0739,32.79,6
+IN,Whitestown,Whitestown,IN,39.9706,-86.3612,0.0,403
+IN,Whitestown,Yorktown,IN,40.183,-85.5123,47.22,1
+IN,Whitestown,Zionsville,IN,39.9897,-86.3182,2.63,1
+KS,Kansas City,Atchison,KS,39.5625,-95.1367,36.87,0
+KS,Kansas City,Edgerton,KS,38.7717,-94.9706,27.18,1
+KS,Kansas City,Edwardsville,KS,39.0765,-94.8166,5.06,1
+KS,Kansas City,Elwood,KS,39.7519,-94.889,44.1,0
+KS,Kansas City,Gardner,KS,38.8122,-94.9275,23.65,1
+KS,Kansas City,Kansas City,KS,39.1235,-94.7443,0.0,6
+KS,Kansas City,Lawrence,KS,38.9597,-95.2642,30.11,2
+KS,Kansas City,Leavenworth,KS,39.3239,-94.924,16.86,0
+KS,Kansas City,Lecompton,KS,39.0358,-95.3929,35.31,0
+KS,Kansas City,Lenexa,KS,38.9609,-94.8018,11.65,0
+KS,Kansas City,Mission,KS,39.027,-94.6568,8.15,1
+KS,Kansas City,Olathe,KS,38.8833,-94.82,17.09,4
+KS,Kansas City,Ottawa,KS,38.5996,-95.2636,45.73,1
+KS,Kansas City,Shawnee,KS,39.0158,-94.8076,8.18,0
+KS,Kansas City,Spring Hill,KS,38.7565,-94.8201,25.68,0
+KS,Kansas City,Tonganoxie,KS,39.1088,-95.0811,18.08,1
+KY,Louisville,Bardstown,KY,37.8175,-85.455,26.3,35
+KY,Louisville,Bloomfield,KY,37.9122,-85.314,25.29,0
+KY,Louisville,Brandenburg,KY,37.9956,-86.1773,31.08,2
+KY,Louisville,Brooks,KY,38.0656,-85.7177,7.91,1
+KY,Louisville,Buckner,KY,38.3903,-85.4535,18.75,6
+KY,Louisville,Carrollton,KY,38.6799,-85.1658,44.07,9
+KY,Louisville,Elizabethtown,KY,37.7031,-85.8773,34.35,44
+KY,Louisville,Eminence,KY,38.3637,-85.1779,28.94,48
+KY,Louisville,Fort Knox,KY,37.8915,-85.9636,25.59,1
+KY,Louisville,Frankfort,KY,38.1924,-84.8643,42.63,38
+KY,Louisville,Heritage Creek,KY,38.0951,-85.6125,5.29,0
+KY,Louisville,Hodgenville,KY,37.5668,-85.7354,41.69,5
+KY,Louisville,Hollyvilla,KY,38.0929,-85.7469,7.37,1
+KY,Louisville,Irvington,KY,37.8779,-86.2848,39.96,1
+KY,Louisville,Jeffersontown,KY,38.2049,-85.5701,5.02,3
+KY,Louisville,La Grange,KY,38.3987,-85.375,21.86,27
+KY,Louisville,Lawrenceburg,KY,38.0332,-84.9031,41.56,3
+KY,Louisville,Lebanon,KY,37.5691,-85.2594,46.4,32
+KY,Louisville,Lebanon Junction,KY,37.8357,-85.7243,23.21,1
+KY,Louisville,Loretto,KY,37.6351,-85.3985,39.15,1
+KY,Louisville,Louisville,KY,38.1663,-85.6485,0.0,383
+KY,Louisville,Pioneer Village,KY,38.0599,-85.68,7.55,0
+KY,Louisville,Radcliff,KY,37.8204,-85.9365,28.59,1
+KY,Louisville,Shelbyville,KY,38.2067,-85.2292,22.94,14
+KY,Louisville,Shepherdsville,KY,37.9813,-85.7007,13.09,48
+KY,Louisville,Shively,KY,38.197,-85.8136,9.21,0
+KY,Louisville,Simpsonville,KY,38.2167,-85.3515,16.5,2
+KY,Louisville,Springfield,KY,37.6922,-85.2193,40.25,2
+KY,Louisville,Vine Grove,KY,37.8134,-85.9828,30.43,0
+KY,Louisville,Watterson Park,KY,38.189,-85.6864,2.59,1
+LA,Baton Rouge,Addis,LA,30.3652,-91.2658,9.62,0
+LA,Baton Rouge,Albany,LA,30.4993,-90.5839,32.83,1
+LA,Baton Rouge,Arnaudville,LA,30.4023,-91.932,47.8,1
+LA,Baton Rouge,Baton Rouge,LA,30.442,-91.1311,0.0,15
+LA,Baton Rouge,Breaux Bridge,LA,30.2829,-91.9043,47.39,0
+LA,Baton Rouge,Denham Springs,LA,30.4743,-90.9593,10.47,0
+LA,Baton Rouge,Gonzales,LA,30.2132,-90.9234,20.08,1
+LA,Baton Rouge,Hammond,LA,30.5061,-90.4563,40.43,1
+LA,Baton Rouge,Independence,LA,30.6361,-90.5056,39.57,0
+LA,Baton Rouge,New Roads,LA,30.6959,-91.4537,26.0,0
+LA,Baton Rouge,Paincourtville,LA,29.9886,-91.0554,31.65,1
+LA,Baton Rouge,Plaquemine,LA,30.2833,-91.243,12.84,1
+LA,Baton Rouge,Port Allen,LA,30.4456,-91.2098,4.69,2
+LA,Baton Rouge,Port Barre,LA,30.5565,-91.9565,49.77,0
+LA,Baton Rouge,Reserve,LA,30.0741,-90.5557,42.72,0
+LA,Baton Rouge,Roseland,LA,30.7646,-90.5114,43.07,0
+LA,Baton Rouge,Springfield,LA,30.4255,-90.5444,34.97,1
+LA,Baton Rouge,Zachary,LA,30.6643,-91.1634,15.48,2
+MA,New Bedford,Attleboro,MA,41.9311,-71.295,25.6,2
+MA,New Bedford,Boston,MA,42.3188,-71.0852,45.44,21
+MA,New Bedford,Brockton,MA,42.0821,-71.0242,28.8,6
+MA,New Bedford,Cambridge,MA,42.3759,-71.1185,49.62,5
+MA,New Bedford,Fall River,MA,41.7136,-71.1015,8.73,8
+MA,New Bedford,New Bedford,MA,41.6697,-70.9428,0.0,48
+MA,New Bedford,Pocasset,MA,41.6877,-70.6195,16.73,1
+MA,New Bedford,Quincy,MA,42.2506,-71.0187,40.33,1
+MA,New Bedford,South Yarmouth,MA,41.6692,-70.2005,38.31,8
+MA,New Bedford,Taunton,MA,41.9036,-71.0943,17.95,25
+MD,Baltimore,Aberdeen,MD,39.5151,-76.1733,27.66,66
+MD,Baltimore,Aberdeen Proving Ground,MD,39.4672,-76.1308,28.15,1
+MD,Baltimore,Abingdon,MD,39.4629,-76.2754,21.13,1
+MD,Baltimore,Annapolis,MD,38.9706,-76.5047,23.85,15
+MD,Baltimore,Arbutus,MD,39.2428,-76.6922,5.99,0
+MD,Baltimore,Arnold,MD,39.0437,-76.4974,19.12,1
+MD,Baltimore,Baltimore,MD,39.3051,-76.6144,0.0,341
+MD,Baltimore,Barclay,MD,39.1451,-75.8655,41.58,5
+MD,Baltimore,Bel Air,MD,39.5348,-76.346,21.38,1
+MD,Baltimore,Beltsville,MD,39.0394,-76.9211,24.64,20
+MD,Baltimore,Bethesda,MD,38.9866,-77.1188,34.85,1
+MD,Baltimore,Bladensburg,MD,38.9424,-76.9264,30.13,3
+MD,Baltimore,Bowie,MD,38.9549,-76.7406,25.12,1
+MD,Baltimore,Brandywine,MD,38.6963,-76.8846,44.5,2
+MD,Baltimore,Brentwood,MD,38.9439,-76.9571,30.99,2
+MD,Baltimore,Camp Springs,MD,38.8052,-76.9199,38.23,1
+MD,Baltimore,Capitol Heights,MD,38.8765,-76.9075,33.53,50
+MD,Baltimore,Catonsville,MD,39.2646,-76.7424,7.4,1
+MD,Baltimore,Centreville,MD,39.042,-76.063,34.68,7
+MD,Baltimore,Charlestown,MD,39.5783,-75.9812,38.7,1
+MD,Baltimore,Chester,MD,38.9677,-76.2824,29.33,1
+MD,Baltimore,Chestertown,MD,39.2182,-76.0714,29.66,15
+MD,Baltimore,Cheverly,MD,38.9254,-76.9141,30.76,3
+MD,Baltimore,Clarksburg,MD,39.2246,-77.2659,35.29,1
+MD,Baltimore,Cockeysville,MD,39.4804,-76.6294,12.14,16
+MD,Baltimore,Columbia,MD,39.2004,-76.859,14.95,129
+MD,Baltimore,Crofton,MD,39.0144,-76.68,20.39,1
+MD,Baltimore,Damascus,MD,39.2701,-77.1957,31.18,1
+MD,Baltimore,Derwood,MD,39.1136,-77.151,31.63,0
+MD,Baltimore,District Heights,MD,38.8588,-76.8885,34.16,1
+MD,Baltimore,Dundalk,MD,39.2704,-76.4942,6.86,2
+MD,Baltimore,Easton,MD,38.776,-76.0701,46.79,19
+MD,Baltimore,Edgemere,MD,39.2273,-76.459,9.9,14
+MD,Baltimore,Edgewood,MD,39.419,-76.2964,18.72,1
+MD,Baltimore,Eldersburg,MD,39.4041,-76.9528,19.33,3
+MD,Baltimore,Elkridge,MD,39.1941,-76.7428,10.3,30
+MD,Baltimore,Elkton,MD,39.6066,-75.8209,47.18,40
+MD,Baltimore,Emmitsburg,MD,39.7051,-77.3217,46.75,1
+MD,Baltimore,Essex,MD,39.3021,-76.4449,9.06,11
+MD,Baltimore,Fallston,MD,39.5332,-76.4452,18.16,0
+MD,Baltimore,Forestville,MD,38.8518,-76.8708,34.21,5
+MD,Baltimore,Fort Meade,MD,39.1061,-76.7437,15.39,1
+MD,Baltimore,Fort Washington,MD,38.7339,-77.0069,44.74,1
+MD,Baltimore,Frederick,MD,39.4337,-77.4141,43.63,95
+MD,Baltimore,Fulton,MD,39.1516,-76.9163,19.33,1
+MD,Baltimore,Gaithersburg,MD,39.1346,-77.2131,34.14,28
+MD,Baltimore,Gambrills,MD,39.0927,-76.6511,14.81,3
+MD,Baltimore,Garrison,MD,39.4023,-76.7514,9.93,1
+MD,Baltimore,Germantown,MD,39.1755,-77.2643,35.91,6
+MD,Baltimore,Glen Burnie,MD,39.156,-76.6071,10.31,32
+MD,Baltimore,Glenarden,MD,38.9294,-76.8577,29.05,1
+MD,Baltimore,Glenn Dale,MD,38.9833,-76.804,24.45,5
+MD,Baltimore,Goldsboro,MD,39.0316,-75.7821,48.42,1
+MD,Baltimore,Greenbelt,MD,38.9953,-76.8885,25.96,1
+MD,Baltimore,Hampstead,MD,39.6105,-76.8549,24.7,8
+MD,Baltimore,Havre De Grace,MD,39.548,-76.1146,31.51,15
+MD,Baltimore,Hillcrest Heights,MD,38.8373,-76.9641,37.37,1
+MD,Baltimore,Hyattsville,MD,38.9613,-76.9548,29.95,23
+MD,Baltimore,Jessup,MD,39.1488,-76.7772,13.88,144
+MD,Baltimore,Joppatowne,MD,39.4181,-76.3516,16.06,1
+MD,Baltimore,Kennedyville,MD,39.3032,-75.9949,33.12,2
+MD,Baltimore,Kingsville,MD,39.4496,-76.4205,14.38,1
+MD,Baltimore,Landover,MD,38.9241,-76.8875,30.12,22
+MD,Baltimore,Landover Hills,MD,38.9425,-76.8945,29.21,1
+MD,Baltimore,Lanham,MD,38.962,-76.8421,26.66,8
+MD,Baltimore,Largo,MD,38.88,-76.8289,31.54,1
+MD,Baltimore,Laurel,MD,39.0949,-76.8622,19.67,33
+MD,Baltimore,Linthicum,MD,39.2088,-76.6626,7.14,2
+MD,Baltimore,Manchester,MD,39.6585,-76.8881,28.45,1
+MD,Baltimore,Marydel,MD,39.113,-75.7497,48.16,1
+MD,Baltimore,Middle River,MD,39.3436,-76.4253,10.45,59
+MD,Baltimore,Milford Mill,MD,39.3444,-76.7668,8.59,2
+MD,Baltimore,Millington,MD,39.2629,-75.836,41.73,0
+MD,Baltimore,Monrovia,MD,39.357,-77.2747,35.47,198
+MD,Baltimore,Montgomery Village,MD,39.1788,-77.1954,32.29,2
+MD,Baltimore,Mount Airy,MD,39.3742,-77.1534,29.2,3
+MD,Baltimore,New Market,MD,39.3889,-77.2789,35.97,3
+MD,Baltimore,New Windsor,MD,39.5443,-77.1012,30.79,11
+MD,Baltimore,North Bethesda,MD,39.0393,-77.1191,32.68,1
+MD,Baltimore,North East,MD,39.6076,-75.9414,41.54,32
+MD,Baltimore,Odenton,MD,39.0661,-76.6938,17.05,8
+MD,Baltimore,Owings Mills,MD,39.4115,-76.7913,11.97,4
+MD,Baltimore,Oxon Hill,MD,38.7884,-76.9727,40.55,4
+MD,Baltimore,Pasadena,MD,39.1552,-76.5537,10.85,5
+MD,Baltimore,Perryman,MD,39.4632,-76.212,24.11,0
+MD,Baltimore,Perryville,MD,39.5737,-76.0668,34.62,36
+MD,Baltimore,Point of Rocks,MD,39.2782,-77.5291,48.95,4
+MD,Baltimore,Port Deposit,MD,39.6111,-76.098,34.73,4
+MD,Baltimore,Queen Anne,MD,38.9021,-76.6973,28.2,0
+MD,Baltimore,Queenstown,MD,38.9868,-76.1633,32.68,5
+MD,Baltimore,Reisterstown,MD,39.455,-76.814,14.86,1
+MD,Baltimore,Rising Sun,MD,39.7003,-76.0587,40.29,1
+MD,Baltimore,Riverdale Park,MD,38.9643,-76.9266,28.89,1
+MD,Baltimore,Rockville,MD,39.0834,-77.1553,32.77,6
+MD,Baltimore,Rosedale,MD,39.3266,-76.5084,5.86,47
+MD,Baltimore,Rossville,MD,39.3572,-76.4767,8.19,2
+MD,Baltimore,Savage,MD,39.1485,-76.8228,15.54,6
+MD,Baltimore,Severn,MD,39.1355,-76.6956,12.5,18
+MD,Baltimore,Severna Park,MD,39.087,-76.5687,15.27,1
+MD,Baltimore,Silver Spring,MD,39.0028,-77.0207,30.17,6
+MD,Baltimore,Stevensville,MD,38.9745,-76.3184,27.81,2
+MD,Baltimore,Sudlersville,MD,39.1833,-75.8535,41.58,4
+MD,Baltimore,Suitland,MD,38.8492,-76.9225,35.57,1
+MD,Baltimore,Sykesville,MD,39.3716,-76.9716,19.63,5
+MD,Baltimore,Takoma Park,MD,38.981,-77.0028,30.57,2
+MD,Baltimore,Taneytown,MD,39.6569,-77.1683,38.25,2
+MD,Baltimore,Temple Hills,MD,38.8106,-76.9495,38.61,2
+MD,Baltimore,Thurmont,MD,39.621,-77.4076,47.61,13
+MD,Baltimore,Timonium,MD,39.4459,-76.6032,9.75,2
+MD,Baltimore,Towson,MD,39.3944,-76.619,6.17,0
+MD,Baltimore,Union Bridge,MD,39.5731,-77.1744,35.15,0
+MD,Baltimore,Upper Marlboro,MD,38.8153,-76.7514,34.63,27
+MD,Baltimore,Westminster,MD,39.5796,-77.0067,28.25,19
+MD,Baltimore,White Marsh,MD,39.3819,-76.4574,9.93,9
+MD,Baltimore,Woodlawn,MD,39.3054,-76.7489,7.19,4
+MD,Baltimore,Woodsboro,MD,39.5328,-77.3097,40.31,0
+ME,Bangor,Bangor,ME,44.8323,-68.7906,0.0,20
+ME,Bangor,Belfast,ME,44.4279,-69.0325,30.37,1
+ME,Bangor,Brewer,ME,44.7835,-68.7352,4.33,1
+ME,Bangor,ELLSWORTH,ME,44.5847,-68.4875,22.68,1
+ME,Bangor,Old Town,ME,44.9491,-68.7249,8.69,4
+ME,Bangor,Waterville,ME,44.5441,-69.6624,47.23,1
+MI,Petoskey,Atlanta,MI,45.0012,-84.1513,47.91,1
+MI,Petoskey,Bear Lake,MI,44.7182,-84.9486,44.73,0
+MI,Petoskey,Charlevoix,MI,45.3137,-85.2558,13.44,0
+MI,Petoskey,Cheboygan,MI,45.641,-84.4687,31.6,0
+MI,Petoskey,East Jordan,MI,45.1547,-85.13,16.07,0
+MI,Petoskey,Elk Rapids,MI,44.8949,-85.4053,38.3,1
+MI,Petoskey,Gaylord,MI,45.0208,-84.6809,28.11,1
+MI,Petoskey,Harbor Springs,MI,45.4326,-84.989,4.68,1
+MI,Petoskey,Petoskey,MI,45.3649,-84.9888,0.0,68
+MI,Petoskey,Vanderbilt,MI,45.1436,-84.6639,21.99,0
+MN,Eden Prairie,Anoka,MN,45.2099,-93.3893,25.18,0
+MN,Eden Prairie,Arden Hills,MN,45.0721,-93.167,21.04,0
+MN,Eden Prairie,Becker,MN,45.3824,-93.8772,42.12,1
+MN,Eden Prairie,Big Lake,MN,45.3417,-93.7434,36.76,1
+MN,Eden Prairie,Blaine,MN,45.1696,-93.2077,25.35,1
+MN,Eden Prairie,Bloomington,MN,44.8306,-93.3151,7.19,5
+MN,Eden Prairie,Brooklyn Park,MN,45.1112,-93.3505,18.9,0
+MN,Eden Prairie,Burnsville,MN,44.7648,-93.2793,10.57,1
+MN,Eden Prairie,Centerville,MN,45.164,-93.054,29.44,0
+MN,Eden Prairie,Chanhassen,MN,44.8546,-93.5621,5.04,0
+MN,Eden Prairie,Chaska,MN,44.8164,-93.6091,7.66,1
+MN,Eden Prairie,Circle Pines,MN,45.1409,-93.1505,25.2,0
+MN,Eden Prairie,Coon Rapids,MN,45.1755,-93.3094,23.73,1
+MN,Eden Prairie,Cottage Grove,MN,44.8161,-92.9274,26.17,0
+MN,Eden Prairie,Eagan,MN,44.817,-93.1638,14.65,5
+MN,Eden Prairie,Eden Prairie,MN,44.8488,-93.4595,0.0,29
+MN,Eden Prairie,Elk River,MN,45.3314,-93.567,33.75,1
+MN,Eden Prairie,Faribault,MN,44.2996,-93.2789,38.97,0
+MN,Eden Prairie,Fridley,MN,45.0841,-93.2595,18.97,1
+MN,Eden Prairie,Glencoe,MN,44.7699,-94.151,34.33,1
+MN,Eden Prairie,Golden Valley,MN,44.9901,-93.3591,10.93,1
+MN,Eden Prairie,Hastings,MN,44.7318,-92.8538,30.78,0
+MN,Eden Prairie,Hutchinson,MN,44.8855,-94.3768,44.99,0
+MN,Eden Prairie,Inver Grove Heights,MN,44.8247,-93.0596,19.66,1
+MN,Eden Prairie,Jordan,MN,44.6648,-93.6351,15.36,0
+MN,Eden Prairie,Lakeville,MN,44.6774,-93.252,15.62,1
+MN,Eden Prairie,Loretto,MN,45.0548,-93.6353,16.63,1
+MN,Eden Prairie,Maple Grove,MN,45.1089,-93.4626,17.97,6
+MN,Eden Prairie,Maple Plain,MN,45.0088,-93.6618,14.84,1
+MN,Eden Prairie,Mendota Heights,MN,44.8815,-93.14,15.81,2
+MN,Eden Prairie,Minneapolis,MN,44.9635,-93.2678,12.28,8
+MN,Eden Prairie,Montgomery,MN,44.445,-93.5797,28.52,0
+MN,Eden Prairie,Monticello,MN,45.2991,-93.7996,35.26,1
+MN,Eden Prairie,Mounds View,MN,45.1071,-93.2076,21.68,1
+MN,Eden Prairie,New Brighton,MN,45.0658,-93.206,19.45,1
+MN,Eden Prairie,New Hope,MN,45.0375,-93.3869,13.51,0
+MN,Eden Prairie,Newport,MN,44.8743,-92.9975,22.69,1
+MN,Eden Prairie,Northfield,MN,44.455,-93.1698,30.71,1
+MN,Eden Prairie,Otsego,MN,45.266,-93.6201,29.87,1
+MN,Eden Prairie,Plymouth,MN,45.0225,-93.4617,12.0,1
+MN,Eden Prairie,Prior Lake,MN,44.7246,-93.4419,8.62,1
+MN,Eden Prairie,Red Wing,MN,44.5817,-92.6036,45.9,1
+MN,Eden Prairie,Rockford,MN,45.092,-93.7453,21.85,0
+MN,Eden Prairie,Rogers,MN,45.1865,-93.5783,24.04,2
+MN,Eden Prairie,Rosemount,MN,44.7466,-93.0661,20.54,1
+MN,Eden Prairie,Roseville,MN,45.0155,-93.1545,18.85,0
+MN,Eden Prairie,Savage,MN,44.7545,-93.3632,8.05,1
+MN,Eden Prairie,Shakopee,MN,44.7745,-93.4772,5.21,0
+MN,Eden Prairie,Waterville,MN,44.2235,-93.5746,43.57,1
+MN,Eden Prairie,White Bear Lake,MN,45.0656,-93.015,26.4,0
+MN,Eden Prairie,Winsted,MN,44.9574,-94.0498,29.85,0
+MN,Eden Prairie,Winthrop,MN,44.5424,-94.3598,49.02,0
+MN,Eden Prairie,Woodbury,MN,44.9057,-92.923,26.56,0
+MO,Sikeston,Anniston,MO,36.8243,-89.3267,15.03,0
+MO,Sikeston,Benton,MO,37.099,-89.5624,14.82,1
+MO,Sikeston,Bloomfield,MO,36.8875,-89.9306,18.95,0
+MO,Sikeston,Cape Girardeau,MO,37.3109,-89.5597,29.44,1
+MO,Sikeston,Dudley,MO,36.7898,-90.0918,28.65,3
+MO,Sikeston,Hayti,MO,36.2323,-89.7475,45.99,0
+MO,Sikeston,Jackson,MO,37.3792,-89.6522,34.3,19
+MO,Sikeston,Malden,MO,36.585,-89.9808,30.08,0
+MO,Sikeston,Marston,MO,36.5177,-89.6063,25.43,0
+MO,Sikeston,Morehouse,MO,36.8463,-89.6911,6.32,0
+MO,Sikeston,New Madrid,MO,36.5878,-89.5505,20.67,0
+MO,Sikeston,Poplar Bluff,MO,36.7632,-90.4135,46.45,7
+MO,Sikeston,Portageville,MO,36.4295,-89.6993,32.1,0
+MO,Sikeston,Scott City,MO,37.2243,-89.536,23.59,0
+MO,Sikeston,Sikeston,MO,36.8854,-89.5877,0.0,129
+MS,Hattiesburg,Bay Springs,MS,31.9772,-89.2792,46.33,4
+MS,Hattiesburg,Beaumont,MS,31.1707,-88.9252,25.0,1
+MS,Hattiesburg,Columbia,MS,31.2564,-89.8266,30.3,0
+MS,Hattiesburg,ELLISVILLE,MS,31.5969,-89.2091,20.99,0
+MS,Hattiesburg,Hattiesburg,MS,31.3074,-89.317,0.0,11
+MS,Hattiesburg,Kokomo,MS,31.1991,-90.0008,41.08,2
+MS,Hattiesburg,Laurel,MS,31.6956,-89.1449,28.67,3
+MS,Hattiesburg,Lumberton,MS,31.0064,-89.4592,22.43,0
+MS,Hattiesburg,Magee,MS,31.873,-89.734,46.15,2
+MS,Hattiesburg,Monticello,MS,31.5525,-90.1145,49.97,4
+MS,Hattiesburg,Moselle,MS,31.5087,-89.2824,14.06,1
+MS,Hattiesburg,New Augusta,MS,31.2036,-89.0272,18.56,0
+MS,Hattiesburg,Purvis,MS,31.145,-89.4054,12.38,1
+MS,Hattiesburg,Taylorsville,MS,31.8322,-89.4342,36.91,0
+MS,Hattiesburg,Wiggins,MS,30.8557,-89.1386,32.95,0
+MT,Billings,Billings,MT,45.7891,-108.5526,0.0,1
+NC,Charlotte,Albemarle,NC,35.3594,-80.1915,37.51,49
+NC,Charlotte,Ansonville,NC,35.1041,-80.1097,41.34,0
+NC,Charlotte,Badin,NC,35.4071,-80.1184,42.43,0
+NC,Charlotte,Belmont,NC,35.2212,-81.0401,11.88,55
+NC,Charlotte,Bessemer City,NC,35.284,-81.2828,26.06,15
+NC,Charlotte,Catawba,NC,35.7095,-81.0668,37.1,56
+NC,Charlotte,Charlotte,NC,35.2083,-80.8303,0.0,2855
+NC,Charlotte,Cherryville,NC,35.3844,-81.3781,33.2,21
+NC,Charlotte,China Grove,NC,35.572,-80.5791,28.84,22
+NC,Charlotte,Claremont,NC,35.7104,-81.1532,39.16,35
+NC,Charlotte,Cleveland,NC,35.7331,-80.6817,37.21,23
+NC,Charlotte,Concord,NC,35.3933,-80.6369,16.8,547
+NC,Charlotte,Conover,NC,35.7154,-81.2174,41.26,76
+NC,Charlotte,Cornelius,NC,35.4724,-80.8813,18.47,13
+NC,Charlotte,Crouse,NC,35.4214,-81.3027,30.43,2
+NC,Charlotte,Dallas,NC,35.3169,-81.183,21.27,11
+NC,Charlotte,Davidson,NC,35.484,-80.8247,19.05,1
+NC,Charlotte,Denver,NC,35.5344,-81.034,25.29,17
+NC,Charlotte,East Spencer,NC,35.6816,-80.4228,39.94,2
+NC,Charlotte,Fairview,NC,35.1545,-80.5345,17.11,1
+NC,Charlotte,Gastonia,NC,35.2494,-81.1854,20.24,203
+NC,Charlotte,Gold Hill,NC,35.5254,-80.3452,35.03,3
+NC,Charlotte,Granite Quarry,NC,35.6131,-80.4489,35.26,2
+NC,Charlotte,Grover,NC,35.1735,-81.452,35.19,50
+NC,Charlotte,Harrisburg,NC,35.3125,-80.6485,12.53,30
+NC,Charlotte,Hickory,NC,35.741,-81.3223,46.05,253
+NC,Charlotte,Hildebran,NC,35.7182,-81.421,48.44,5
+NC,Charlotte,Huntersville,NC,35.406,-80.8716,13.86,52
+NC,Charlotte,Indian Trail,NC,35.0699,-80.6452,14.17,92
+NC,Charlotte,Iron Station,NC,35.4515,-81.1568,24.92,12
+NC,Charlotte,Kannapolis,NC,35.4764,-80.6408,21.38,40
+NC,Charlotte,Kings Mountain,NC,35.2349,-81.3501,29.4,540
+NC,Charlotte,Kingstown,NC,35.3621,-81.6201,45.79,0
+NC,Charlotte,Landis,NC,35.5477,-80.6113,26.5,72
+NC,Charlotte,Lawndale,NC,35.4142,-81.563,43.69,19
+NC,Charlotte,Lincolnton,NC,35.4748,-81.2386,29.47,69
+NC,Charlotte,Locust,NC,35.2688,-80.4369,22.59,3
+NC,Charlotte,Lowell,NC,35.2688,-81.1013,15.85,4
+NC,Charlotte,Maiden,NC,35.5845,-81.224,34.17,10
+NC,Charlotte,Marshville,NC,34.9865,-80.3685,30.27,22
+NC,Charlotte,Matthews,NC,35.1195,-80.7101,9.15,97
+NC,Charlotte,Mcadenville,NC,35.2652,-81.0805,14.66,1
+NC,Charlotte,Midland,NC,35.245,-80.5212,17.63,23
+NC,Charlotte,Mint Hill,NC,35.1783,-80.6528,10.23,8
+NC,Charlotte,Monroe,NC,35.0063,-80.5596,20.71,189
+NC,Charlotte,Mooresboro,NC,35.2992,-81.6986,49.39,0
+NC,Charlotte,Mooresville,NC,35.5847,-80.8266,26.01,128
+NC,Charlotte,Mount Gilead,NC,35.2163,-80.005,46.59,1
+NC,Charlotte,Mount Holly,NC,35.3136,-81.0073,12.36,42
+NC,Charlotte,Mount Pleasant,NC,35.3771,-80.4503,24.4,2
+NC,Charlotte,New London,NC,35.4348,-80.2198,37.81,71
+NC,Charlotte,Newton,NC,35.663,-81.2335,38.76,160
+NC,Charlotte,Norwood,NC,35.2337,-80.1147,40.43,4
+NC,Charlotte,Oakboro,NC,35.2283,-80.3339,28.05,13
+NC,Charlotte,Peachland,NC,34.9931,-80.266,35.19,0
+NC,Charlotte,Pineville,NC,35.0864,-80.8915,9.1,1381
+NC,Charlotte,Polkton,NC,35.0031,-80.1963,38.54,1
+NC,Charlotte,Richfield,NC,35.4716,-80.2586,37.0,8
+NC,Charlotte,Rockwell,NC,35.5538,-80.407,33.74,5
+NC,Charlotte,Salisbury,NC,35.6658,-80.4905,36.95,441
+NC,Charlotte,Shelby,NC,35.2904,-81.5451,40.73,400
+NC,Charlotte,Stallings,NC,35.1088,-80.6598,11.83,3
+NC,Charlotte,Stanfield,NC,35.2337,-80.4303,22.65,57
+NC,Charlotte,Stanley,NC,35.3552,-81.0938,18.0,11
+NC,Charlotte,Statesville,NC,35.7842,-80.8713,39.86,939
+NC,Charlotte,Stony Point,NC,35.8669,-81.047,47.11,4
+NC,Charlotte,Troutman,NC,35.6873,-80.883,33.23,17
+NC,Charlotte,Unionville,NC,35.0716,-80.5173,20.05,3
+NC,Charlotte,Waco,NC,35.3622,-81.4287,35.39,1
+NC,Charlotte,Wadesboro,NC,34.9645,-80.0746,45.93,6
+NC,Charlotte,Waxhaw,NC,34.9363,-80.7439,19.42,6
+NC,Charlotte,Wingate,NC,34.9859,-80.448,26.52,41
+ND,Carrington,Carrington,ND,47.452,-99.1307,0.0,1
+NE,Omaha,Colon,NE,41.2981,-96.6069,28.87,0
+NE,Omaha,La Vista,NE,41.1816,-96.0664,5.65,2
+NE,Omaha,Lincoln,NE,40.8099,-96.6784,45.18,0
+NE,Omaha,Offutt AFB,NE,41.1207,-95.9209,11.97,0
+NE,Omaha,Omaha,NE,41.2627,-96.0529,0.0,4
+NE,Omaha,Valley,NE,41.3148,-96.3566,16.17,1
+NH,Nashua,Concord,NH,43.2305,-71.5595,33.44,6
+NH,Nashua,Dover,NH,43.1887,-70.8845,43.16,5
+NH,Nashua,Franklin,NH,43.4499,-71.6691,49.25,3
+NH,Nashua,Keene,NH,42.9494,-72.2998,43.24,3
+NH,Nashua,Manchester,NH,42.9848,-71.4447,16.45,8
+NH,Nashua,Nashua,NH,42.7491,-71.491,0.0,13
+NH,Nashua,Portsmouth,NH,43.058,-70.7826,41.72,4
+NH,Nashua,Rochester,NH,43.299,-70.9787,45.97,2
+NH,Nashua,Somersworth,NH,43.2534,-70.8856,46.37,5
+NJ,Newark,Allendale,NJ,41.0332,-74.1333,21.43,2
+NJ,Newark,Allentown,NJ,40.1778,-74.5873,43.62,1
+NJ,Newark,Asbury,NJ,40.7003,-75.0121,44.0,15
+NJ,Newark,Asbury Park,NJ,40.2226,-74.0119,35.69,5
+NJ,Newark,Avenel,NJ,40.5842,-74.2716,11.0,26
+NJ,Newark,Bayonne,NJ,40.6668,-74.1158,4.97,11
+NJ,Newark,Bergenfield,NJ,40.9236,-73.9982,16.5,1
+NJ,Newark,Bloomsbury,NJ,40.6537,-75.084,48.0,1
+NJ,Newark,Bogota,NJ,40.8751,-74.0293,12.82,2
+NJ,Newark,Bound Brook,NJ,40.5676,-74.5383,22.03,6
+NJ,Newark,Budd Lake,NJ,40.8733,-74.7375,31.29,0
+NJ,Newark,Butler,NJ,40.999,-74.3472,21.05,1
+NJ,Newark,Califon,NJ,40.7193,-74.8371,34.8,1
+NJ,Newark,Carlstadt,NJ,40.8247,-74.0613,9.04,71
+NJ,Newark,Carteret,NJ,40.5849,-74.2284,10.08,46
+NJ,Newark,Clifton,NJ,40.863,-74.1575,9.6,57
+NJ,Newark,Closter,NJ,40.9733,-73.9604,20.45,1
+NJ,Newark,Cranford,NJ,40.6548,-74.3053,8.46,3
+NJ,Newark,Cream Ridge,NJ,40.1326,-74.5348,45.12,1
+NJ,Newark,Dayton,NJ,40.3768,-74.5112,29.89,115
+NJ,Newark,Dover,NJ,40.8859,-74.5597,23.12,6
+NJ,Newark,East Orange,NJ,40.7651,-74.2117,3.48,2
+NJ,Newark,East Rutherford,NJ,40.8179,-74.0854,7.9,8
+NJ,Newark,Eatontown,NJ,40.2913,-74.0558,30.55,6
+NJ,Newark,Edgewater,NJ,40.8237,-73.974,12.44,1
+NJ,Newark,Elizabeth,NJ,40.6658,-74.1913,4.17,77
+NJ,Newark,Elmwood Park,NJ,40.9049,-74.1201,12.76,13
+NJ,Newark,Emerson,NJ,40.9748,-74.024,18.96,2
+NJ,Newark,Englewood,NJ,40.8917,-73.9736,15.55,5
+NJ,Newark,Englishtown,NJ,40.2971,-74.3607,31.14,2
+NJ,Newark,Fair Lawn,NJ,40.9359,-74.1177,14.88,5
+NJ,Newark,Fairview,NJ,40.8182,-74.0022,11.01,3
+NJ,Newark,Farmingdale,NJ,40.1985,-74.1702,36.34,14
+NJ,Newark,Flanders,NJ,40.8412,-74.7102,29.26,5
+NJ,Newark,Flemington,NJ,40.5087,-74.8599,39.01,15
+NJ,Newark,Fords,NJ,40.5359,-74.3126,14.96,1
+NJ,Newark,Fort Lee,NJ,40.8509,-73.9713,13.68,1
+NJ,Newark,Frenchtown,NJ,40.5272,-75.0571,48.35,2
+NJ,Newark,Garfield,NJ,40.8791,-74.1085,11.19,14
+NJ,Newark,Glen Rock,NJ,40.9601,-74.125,16.47,1
+NJ,Newark,Great Meadows,NJ,40.877,-74.9034,39.65,1
+NJ,Newark,Hackensack,NJ,40.8891,-74.0462,13.15,3
+NJ,Newark,Hackettstown,NJ,40.854,-74.8257,35.32,7
+NJ,Newark,Haledon,NJ,40.9363,-74.1887,14.66,1
+NJ,Newark,Harrison,NJ,40.7431,-74.1531,1.64,3
+NJ,Newark,Hasbrouck Heights,NJ,40.8618,-74.0741,10.79,0
+NJ,Newark,Hawthorne,NJ,40.9579,-74.1582,16.14,70
+NJ,Newark,Hightstown,NJ,40.2686,-74.5253,36.55,2
+NJ,Newark,Hillsborough,NJ,40.5069,-74.6523,29.31,6
+NJ,Newark,Hoboken,NJ,40.7452,-74.0281,7.69,1
+NJ,Newark,Jamesburg,NJ,40.3493,-74.4399,29.48,45
+NJ,Newark,Jersey City,NJ,40.7184,-74.0686,5.46,76
+NJ,Newark,Kearny,NJ,40.7528,-74.1202,3.36,46
+NJ,Newark,Keasbey,NJ,40.5143,-74.3078,16.16,37
+NJ,Newark,Kenilworth,NJ,40.6781,-74.289,6.89,8
+NJ,Newark,Keyport,NJ,40.4328,-74.2011,20.21,2
+NJ,Newark,Lakehurst,NJ,40.0133,-74.3201,49.75,0
+NJ,Newark,Lambertville,NJ,40.3687,-74.943,47.34,3
+NJ,Newark,Landing,NJ,40.9078,-74.6593,28.43,1
+NJ,Newark,Lawrenceville,NJ,40.3018,-74.7378,41.65,0
+NJ,Newark,Leonia,NJ,40.8638,-73.99,13.56,0
+NJ,Newark,Lincoln Park,NJ,40.9239,-74.3035,15.39,0
+NJ,Newark,Linden,NJ,40.6251,-74.2383,7.68,66
+NJ,Newark,Little Ferry,NJ,40.8464,-74.0388,10.95,22
+NJ,Newark,Little Silver,NJ,40.3357,-74.0346,27.82,1
+NJ,Newark,Lodi,NJ,40.8784,-74.0814,11.65,75
+NJ,Newark,Long Branch,NJ,40.2965,-73.9915,31.06,7
+NJ,Newark,Madison,NJ,40.7586,-74.4169,13.01,1
+NJ,Newark,Matawan,NJ,40.4127,-74.2365,21.8,2
+NJ,Newark,Maywood,NJ,40.9025,-74.0634,13.56,47
+NJ,Newark,Metuchen,NJ,40.5424,-74.3628,16.06,7
+NJ,Newark,Middlesex,NJ,40.5744,-74.5011,20.11,6
+NJ,Newark,Milford,NJ,40.5694,-75.0916,49.36,14
+NJ,Newark,Milltown,NJ,40.4504,-74.4351,23.42,0
+NJ,Newark,Monmouth Beach,NJ,40.3364,-73.9863,28.54,1
+NJ,Newark,Monmouth Junction,NJ,40.3754,-74.5582,31.49,7
+NJ,Newark,Moonachie,NJ,40.8408,-74.059,9.99,29
+NJ,Newark,Morris Plains,NJ,40.8356,-74.4786,17.76,1
+NJ,Newark,Morristown,NJ,40.7967,-74.4772,16.71,2
+NJ,Newark,Mount Arlington,NJ,40.919,-74.639,27.85,1
+NJ,Newark,Mountainside,NJ,40.6811,-74.3601,10.27,20
+NJ,Newark,Neptune City,NJ,40.2005,-74.0333,36.94,2
+NJ,Newark,Netcong,NJ,40.8985,-74.7019,30.18,1
+NJ,Newark,New Brunswick,NJ,40.487,-74.445,21.76,18
+NJ,Newark,New Egypt,NJ,40.0645,-74.5284,49.3,2
+NJ,Newark,Newark,NJ,40.7245,-74.1725,0.0,121
+NJ,Newark,Newfoundland,NJ,41.0594,-74.4308,26.79,1
+NJ,Newark,Newton,NJ,41.0534,-74.7527,37.88,2
+NJ,Newark,North Arlington,NJ,40.7874,-74.1273,4.95,3
+NJ,Newark,North Plainfield,NJ,40.6209,-74.4386,15.67,2
+NJ,Newark,Northvale,NJ,41.0101,-73.9505,22.89,1
+NJ,Newark,Norwood,NJ,40.9933,-73.951,21.88,2
+NJ,Newark,Oakhurst,NJ,40.2607,-74.0263,32.95,1
+NJ,Newark,Oakland,NJ,41.0313,-74.2408,21.5,2
+NJ,Newark,Oradell,NJ,40.9562,-74.0314,17.63,2
+NJ,Newark,Palisades Park,NJ,40.8472,-73.9966,12.51,17
+NJ,Newark,Paramus,NJ,40.9455,-74.0712,16.16,1
+NJ,Newark,Parsippany,NJ,40.8645,-74.4135,15.89,16
+NJ,Newark,Passaic,NJ,40.8574,-74.1282,9.47,19
+NJ,Newark,Paterson,NJ,40.9147,-74.1624,13.15,51
+NJ,Newark,Pennington,NJ,40.3262,-74.7908,42.57,1
+NJ,Newark,Perth Amboy,NJ,40.5202,-74.2724,15.06,50
+NJ,Newark,Pine Brook,NJ,40.8676,-74.3438,13.34,3
+NJ,Newark,Plainfield,NJ,40.6154,-74.4157,14.81,3
+NJ,Newark,Pompton Lakes,NJ,41.0024,-74.2859,20.09,2
+NJ,Newark,Pompton Plains,NJ,40.9679,-74.3075,18.24,11
+NJ,Newark,Port Murray,NJ,40.7915,-74.924,39.6,10
+NJ,Newark,Port Reading,NJ,40.5685,-74.2469,11.46,3
+NJ,Newark,Rahway,NJ,40.6077,-74.2807,9.86,6
+NJ,Newark,Ramsey,NJ,41.0595,-74.1454,23.19,0
+NJ,Newark,Ridgefield,NJ,40.8313,-74.0147,11.07,2
+NJ,Newark,Ridgefield Park,NJ,40.8543,-74.0201,12.0,5
+NJ,Newark,Ringwood,NJ,41.1065,-74.2749,26.93,1
+NJ,Newark,Riverdale,NJ,40.9921,-74.3125,19.88,1
+NJ,Newark,Rockleigh,NJ,41.0026,-73.9327,22.94,4
+NJ,Newark,Roseland,NJ,40.8208,-74.3086,9.75,3
+NJ,Newark,Roselle,NJ,40.6527,-74.2599,6.75,0
+NJ,Newark,Roselle Park,NJ,40.6653,-74.2666,6.41,0
+NJ,Newark,Rutherford,NJ,40.8203,-74.1057,7.49,3
+NJ,Newark,Sayreville,NJ,40.4656,-74.3237,19.57,18
+NJ,Newark,Secaucus,NJ,40.781,-74.0659,6.81,25
+NJ,Newark,Shrewsbury,NJ,40.3249,-74.06,28.23,1
+NJ,Newark,Somerset,NJ,40.5083,-74.501,22.8,17
+NJ,Newark,Somerville,NJ,40.5696,-74.6092,25.27,4
+NJ,Newark,South Amboy,NJ,40.4852,-74.2831,17.52,0
+NJ,Newark,South Plainfield,NJ,40.5748,-74.4152,16.4,39
+NJ,Newark,South River,NJ,40.4455,-74.3783,22.1,6
+NJ,Newark,Spotswood,NJ,40.3949,-74.392,25.52,6
+NJ,Newark,Springfield,NJ,40.706,-74.313,7.47,3
+NJ,Newark,Stanhope,NJ,40.9141,-74.7027,30.66,3
+NJ,Newark,Succasunna,NJ,40.853,-74.6568,26.85,1
+NJ,Newark,Summit,NJ,40.7154,-74.3647,10.08,1
+NJ,Newark,Teterboro,NJ,40.858,-74.0594,10.96,18
+NJ,Newark,Tinton Falls,NJ,40.2708,-74.0949,31.61,8
+NJ,Newark,Totowa,NJ,40.9039,-74.2214,12.66,19
+NJ,Newark,Trenton,NJ,40.2237,-74.7641,46.52,17
+NJ,Newark,Union,NJ,40.6966,-74.2693,5.42,15
+NJ,Newark,Union City,NJ,40.7675,-74.0323,7.92,1
+NJ,Newark,Waldwick,NJ,41.0133,-74.1259,20.1,2
+NJ,Newark,Wallington,NJ,40.8536,-74.1069,9.56,1
+NJ,Newark,Washington,NJ,40.7587,-74.9825,42.47,1
+NJ,Newark,Watchung,NJ,40.6431,-74.4391,15.06,1
+NJ,Newark,West Long Branch,NJ,40.2883,-74.0185,31.21,1
+NJ,Newark,West New York,NJ,40.7857,-74.0094,9.53,2
+NJ,Newark,Westwood,NJ,40.9878,-74.0308,19.64,1
+NJ,Newark,Wharton,NJ,40.8998,-74.5808,24.55,52
+NJ,Newark,Whippany,NJ,40.8233,-74.4184,14.57,11
+NJ,Newark,Wood-Ridge,NJ,40.8508,-74.0878,9.79,1
+NM,Hobbs,Hobbs,NM,32.7281,-103.16,0.0,1
+NV,Las Vegas,Las Vegas,NV,36.2333,-115.2654,0.0,1
+NY,Rochester,Akron,NY,43.018,-78.4978,45.67,2
+NY,Rochester,Albion,NY,43.246,-78.1902,29.41,6
+NY,Rochester,Batavia,NY,42.9987,-78.1802,30.77,51
+NY,Rochester,Bloomfield,NY,42.8991,-77.4242,20.96,0
+NY,Rochester,Brockport,NY,43.2137,-77.9404,16.63,7
+NY,Rochester,Churchville,NY,43.1034,-77.8825,14.15,1
+NY,Rochester,Clyde,NY,43.0839,-76.8707,38.04,1
+NY,Rochester,Corfu,NY,42.9611,-78.4028,42.2,0
+NY,Rochester,Dansville,NY,42.5625,-77.6968,42.03,1
+NY,Rochester,East Rochester,NY,43.1122,-77.4869,7.57,2
+NY,Rochester,Fairport,NY,43.099,-77.4427,9.96,3
+NY,Rochester,Gasport,NY,43.1938,-78.5762,48.4,2
+NY,Rochester,Geneva,NY,42.8645,-76.9826,38.27,9
+NY,Rochester,Hall,NY,42.7965,-77.068,37.77,1
+NY,Rochester,Hemlock,NY,42.7938,-77.6073,25.86,0
+NY,Rochester,Holley,NY,43.2247,-78.0292,21.17,1
+NY,Rochester,Honeoye,NY,42.7885,-77.5125,26.74,2
+NY,Rochester,Honeoye Falls,NY,42.9557,-77.5902,14.73,0
+NY,Rochester,Lakeville,NY,42.8367,-77.703,23.31,2
+NY,Rochester,Lyndonville,NY,43.3213,-78.3891,40.32,1
+NY,Rochester,Medina,NY,43.2197,-78.3888,39.08,2
+NY,Rochester,Middleport,NY,43.2117,-78.4757,43.4,2
+NY,Rochester,Newark,NY,43.0418,-77.093,27.8,3
+NY,Rochester,North Rose,NY,43.1872,-76.8863,36.8,1
+NY,Rochester,Penn Yan,NY,42.6609,-77.0535,45.15,8
+NY,Rochester,Piffard,NY,42.8319,-77.8584,26.25,0
+NY,Rochester,Rochester,NY,43.168,-77.6162,0.0,171
+NY,Rochester,Scottsville,NY,43.0221,-77.7555,12.29,2
+NY,Rochester,Shortsville,NY,42.9556,-77.2227,24.7,1
+NY,Rochester,Silver Springs,NY,42.6605,-78.0855,42.35,0
+NY,Rochester,Wyoming,NY,42.8241,-78.0842,33.53,1
+OH,Columbus,Ashville,OH,39.7238,-82.9575,18.19,28
+OH,Columbus,Baltimore,OH,39.846,-82.6046,22.39,1
+OH,Columbus,Bellefontaine,OH,40.3627,-83.763,48.6,3
+OH,Columbus,Caledonia,OH,40.6364,-82.9695,44.93,1
+OH,Columbus,Canal Winchester,OH,39.8437,-82.8126,13.45,120
+OH,Columbus,Centerburg,OH,40.3038,-82.6976,26.7,0
+OH,Columbus,Chillicothe,OH,39.3393,-82.9939,44.7,17
+OH,Columbus,Circleville,OH,39.6063,-82.9334,26.39,36
+OH,Columbus,Columbus,OH,39.9862,-82.9855,0.0,360
+OH,Columbus,Crooksville,OH,39.769,-82.0956,49.51,0
+OH,Columbus,Delaware,OH,40.2851,-83.0741,21.18,43
+OH,Columbus,Dublin,OH,40.1112,-83.1454,12.09,5
+OH,Columbus,East Liberty,OH,40.3339,-83.585,39.74,2
+OH,Columbus,Etna,OH,39.9544,-82.6878,15.92,8
+OH,Columbus,Frazeysburg,OH,40.1191,-82.1177,46.81,3
+OH,Columbus,Gahanna,OH,40.0251,-82.8637,6.98,3
+OH,Columbus,Glenford,OH,39.8863,-82.3201,35.92,1
+OH,Columbus,Grove City,OH,39.8654,-83.069,9.45,35
+OH,Columbus,Groveport,OH,39.8586,-82.8978,9.97,259
+OH,Columbus,Heath,OH,40.0241,-82.4413,28.92,5
+OH,Columbus,Hebron,OH,39.9644,-82.4898,26.29,17
+OH,Columbus,Hilliard,OH,40.0353,-83.1578,9.73,5
+OH,Columbus,Iberia,OH,40.6747,-82.8403,48.18,0
+OH,Columbus,Jeffersonville,OH,39.6522,-83.555,38.03,7
+OH,Columbus,Johnstown,OH,40.15,-82.6881,19.37,12
+OH,Columbus,Lancaster,OH,39.7248,-82.6049,27.09,12
+OH,Columbus,Lockbourne,OH,39.8078,-82.9838,12.33,193
+OH,Columbus,Logan,OH,39.5385,-82.4062,43.63,1
+OH,Columbus,London,OH,39.8935,-83.4375,24.79,6
+OH,Columbus,Marengo,OH,40.4008,-82.811,30.09,11
+OH,Columbus,Marion,OH,40.5973,-83.1227,42.84,19
+OH,Columbus,Marysville,OH,40.2279,-83.3595,25.87,7
+OH,Columbus,Mount Sterling,OH,39.7134,-83.2735,24.26,35
+OH,Columbus,Mount Vernon,OH,40.3854,-82.4737,38.61,7
+OH,Columbus,Nashport,OH,40.068,-82.1735,43.33,0
+OH,Columbus,New Albany,OH,40.0809,-82.7848,12.47,30
+OH,Columbus,New Bloomington,OH,40.5837,-83.3125,44.74,1
+OH,Columbus,New Lexington,OH,39.716,-82.208,45.27,2
+OH,Columbus,Newark,OH,40.0706,-82.425,30.22,4
+OH,Columbus,Obetz,OH,39.8671,-82.9451,8.5,10
+OH,Columbus,Orient,OH,39.8056,-83.1528,15.31,1
+OH,Columbus,Ostrander,OH,40.269,-83.2075,22.79,1
+OH,Columbus,Pataskala,OH,40.011,-82.7155,14.39,15
+OH,Columbus,Plain City,OH,40.1066,-83.2686,17.13,10
+OH,Columbus,Powell,OH,40.1689,-83.0829,13.63,0
+OH,Columbus,Reynoldsburg,OH,39.9588,-82.7943,10.3,10
+OH,Columbus,Sabina,OH,39.4903,-83.6345,48.61,1
+OH,Columbus,South Charleston,OH,39.8243,-83.6417,36.53,0
+OH,Columbus,Springfield,OH,39.93,-83.7959,43.09,27
+OH,Columbus,Sunbury,OH,40.2485,-82.8806,18.95,4
+OH,Columbus,Thornville,OH,39.8944,-82.4203,30.61,1
+OH,Columbus,Urbana,OH,40.1085,-83.7541,41.52,4
+OH,Columbus,Urbancrest,OH,39.9017,-83.0859,7.9,3
+OH,Columbus,Utica,OH,40.2335,-82.441,33.46,2
+OH,Columbus,Washington Court House,OH,39.5381,-83.4281,38.87,28
+OH,Columbus,West Jefferson,OH,39.9475,-83.3076,17.26,30
+OH,Columbus,Westerville,OH,40.1241,-82.921,10.12,3
+OH,Columbus,Whitehall,OH,39.9682,-82.8833,5.55,6
+OH,Columbus,Worthington,OH,40.095,-83.0209,7.75,0
+OK,Tulsa,Catoosa,OK,36.1834,-95.768,8.5,2
+OK,Tulsa,Claremore,OK,36.3146,-95.6095,20.87,0
+OK,Tulsa,Fort Gibson,OK,35.7763,-95.2602,43.46,0
+OK,Tulsa,Inola,OK,36.1321,-95.5369,20.5,1
+OK,Tulsa,Muskogee,OK,35.7432,-95.3567,40.57,0
+OK,Tulsa,Sand Springs,OK,36.1353,-96.1283,12.52,0
+OK,Tulsa,Sapulpa,OK,36.0091,-96.1003,13.7,0
+OK,Tulsa,Tulsa,OK,36.1283,-95.9042,0.0,6
+OR,Halsey,Halsey,OR,44.3827,-123.111,0.0,1
+PA,Carlisle,Allensville,PA,40.533,-77.8142,39.54,1
+PA,Carlisle,Aspers,PA,39.9792,-77.2276,15.31,9
+PA,Carlisle,Beaver Springs,PA,40.7448,-77.2168,37.65,3
+PA,Carlisle,Beavertown,PA,40.7522,-77.169,38.2,1
+PA,Carlisle,Belleville,PA,40.6059,-77.7211,39.1,6
+PA,Carlisle,Biglerville,PA,39.9303,-77.2462,18.77,16
+PA,Carlisle,Burnham,PA,40.6352,-77.5631,35.53,1
+PA,Carlisle,Camp Hill,PA,40.2422,-76.9274,14.85,37
+PA,Carlisle,Carlisle,PA,40.2,-77.2034,0.0,397
+PA,Carlisle,Chambersburg,PA,39.9315,-77.6556,30.26,132
+PA,Carlisle,Columbia,PA,40.0347,-76.4944,39.16,6
+PA,Carlisle,Dallastown,PA,39.8996,-76.641,36.27,2
+PA,Carlisle,Dalmatia,PA,40.65,-76.9027,34.88,1
+PA,Carlisle,Dillsburg,PA,40.1103,-77.0335,10.9,6
+PA,Carlisle,East Berlin,PA,39.9368,-76.9793,21.71,1
+PA,Carlisle,East York,PA,39.9687,-76.6755,32.16,2
+PA,Carlisle,Elizabethtown,PA,40.1533,-76.599,32.07,21
+PA,Carlisle,Elizabethville,PA,40.5472,-76.816,31.49,2
+PA,Carlisle,Emigsville,PA,40.0077,-76.7303,28.31,1
+PA,Carlisle,Fairfield,PA,39.7891,-77.3698,29.73,2
+PA,Carlisle,Fayetteville,PA,39.9114,-77.5652,27.64,1
+PA,Carlisle,Fort Loudon,PA,39.9219,-77.9073,41.89,1
+PA,Carlisle,Fredericksburg,PA,40.4441,-76.4377,43.72,42
+PA,Carlisle,Gardners,PA,40.0063,-77.2084,13.39,0
+PA,Carlisle,Gettysburg,PA,39.8304,-77.2339,25.59,8
+PA,Carlisle,Glen Rock,PA,39.7935,-76.7307,37.61,24
+PA,Carlisle,Greencastle,PA,39.7907,-77.7267,39.59,98
+PA,Carlisle,Hallam,PA,40.0024,-76.6041,34.49,1
+PA,Carlisle,Hanover,PA,39.8118,-76.9836,29.24,130
+PA,Carlisle,Harrisburg,PA,40.2752,-76.8843,17.61,94
+PA,Carlisle,Herndon,PA,40.7104,-76.8519,39.81,2
+PA,Carlisle,Hershey,PA,40.2806,-76.6458,29.93,9
+PA,Carlisle,Highspire,PA,40.2085,-76.7851,22.08,0
+PA,Carlisle,Hummelstown,PA,40.2657,-76.7126,26.28,1
+PA,Carlisle,Huntingdon,PA,40.5,-78.0097,47.25,9
+PA,Carlisle,Jonestown,PA,40.413,-76.4806,40.83,28
+PA,Carlisle,Klingerstown,PA,40.6588,-76.6931,41.54,1
+PA,Carlisle,Kreamer,PA,40.8004,-76.9707,43.25,0
+PA,Carlisle,Lancaster,PA,40.042,-76.3012,48.9,113
+PA,Carlisle,Landisville,PA,40.0902,-76.4064,42.77,4
+PA,Carlisle,Lebanon,PA,40.3412,-76.4228,42.29,58
+PA,Carlisle,Lemoyne,PA,40.2442,-76.8991,16.34,21
+PA,Carlisle,Lewisberry,PA,40.1356,-76.861,18.62,33
+PA,Carlisle,Lewistown,PA,40.5964,-77.573,33.59,266
+PA,Carlisle,Lititz,PA,40.154,-76.3044,47.57,18
+PA,Carlisle,Littlestown,PA,39.7452,-77.0892,32.0,3
+PA,Carlisle,Loysville,PA,40.3656,-77.3444,13.64,1
+PA,Carlisle,Lykens,PA,40.5641,-76.6983,36.6,0
+PA,Carlisle,Manchester,PA,40.0613,-76.7195,27.3,7
+PA,Carlisle,Manheim,PA,40.163,-76.3964,42.68,15
+PA,Carlisle,Marietta,PA,40.0574,-76.5515,35.82,7
+PA,Carlisle,Mcalisterville,PA,40.6381,-77.273,30.49,0
+PA,Carlisle,Mcconnellsburg,PA,39.932,-77.9958,45.81,16
+PA,Carlisle,Mcsherrystown,PA,39.8036,-77.0199,29.06,0
+PA,Carlisle,Mcveytown,PA,40.4981,-77.7415,35.03,2
+PA,Carlisle,Mechanicsburg,PA,40.2115,-77.006,10.45,127
+PA,Carlisle,Mercersburg,PA,39.8318,-77.9028,44.91,1
+PA,Carlisle,Middleburg,PA,40.7892,-77.0445,41.56,2
+PA,Carlisle,Middletown,PA,40.201,-76.7289,25.04,43
+PA,Carlisle,Mifflintown,PA,40.5713,-77.3951,27.57,4
+PA,Carlisle,Millersburg,PA,40.5422,-76.9554,27.01,3
+PA,Carlisle,Mount Holly Springs,PA,40.1126,-77.1854,6.11,0
+PA,Carlisle,Mount Joy,PA,40.1106,-76.5065,37.32,39
+PA,Carlisle,Mount Pleasant Mills,PA,40.7247,-77.02,37.51,1
+PA,Carlisle,Mount Union,PA,40.3846,-77.8822,37.98,7
+PA,Carlisle,Mount Wolf,PA,40.0616,-76.7053,28.0,5
+PA,Carlisle,Mountville,PA,40.0402,-76.4339,42.13,19
+PA,Carlisle,Myerstown,PA,40.3722,-76.3055,48.8,68
+PA,Carlisle,New Cumberland,PA,40.2297,-76.8764,17.37,8
+PA,Carlisle,New Freedom,PA,39.7353,-76.6967,41.84,1
+PA,Carlisle,New Kingstown,PA,40.2311,-77.0728,7.22,0
+PA,Carlisle,New Oxford,PA,39.863,-77.0554,24.57,12
+PA,Carlisle,New Salem,PA,39.9037,-76.7912,29.91,1
+PA,Carlisle,Newville,PA,40.1702,-77.4016,10.66,40
+PA,Carlisle,Orrstown,PA,40.0588,-77.608,23.5,1
+PA,Carlisle,Palmyra,PA,40.3099,-76.5943,33.0,10
+PA,Carlisle,Pine Grove,PA,40.5535,-76.386,49.47,61
+PA,Carlisle,Port Trevorton,PA,40.6924,-76.894,37.71,2
+PA,Carlisle,Red Lion,PA,39.8986,-76.6078,37.76,8
+PA,Carlisle,Reedsville,PA,40.6646,-77.593,38.08,3
+PA,Carlisle,Schaefferstown,PA,40.2968,-76.2939,48.43,1
+PA,Carlisle,Selinsgrove,PA,40.8003,-76.8646,45.13,3
+PA,Carlisle,Seven Valleys,PA,39.8545,-76.7667,33.22,0
+PA,Carlisle,Shade Gap,PA,40.1803,-77.8662,35.01,1
+PA,Carlisle,Shippensburg,PA,40.0484,-77.5227,19.86,103
+PA,Carlisle,Shiremanstown,PA,40.2224,-76.9555,13.17,3
+PA,Carlisle,Shrewsbury,PA,39.7714,-76.6799,40.56,1
+PA,Carlisle,Spring Grove,PA,39.8808,-76.8641,28.43,5
+PA,Carlisle,Steelton,PA,40.2258,-76.8253,20.03,0
+PA,Carlisle,Thompsontown,PA,40.5658,-77.2361,25.33,1
+PA,Carlisle,Tower City,PA,40.5884,-76.553,43.49,0
+PA,Carlisle,Waynesboro,PA,39.7524,-77.5822,36.86,5
+PA,Carlisle,Wellsville,PA,40.0513,-76.9408,17.26,2
+PA,Carlisle,Woodward,PA,40.8997,-77.3472,48.93,1
+PA,Carlisle,Wrightsville,PA,40.0239,-76.5312,37.55,9
+PA,Carlisle,Yoe,PA,39.9096,-76.6365,36.08,0
+PA,Carlisle,York,PA,39.9651,-76.7315,29.76,376
+PA,Carlisle,York Haven,PA,40.1106,-76.7149,26.53,1
+PA,Carlisle,York Springs,PA,40.0093,-77.1159,13.96,1
+PA,Carlisle,Yorkana,PA,39.976,-76.5846,36.19,1
+RI,Woonsocket,Ashaway,RI,41.426,-71.7852,42.38,0
+RI,Woonsocket,Central Falls,RI,41.8901,-71.3934,9.4,0
+RI,Woonsocket,Cranston,RI,41.7658,-71.4858,16.27,6
+RI,Woonsocket,East Providence,RI,41.8065,-71.3565,15.31,5
+RI,Woonsocket,Newport,RI,41.4801,-71.3203,37.16,1
+RI,Woonsocket,Pawtucket,RI,41.8744,-71.3743,10.85,10
+RI,Woonsocket,Providence,RI,41.823,-71.4187,12.98,6
+RI,Woonsocket,Warwick,RI,41.7062,-71.4334,20.65,7
+RI,Woonsocket,Woonsocket,RI,42.001,-71.4993,0.0,26
+RI,Woonsocket,Wyoming,RI,41.5143,-71.6903,35.04,1
+SC,Newberry,Abbeville,SC,34.1787,-82.3774,44.92,87
+SC,Newberry,Batesburg-Leesville,SC,33.9126,-81.5313,25.78,1
+SC,Newberry,Blythewood,SC,34.2121,-80.9921,35.1,91
+SC,Newberry,Bradley,SC,34.0391,-82.2435,40.37,1
+SC,Newberry,Buffalo,SC,34.7244,-81.6844,30.98,0
+SC,Newberry,Carlisle,SC,34.5921,-81.4645,22.84,1
+SC,Newberry,Cayce,SC,33.9459,-81.0429,39.45,16
+SC,Newberry,Chapin,SC,34.165,-81.3446,16.71,3
+SC,Newberry,Chester,SC,34.7051,-81.2132,36.68,46
+SC,Newberry,Clinton,SC,34.4781,-81.8638,20.24,9
+SC,Newberry,Columbia,SC,34.0378,-80.9036,43.28,628
+SC,Newberry,Donalds,SC,34.3766,-82.3467,43.05,0
+SC,Newberry,Edgefield,SC,33.787,-81.9291,38.98,10
+SC,Newberry,Enoree,SC,34.6593,-81.9609,33.2,0
+SC,Newberry,Fort Lawn,SC,34.7003,-80.8991,49.35,139
+SC,Newberry,Fountain Inn,SC,34.6989,-82.2005,44.7,175
+SC,Newberry,Gaston,SC,33.818,-81.0997,42.99,20
+SC,Newberry,Gilbert,SC,33.9245,-81.3928,27.38,3
+SC,Newberry,Gray Court,SC,34.6079,-82.1143,36.94,23
+SC,Newberry,Great Falls,SC,34.5753,-80.9048,44.57,10
+SC,Newberry,Greenwood,SC,34.1947,-82.1542,32.16,65
+SC,Newberry,Hickory Grove,SC,34.9785,-81.418,49.28,1
+SC,Newberry,Hodges,SC,34.2876,-82.248,36.94,11
+SC,Newberry,Honea Path,SC,34.4476,-82.395,46.72,5
+SC,Newberry,Hopkins,SC,33.8983,-80.8599,49.99,12
+SC,Newberry,Irmo,SC,34.1018,-81.1956,26.28,13
+SC,Newberry,Johnston,SC,33.8328,-81.8051,33.12,4
+SC,Newberry,Jonesville,SC,34.8348,-81.6811,38.51,43
+SC,Newberry,Laurens,SC,34.5022,-82.0207,28.38,30
+SC,Newberry,Lexington,SC,33.989,-81.2202,29.7,125
+SC,Newberry,Little Mountain,SC,34.1968,-81.4124,12.25,1
+SC,Newberry,Monetta,SC,33.8501,-81.61,29.8,3
+SC,Newberry,Newberry,SC,34.2813,-81.601,0.0,813
+SC,Newberry,Ninety Six,SC,34.1696,-82.0239,25.36,5
+SC,Newberry,Pauline,SC,34.8321,-81.8693,41.0,1
+SC,Newberry,Pelion,SC,33.775,-81.2502,40.34,11
+SC,Newberry,Prosperity,SC,34.2121,-81.5329,6.16,6
+SC,Newberry,Richburg,SC,34.7168,-81.0196,44.74,51
+SC,Newberry,Ridge Spring,SC,33.8453,-81.6617,30.32,2
+SC,Newberry,Ridgeway,SC,34.3066,-80.9601,36.63,71
+SC,Newberry,Roebuck,SC,34.8789,-81.9646,46.18,4
+SC,Newberry,Saluda,SC,34.0009,-81.7713,21.68,3
+SC,Newberry,Simpsonville,SC,34.7287,-82.2569,48.48,38
+SC,Newberry,Spartanburg,SC,34.9442,-81.9251,49.37,291
+SC,Newberry,Swansea,SC,33.7397,-81.1052,46.98,1
+SC,Newberry,Trenton,SC,33.7401,-81.8404,39.83,47
+SC,Newberry,Union,SC,34.7235,-81.6248,30.58,49
+SC,Newberry,Wagener,SC,33.6512,-81.3625,45.63,2
+SC,Newberry,Ward,SC,33.8573,-81.7313,30.23,1
+SC,Newberry,Ware Shoals,SC,34.3894,-82.239,37.16,0
+SC,Newberry,West Columbia,SC,33.9932,-81.0936,35.19,377
+SC,Newberry,Winnsboro,SC,34.3718,-81.0907,29.78,45
+SC,Newberry,Woodruff,SC,34.7421,-82.0371,40.37,11
+SD,Sioux Falls,Beresford,SD,43.0797,-96.7803,31.87,0
+SD,Sioux Falls,Canton,SD,43.3032,-96.5848,17.91,1
+SD,Sioux Falls,Madison,SD,44.0062,-97.1085,37.33,0
+SD,Sioux Falls,Sioux Falls,SD,43.5396,-96.7311,0.0,2
+SD,Sioux Falls,Tea,SD,43.4564,-96.8257,7.45,1
+TN,Knoxville,Alcoa,TN,35.8076,-83.9753,11.26,63
+TN,Knoxville,Andersonville,TN,36.197,-84.033,16.41,3
+TN,Knoxville,Bean Station,TN,36.3323,-83.2852,44.76,1
+TN,Knoxville,Blaine,TN,36.1478,-83.6939,18.87,1
+TN,Knoxville,Caryville,TN,36.3252,-84.2199,28.85,0
+TN,Knoxville,Clinton,TN,36.0981,-84.1283,13.38,13
+TN,Knoxville,Cosby,TN,35.7952,-83.2457,41.2,0
+TN,Knoxville,Dandridge,TN,36.0284,-83.4308,29.29,7
+TN,Knoxville,Farragut,TN,35.8731,-84.1821,14.61,1
+TN,Knoxville,Friendsville,TN,35.7563,-84.1319,17.9,1
+TN,Knoxville,Gatlinburg,TN,35.725,-83.4938,30.6,1
+TN,Knoxville,Greenback,TN,35.6487,-84.1725,25.42,0
+TN,Knoxville,Halls,TN,36.0817,-83.9344,7.82,1
+TN,Knoxville,Harriman,TN,35.9307,-84.5602,34.26,4
+TN,Knoxville,Helenwood,TN,36.4227,-84.5429,45.57,1
+TN,Knoxville,Huntsville,TN,36.4112,-84.5056,43.52,1
+TN,Knoxville,Jacksboro,TN,36.3351,-84.1928,28.69,6
+TN,Knoxville,Jefferson City,TN,36.1201,-83.4829,28.08,15
+TN,Knoxville,Kingston,TN,35.8713,-84.4959,31.31,1
+TN,Knoxville,Knoxville,TN,35.9692,-83.9496,0.0,216
+TN,Knoxville,Lenoir City,TN,35.8111,-84.2818,21.57,8
+TN,Knoxville,Loudon,TN,35.7414,-84.3701,28.32,39
+TN,Knoxville,Louisville,TN,35.8247,-84.0552,11.6,5
+TN,Knoxville,Madisonville,TN,35.5232,-84.363,38.56,2
+TN,Knoxville,Maryville,TN,35.7468,-83.9789,15.45,8
+TN,Knoxville,Mascot,TN,36.0673,-83.7649,12.35,0
+TN,Knoxville,Maynardville,TN,36.247,-83.8057,20.81,4
+TN,Knoxville,Mooresburg,TN,36.3531,-83.2362,47.83,0
+TN,Knoxville,Morristown,TN,36.2043,-83.3001,39.74,55
+TN,Knoxville,New Market,TN,36.1096,-83.5493,24.38,0
+TN,Knoxville,New Tazewell,TN,36.4381,-83.6053,37.66,5
+TN,Knoxville,Newport,TN,35.9617,-83.1976,42.06,12
+TN,Knoxville,Oak Ridge,TN,35.9639,-84.2938,19.25,1
+TN,Knoxville,Oneida,TN,36.5171,-84.5108,49.1,3
+TN,Knoxville,Pigeon Forge,TN,35.7977,-83.5623,24.71,3
+TN,Knoxville,Powell,TN,36.0358,-84.0296,6.42,1
+TN,Knoxville,Rockford,TN,35.8328,-83.9358,9.46,3
+TN,Knoxville,Rockwood,TN,35.8692,-84.6731,41.07,2
+TN,Knoxville,Sevierville,TN,35.8872,-83.5678,22.1,6
+TN,Knoxville,Sunbright,TN,36.2428,-84.6798,44.93,1
+TN,Knoxville,Sweetwater,TN,35.6029,-84.4716,38.69,8
+TN,Knoxville,Tazewell,TN,36.4625,-83.5669,40.21,3
+TN,Knoxville,Vonore,TN,35.5977,-84.2364,30.29,20
+TN,Knoxville,White Pine,TN,36.1087,-83.297,37.71,0
+TX,Fort Worth,Alvarado,TX,32.4068,-97.2149,27.03,0
+TX,Fort Worth,Arlington,TX,32.6998,-97.125,14.11,2
+TX,Fort Worth,Balch Springs,TX,32.7194,-96.6151,42.77,1
+TX,Fort Worth,Carrollton,TX,32.989,-96.8999,29.65,1
+TX,Fort Worth,Cedar Hill,TX,32.581,-96.9591,26.5,1
+TX,Fort Worth,Celina,TX,33.3154,-96.7941,48.85,1
+TX,Fort Worth,Cleburne,TX,32.3568,-97.4151,29.62,1
+TX,Fort Worth,Coppell,TX,32.9639,-96.9903,24.25,1
+TX,Fort Worth,Crowley,TX,32.5781,-97.3585,14.08,0
+TX,Fort Worth,Dallas,TX,32.7935,-96.7667,33.74,11
+TX,Fort Worth,Denton,TX,33.2175,-97.1418,32.38,1
+TX,Fort Worth,Euless,TX,32.8508,-97.08,16.24,1
+TX,Fort Worth,Farmers Branch,TX,32.9272,-96.8804,28.91,0
+TX,Fort Worth,Fort Worth,TX,32.7817,-97.3474,0.0,35
+TX,Fort Worth,Frisco,TX,33.156,-96.8216,39.97,1
+TX,Fort Worth,Garland,TX,32.91,-96.6304,42.55,0
+TX,Fort Worth,Grand Prairie,TX,32.6871,-97.0208,20.08,7
+TX,Fort Worth,Grapevine,TX,32.9343,-97.0742,19.04,0
+TX,Fort Worth,Haslet,TX,32.9609,-97.3387,12.39,0
+TX,Fort Worth,Hutchins,TX,32.6421,-96.7093,38.33,1
+TX,Fort Worth,Irving,TX,32.8583,-96.9702,22.53,4
+TX,Fort Worth,Justin,TX,33.0882,-97.3041,21.33,1
+TX,Fort Worth,Lancaster,TX,32.5922,-96.7739,35.83,11
+TX,Fort Worth,Lewisville,TX,33.0454,-96.9815,27.97,7
+TX,Fort Worth,Mansfield,TX,32.569,-97.1213,19.72,2
+TX,Fort Worth,Mckinney,TX,33.2016,-96.667,48.95,0
+TX,Fort Worth,Mesquite,TX,32.7602,-96.5865,44.23,3
+TX,Fort Worth,Midlothian,TX,32.4669,-96.989,30.13,1
+TX,Fort Worth,Mineral Wells,TX,32.8169,-98.0776,42.48,0
+TX,Fort Worth,Northlake,TX,33.0809,-97.2548,21.36,1
+TX,Fort Worth,Rhome,TX,33.0646,-97.4779,20.96,1
+TX,Fort Worth,Richardson,TX,32.9716,-96.7093,39.28,1
+TX,Fort Worth,Roanoke,TX,33.0144,-97.2276,17.52,1
+TX,Fort Worth,Saginaw,TX,32.8657,-97.3654,5.9,2
+TX,Fort Worth,Sunnyvale,TX,32.7974,-96.5577,45.88,0
+TX,Fort Worth,Waxahachie,TX,32.4035,-96.8446,39.24,2
+TX,Fort Worth,White Settlement,TX,32.7554,-97.4605,6.82,0
+TX,Fort Worth,Wilmer,TX,32.5983,-96.6815,40.74,1
+UT,Magna,Magna,UT,40.7634,-112.1599,0.0,1
+UT,Magna,Salt Lake City,UT,40.7776,-111.9311,12.01,1
+VA,Richmond,Amelia Court House,VA,37.3367,-77.9882,31.12,1
+VA,Richmond,Ashland,VA,37.7597,-77.4716,15.91,131
+VA,Richmond,Blackstone,VA,37.0822,-78.003,42.37,1
+VA,Richmond,Bon Air,VA,37.5187,-77.5713,5.3,1
+VA,Richmond,Charles City,VA,37.344,-77.0687,25.74,8
+VA,Richmond,Chester,VA,37.3531,-77.4342,12.4,75
+VA,Richmond,Colonial Heights,VA,37.265,-77.3969,18.78,26
+VA,Richmond,Crewe,VA,37.1812,-78.1307,43.29,0
+VA,Richmond,Cumberland,VA,37.4914,-78.2577,42.95,1
+VA,Richmond,Dendron,VA,37.0364,-76.9241,45.61,1
+VA,Richmond,Disputanta,VA,37.1236,-77.2249,31.24,62
+VA,Richmond,Glen Allen,VA,37.666,-77.4838,9.44,78
+VA,Richmond,Hopewell,VA,37.2915,-77.2985,19.1,12
+VA,Richmond,Jarratt,VA,36.816,-77.4689,49.3,1
+VA,Richmond,King William,VA,37.6882,-77.0212,27.18,1
+VA,Richmond,Louisa,VA,38.0212,-77.9986,44.38,4
+VA,Richmond,Mckenney,VA,36.9853,-77.7219,39.97,4
+VA,Richmond,Mechanicsville,VA,37.6263,-77.3561,9.36,33
+VA,Richmond,Midlothian,VA,37.4856,-77.6522,10.14,20
+VA,Richmond,Palmyra,VA,37.8652,-78.2627,48.88,1
+VA,Richmond,Petersburg,VA,37.2043,-77.3913,22.94,48
+VA,Richmond,Powhatan,VA,37.5427,-77.9267,24.73,4
+VA,Richmond,Prince George,VA,37.2209,-77.2683,24.17,59
+VA,Richmond,Richmond,VA,37.5295,-77.4756,0.0,378
+VA,Richmond,Saluda,VA,37.6053,-76.5938,48.58,2
+VA,Richmond,Sandston,VA,37.512,-77.3149,8.89,65
+VA,Richmond,Stony Creek,VA,36.948,-77.4001,40.39,1
+VA,Richmond,Tappahannock,VA,37.9187,-76.8667,42.78,2
+VA,Richmond,Waverly,VA,37.034,-77.0956,40.11,2
+VA,Richmond,West Point,VA,37.5519,-76.8017,36.95,19
+VA,Richmond,Williamsburg,VA,37.2693,-76.7076,45.83,53
+VT,Rutland,BARRE,VT,44.1998,-72.5085,47.03,10
+VT,Rutland,Danby,VT,43.3452,-72.9946,18.26,0
+VT,Rutland,Londonderry,VT,43.2278,-72.8083,27.7,1
+VT,Rutland,Montpelier,VT,44.2659,-72.5717,49.68,5
+VT,Rutland,New Haven,VT,44.1266,-73.151,36.77,1
+VT,Rutland,North Bennington,VT,42.924,-73.2411,49.15,0
+VT,Rutland,North Springfield,VT,43.3304,-72.5277,29.69,1
+VT,Rutland,Rutland,VT,43.6092,-72.9783,0.0,26
+VT,Rutland,Vergennes,VT,44.1664,-73.2557,40.9,21
+WA,Vancouver,Vancouver,WA,45.6366,-122.5967,0.0,1
+WI,Oshkosh,Allenton,WI,43.4218,-88.3448,42.91,0
+WI,Oshkosh,Appleton,WI,44.278,-88.3892,19.61,7
+WI,Oshkosh,Beaver Dam,WI,43.4688,-88.8309,40.56,3
+WI,Oshkosh,Black Creek,WI,44.4742,-88.4506,31.68,1
+WI,Oshkosh,Brownsville,WI,43.6147,-88.4953,28.38,0
+WI,Oshkosh,Cambria,WI,43.5416,-89.1108,43.07,0
+WI,Oshkosh,Campbellsport,WI,43.5975,-88.2814,32.54,1
+WI,Oshkosh,Chilton,WI,44.0293,-88.1625,19.85,1
+WI,Oshkosh,Clintonville,WI,44.6222,-88.7513,42.47,1
+WI,Oshkosh,Clyman,WI,43.3116,-88.7232,49.79,0
+WI,Oshkosh,Combined Locks,WI,44.2642,-88.3064,20.95,2
+WI,Oshkosh,De Pere,WI,44.4308,-88.0785,36.98,5
+WI,Oshkosh,Endeavor,WI,43.7146,-89.4684,49.92,0
+WI,Oshkosh,Fond Du Lac,WI,43.7718,-88.4397,18.37,0
+WI,Oshkosh,Friesland,WI,43.5886,-89.067,39.17,0
+WI,Oshkosh,Green Bay,WI,44.5148,-87.9895,44.25,12
+WI,Oshkosh,Hartford,WI,43.3223,-88.3784,49.25,0
+WI,Oshkosh,Hobart,WI,44.4967,-88.1602,38.31,6
+WI,Oshkosh,Horicon,WI,43.4454,-88.6403,40.08,0
+WI,Oshkosh,Hortonville,WI,44.3368,-88.6361,22.01,1
+WI,Oshkosh,Kaukauna,WI,44.2773,-88.2641,22.97,0
+WI,Oshkosh,Kimberly,WI,44.267,-88.3378,20.21,3
+WI,Oshkosh,Kohler,WI,43.7364,-87.7795,43.7,1
+WI,Oshkosh,Little Chute,WI,44.2906,-88.3208,22.03,1
+WI,Oshkosh,Lomira,WI,43.5946,-88.4421,30.18,1
+WI,Oshkosh,Manawa,WI,44.4613,-88.9204,35.12,0
+WI,Oshkosh,Manitowoc,WI,44.0991,-87.6812,44.04,1
+WI,Oshkosh,Markesan,WI,43.7098,-88.9907,30.39,0
+WI,Oshkosh,Menasha,WI,44.2125,-88.4271,14.72,0
+WI,Oshkosh,Neenah,WI,44.1669,-88.4767,10.82,14
+WI,Oshkosh,New London,WI,44.3949,-88.7395,27.18,0
+WI,Oshkosh,North Fond du Lac,WI,43.8107,-88.486,15.13,0
+WI,Oshkosh,Oakfield,WI,43.6843,-88.5476,23.39,0
+WI,Oshkosh,Oshkosh,WI,44.0227,-88.5619,0.0,49
+WI,Oshkosh,Pardeeville,WI,43.5358,-89.301,49.91,0
+WI,Oshkosh,Plymouth,WI,43.7447,-87.966,35.35,2
+WI,Oshkosh,Pulaski,WI,44.6684,-88.2351,47.45,0
+WI,Oshkosh,Random Lake,WI,43.5541,-87.9548,44.33,1
+WI,Oshkosh,Redgranite,WI,44.0513,-89.1059,27.09,0
+WI,Oshkosh,Ripon,WI,43.8436,-88.8386,18.51,0
+WI,Oshkosh,Sheboygan,WI,43.7403,-87.7316,45.72,6
+WI,Oshkosh,Sheboygan Falls,WI,43.729,-87.8266,41.87,1
+WI,Oshkosh,Waupaca,WI,44.3506,-89.0719,33.94,0
+WI,Oshkosh,West Bend,WI,43.4173,-88.1818,45.93,1
+WI,Oshkosh,Weyauwega,WI,44.324,-88.9333,27.79,0
+WI,Oshkosh,Winneconne,WI,44.1111,-88.7116,9.62,2
+WI,Oshkosh,Wrightstown,WI,44.3263,-88.1756,28.4,3
+WV,Culloden,Apple Grove,WV,38.6663,-82.1706,18.16,7
+WV,Culloden,Barboursville,WV,38.4067,-82.2964,12.24,2
+WV,Culloden,Big Creek,WV,38.0054,-82.0361,28.39,1
+WV,Culloden,Charleston,WV,38.3484,-81.6322,24.19,30
+WV,Culloden,Cross Lanes,WV,38.4351,-81.7707,16.28,1
+WV,Culloden,Culloden,WV,38.4154,-82.0705,0.0,68
+WV,Culloden,Delbarton,WV,37.7052,-82.186,49.47,1
+WV,Culloden,Dixie,WV,38.2511,-81.1944,48.82,0
+WV,Culloden,Dunbar,WV,38.3688,-81.7345,18.48,3
+WV,Culloden,Eleanor,WV,38.5371,-81.9254,11.5,1
+WV,Culloden,Handley,WV,38.1863,-81.3673,41.28,0
+WV,Culloden,Huntington,WV,38.4109,-82.4345,19.71,37
+WV,Culloden,Hurricane,WV,38.4293,-82.0182,2.99,5
+WV,Culloden,Institute,WV,38.3797,-81.7662,16.66,0
+WV,Culloden,Kermit,WV,37.8425,-82.4086,43.64,0
+WV,Culloden,Lesage,WV,38.487,-82.293,13.02,3
+WV,Culloden,Logan,WV,37.8509,-81.9857,39.27,1
+WV,Culloden,Madison,WV,38.0631,-81.8046,28.3,1
+WV,Culloden,Milton,WV,38.433,-82.1303,3.46,0
+WV,Culloden,Nitro,WV,38.4117,-81.8193,13.6,19
+WV,Culloden,Poca,WV,38.4748,-81.8119,14.58,22
+WV,Culloden,Point Pleasant,WV,38.853,-82.1303,30.41,15
+WV,Culloden,Prichard,WV,38.2362,-82.6028,31.4,5
+WV,Culloden,Ravenswood,WV,38.9561,-81.7619,40.9,21
+WV,Culloden,Ripley,WV,38.8201,-81.7091,34.1,1
+WV,Culloden,Shrewsbury,WV,38.2079,-81.4671,35.72,0
+WV,Culloden,South Charleston,WV,38.3426,-81.7155,19.88,24
+WV,Culloden,Spencer,WV,38.8024,-81.3531,47.07,2
+WV,Culloden,Teays Valley,WV,38.4482,-81.9246,8.22,0
+WV,Culloden,Wayne,WV,38.2301,-82.4415,23.84,1
+WY,Cheyenne,Cheyenne,WY,41.135,-104.7902,0.0,1
