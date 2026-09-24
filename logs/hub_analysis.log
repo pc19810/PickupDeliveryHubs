@@ -1856,3 +1856,11 @@
 2026-01-18 21:48:23,016 - src.visualization - INFO - Loading visualization data...
 2026-01-18 21:48:23,046 - src.visualization - INFO - Data loaded successfully
 2026-01-18 21:48:23,081 - src.visualization - INFO - Starting visualization server at http://0.0.0.0:8050
+2026-01-18 22:09:25,916 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "C:\Users\puneet\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\serving.py", line 363, in run_wsgi
+    execute(self.server.app)
+  File "C:\Users\puneet\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\serving.py", line 348, in execute
+    data = self.rfile.read(10_000_000)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MemoryError
